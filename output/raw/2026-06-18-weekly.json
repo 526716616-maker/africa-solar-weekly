@@ -1,7 +1,7 @@
 {
   "week": "2026-W25",
   "date": "2026-06-18",
-  "issue": 5,
+  "issue": 6,
   "highlights": [
     {
       "num": "500 MW",
@@ -95,6 +95,24 @@
           "source": "PV Magazine",
           "source_url": "https://www.pv-magazine.com/2026/06/17/korean-developers-propose-500-mw-solar-project-in-zambia/",
           "date": "2026-06-17"
+        },
+        {
+          "tag": "AFSIA · 非洲太阳能",
+          "title": "天合光能携下一代综合能源解决方案重返2026非洲能源论坛",
+          "summary": "全球太阳能领导者正式推出 Vertex N G3 &#38; Vertex S+ G3 组件出席在开普敦举行的 AEF 2026 Trinasolar，智能光伏和能源领域的全球领导者 [&#8230;]",
+          "bullets": [],
+          "source": "AFSIA Solar Africa",
+          "source_url": "https://www.afsiasolar.com/trinasolar-returns-to-africa-energy-forum-2026-with-next-generation-integrated-energy-solutions/?utm_source=rss&utm_medium=rss&utm_campaign=trinasolar-returns-to-africa-energy-forum-2026-with-next-generation-integrated-energy-solutions",
+          "date": "2026-06-17"
+        },
+        {
+          "tag": "AFSIA · 非洲太阳能",
+          "title": "ARC Power 与 Kiyona Energy 签署 FUSE 协议，加速赞比亚太阳能发电",
+          "summary": "ARC Power 与 Kiyona Energy 签署了 FUSE 协议，初始投资目标为 6000 万美元，标志着赞比亚太阳能发电基础设施建设向前迈出了重要一步。",
+          "bullets": [],
+          "source": "AFSIA Solar Africa",
+          "source_url": "https://www.afsiasolar.com/arc-power-signs-fuse-agreement-with-kiyona-energy-to-accelerate-solar-generation-in-zambia/?utm_source=rss&utm_medium=rss&utm_campaign=arc-power-signs-fuse-agreement-with-kiyona-energy-to-accelerate-solar-generation-in-zambia",
+          "date": "2026-06-16"
         }
       ]
     },

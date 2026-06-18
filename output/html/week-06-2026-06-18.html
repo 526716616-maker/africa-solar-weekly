@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>非洲离网太阳能市场资讯 2026-06-18 第 6 期</title>
+<style>/* ===== 非洲离网太阳能市场资讯 - 样式 ===== */
+:root {
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --text: #1a1a2e;
+  --text-secondary: #555770;
+  --text-tertiary: #8e8ea0;
+  --border: #e8e8ee;
+  --green-dark: #0F6E56;
+  --green-light: #1D9E75;
+  --green-bg: #E1F5EE;
+  --green-tag-bg: rgba(15,110,86,0.08);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+/* ===== Header ===== */
+.header {
+  background: var(--green-dark);
+  color: #fff;
+  padding: 28px 28px 22px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+}
+.header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  letter-spacing: -0.01em;
+}
+.header .subtitle {
+  font-size: 13px;
+  opacity: 0.78;
+  font-weight: 400;
+}
+.header .meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.header .meta span {
+  background: rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  padding: 3px 10px;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+/* ===== Stats Row ===== */
+.section-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 28px 0 10px;
+}
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.stat-box {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 12px;
+  text-align: center;
+}
+.stat-box .num {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 4px;
+}
+.stat-box .lbl {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+@media (max-width: 560px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== News Card ===== */
+.news-card {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  transition: border-color 0.15s;
+}
+.news-card:hover { border-color: var(--green-light); }
+.news-card .tag {
+  display: inline-block;
+  background: var(--green-tag-bg);
+  color: var(--green-dark);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+.news-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.news-card .summary {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+.news-card .bullets {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.news-card .bullets li {
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 2px 0 2px 16px;
+  position: relative;
+}
+.news-card .bullets li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--green-light);
+}
+.news-card .source {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+.news-card .source a {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+.news-card .source a:hover { text-decoration: underline; }
+
+/* ===== Company Card ===== */
+.company-card {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  transition: border-color 0.15s;
+}
+.company-card:hover { border-color: var(--green-light); }
+.company-card .tag {
+  display: inline-block;
+  background: var(--green-tag-bg);
+  color: var(--green-dark);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+.company-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.company-card p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.company-card .source {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-top: 8px;
+}
+.company-card .source a {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+.company-card .source a:hover { text-decoration: underline; }
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  border-top: 0.5px solid var(--border);
+  padding-top: 20px;
+  margin-top: 32px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>Africa Off-Grid Solar Market News</h1>
+    <p class="subtitle">非洲离网太阳能市场资讯</p>
+    <div class="meta">
+      <span>第 6 期</span>
+      <span>2026-06-18</span>
+      <span>行业动态 · 企业跟踪</span>
+    </div>
+  </div>
+
+  <div class="section-title">本期数据亮点</div>
+  <div class="stats-row"><div class="stat-box"><div class="num">500 MW</div><div class="lbl">韩国提案赞比亚光伏项目</div></div><div class="stat-box"><div class="num">1亿</div><div class="lbl">Ignite 2030年连接目标</div></div><div class="stat-box"><div class="num">1000万套</div><div class="lbl">2025年离网太阳能销量</div></div><div class="stat-box"><div class="num">$210亿</div><div class="lbl">离网太阳能投资缺口</div></div></div>
+
+  <div class="section-title">一、行业动态</div>
+<div class="news-card">
+  <span class="tag">GOGLA · 行业报告</span>
+  <h3>创纪录的销售凸显离网太阳能在电气化中的关键作用</h3>
+  <p class="summary">GOGLA 呼吁协调支持，因为离网太阳能销量到 2025 年将达到 1000 万套，推动全球能源获取和 SDG7 目标的进展。</p>
+  
+  <div class="source">来源：<a href="https://newsroom.gogla.org/tags/market-trends-insights/" target="_blank" rel="noopener">GOGLA Newsroom · 2026-06-02</a></div>
+</div>
+<div class="news-card">
+  <span class="tag">GOGLA · 行业报告</span>
+  <h3>新联盟成立，用清洁能源为食品系统提供动力</h3>
+  <p class="summary">农业能源联盟联合全球领导人，推动可持续农业和清洁能源的获取，解决发展中地区的粮食安全和能源挑战。</p>
+  
+  <div class="source">来源：<a href="https://newsroom.gogla.org/tags/climate-impact/" target="_blank" rel="noopener">GOGLA Newsroom · 2025-09-01</a></div>
+</div>
+<div class="news-card">
+  <span class="tag">GOGLA · 行业报告</span>
+  <h3>GOGLA 报告揭示混合金融解决方案可弥补 210 亿美元的离网太阳能缺口</h3>
+  <p class="summary">了解战略性地将公共、私人和慈善资本结合起来以动员私人资本的投资计划如何能够加速能源获取和可持续发展……</p>
+  
+  <div class="source">来源：<a href="https://newsroom.gogla.org/tags/investment/" target="_blank" rel="noopener">GOGLA Newsroom · 2025-07-10</a></div>
+</div>
+<div class="news-card">
+  <span class="tag">GOGLA · 行业报告</span>
+  <h3>根据新的全球离网太阳能报告，到 2024 年，将有 2000 万人通过离网太阳能改善了能源获取...</h3>
+  <p class="summary">据 GOGLA 报道，通过附属机构受益的总人数达到 1.38 亿，创造了 10B 美元的新收入。</p>
+  
+  <div class="source">来源：<a href="https://newsroom.gogla.org/tags/market-trends-insights/" target="_blank" rel="noopener">GOGLA Newsroom · 2025-05-27</a></div>
+</div>
+<div class="news-card">
+  <span class="tag">GOGLA · 行业报告</span>
+  <h3>在资金下降和整合的情况下，随着市场势头增强，3亿美元流向离网太阳能</h3>
+  <p class="summary">GOGLA 的 2024 年报告显示，尽管资金有所下降，但离网太阳能投资仍达 3 亿美元。规模扩张表明成熟，而初创企业则面临挑战。新的股权基金和补贴提振市场动力...</p>
+  
+  <div class="source">来源：<a href="https://newsroom.gogla.org/tags/investment/" target="_blank" rel="noopener">GOGLA Newsroom · 2025-04-16</a></div>
+</div>
+<div class="news-card">
+  <span class="tag">GOGLA · 行业报告</span>
+  <h3>新报告强调了能源和农业部门的合作将如何加强整个非洲的粮食安全</h3>
+  <p class="summary">GOGLA 和合作伙伴在非洲推动联结方法，强调离网太阳能在农业食品系统转型以实现可持续发展方面的作用。</p>
+  
+  <div class="source">来源：<a href="https://newsroom.gogla.org/tags/climate-impact/" target="_blank" rel="noopener">GOGLA Newsroom · 2025-04-03</a></div>
+</div>
+<div class="news-card">
+  <span class="tag">GOGLA · 行业报告</span>
+  <h3>GOGLA 和宜家基金会推出新资源，以增强离网太阳能对气候的影响</h3>
+  <p class="summary">公司、气候基金、政府和发展组织可以利用这些资源来设计和实施离网太阳能商业模式、投资和计划，以改善资源...</p>
+  
+  <div class="source">来源：<a href="https://newsroom.gogla.org/tags/climate-impact/" target="_blank" rel="noopener">GOGLA Newsroom · 2025-03-13</a></div>
+</div>
+<div class="news-card">
+  <span class="tag">PV Magazine · 太阳能</span>
+  <h3>韩国开发商提议在赞比亚建设500兆瓦太阳能项目</h3>
+  <p class="summary">韩国代表团正在与赞比亚政府就在赞比亚建设500兆瓦太阳能项目进行谈判。政府部门表示，该项目规模足够大，足以弥补该国目前三分之一的能源赤字。</p>
+  
+  <div class="source">来源：<a href="https://www.pv-magazine.com/2026/06/17/korean-developers-propose-500-mw-solar-project-in-zambia/" target="_blank" rel="noopener">PV Magazine · 2026-06-17</a></div>
+</div>
+<div class="news-card">
+  <span class="tag">AFSIA · 非洲太阳能</span>
+  <h3>天合光能携下一代综合能源解决方案重返2026非洲能源论坛</h3>
+  <p class="summary">全球太阳能领导者正式推出 Vertex N G3 &#38; Vertex S+ G3 组件出席在开普敦举行的 AEF 2026 Trinasolar，智能光伏和能源领域的全球领导者 [&#8230;]</p>
+  
+  <div class="source">来源：<a href="https://www.afsiasolar.com/trinasolar-returns-to-africa-energy-forum-2026-with-next-generation-integrated-energy-solutions/?utm_source=rss&utm_medium=rss&utm_campaign=trinasolar-returns-to-africa-energy-forum-2026-with-next-generation-integrated-energy-solutions" target="_blank" rel="noopener">AFSIA Solar Africa · 2026-06-17</a></div>
+</div>
+<div class="news-card">
+  <span class="tag">AFSIA · 非洲太阳能</span>
+  <h3>ARC Power 与 Kiyona Energy 签署 FUSE 协议，加速赞比亚太阳能发电</h3>
+  <p class="summary">ARC Power 与 Kiyona Energy 签署了 FUSE 协议，初始投资目标为 6000 万美元，标志着赞比亚太阳能发电基础设施建设向前迈出了重要一步。</p>
+  
+  <div class="source">来源：<a href="https://www.afsiasolar.com/arc-power-signs-fuse-agreement-with-kiyona-energy-to-accelerate-solar-generation-in-zambia/?utm_source=rss&utm_medium=rss&utm_campaign=arc-power-signs-fuse-agreement-with-kiyona-energy-to-accelerate-solar-generation-in-zambia" target="_blank" rel="noopener">AFSIA Solar Africa · 2026-06-16</a></div>
+</div>
+<div class="section-title">二、重点企业动态</div>
+<div class="company-card">
+  <span class="tag">企业动态 · Ignite Power</span>
+  <h3>福布斯：初创公司如何为非洲带来负担得起的清洁能源</h3>
+  <p>向撒哈拉以南非洲一些能源最匮乏的地区提供电力，更不用说来自可再生能源的电力，是一个令人烦恼和令人畏惧的问题</p>
+  <div class="source">来源：<a href="https://igniteaccess.com/how-startups-are-bringing-affordable-clean-energy-to-africa/" target="_blank" rel="noopener">ENGIE / IgniteAccess</a></div>
+</div>
+<div class="company-card">
+  <span class="tag">企业动态 · Ignite Power</span>
+  <h3>彭博社：非洲电气化的使命可能终于开始了</h3>
+  <p>当太阳能电池板条抵达赞比亚东北部的偏远村庄时，达马塞克·姆瓦勒看到了机会。</p>
+  <div class="source">来源：<a href="https://igniteaccess.com/the-mission-to-electrify-africa-might-finally-be-under-way/" target="_blank" rel="noopener">ENGIE / IgniteAccess</a></div>
+</div>
+<div class="company-card">
+  <span class="tag">企业动态 · Ignite Power</span>
+  <h3>ADIO 与清洁能源领导者 Ignite Energy Access 合作进行全球扩张</h3>
+  <p>阿布扎比投资办公室 (ADIO) 与 Ignite Energy Access 签署了战略协议，Ignite Energy Access 是一家领先的泛非全系列分布式能源供应商</p>
+  <div class="source">来源：<a href="https://igniteaccess.com/adio-partners-with-clean-energy-leader-ignite-energy-access-for-global-expansion/" target="_blank" rel="noopener">ENGIE / IgniteAccess</a></div>
+</div>
+<div class="company-card">
+  <span class="tag">企业动态 · Ignite Power</span>
+  <h3>到 2030 年让 1 亿人获得清洁能源，解决能源贫困问题</h3>
+  <p>Ignite Energy Access 的目标是到 2030 年让 1 亿人获得清洁能源。</p>
+  <div class="source">来源：<a href="https://igniteaccess.com/connecting-100-million-people-to-clean-energy-by-2030-to-tackle-energy-poverty/" target="_blank" rel="noopener">ENGIE / IgniteAccess</a></div>
+</div>
+<div class="company-card">
+  <span class="tag">企业动态 · Ignite Power</span>
+  <h3>Ignite Power 推进对 ENGIE Energy Access 的收购，打造非洲最大的可再生能源</h3>
+  <p>肯尼亚监管机构批准Ignite Power收购ENGIE Energy，非洲最大分布式可再生能源提供商的成立向前迈出了重要一步</p>
+  <div class="source">来源：<a href="https://igniteaccess.com/ignite-power-advances-acquisition-of-engie-energy-access-to-create-africas-largest-renewable-energy-provider/" target="_blank" rel="noopener">ENGIE / IgniteAccess</a></div>
+</div>
+<div class="company-card">
+  <span class="tag">企业动态 · Ignite Power</span>
+  <h3>权力归于人民：亚里夫·科恩如何照亮最后一英里社区</h3>
+  <p>亚里夫·科恩不会浪费时间。他负担不起；他正在朝着一个雄心勃勃的目标努力。</p>
+  <div class="source">来源：<a href="https://igniteaccess.com/power-to-the-people-how-yariv-cohen-is-shining-a-light-on-last-mile-communities/" target="_blank" rel="noopener">ENGIE / IgniteAccess</a></div>
+</div>
+
+
+  <div class="footer">
+    Africa Solar News · 2026-06-18 · 每日更新
+  </div>
+
+</div>
+</body>
+</html>
