@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-18T11:34:16.700310+08:00",
+  "crawled_at": "2026-06-18T12:07:19.265387+08:00",
   "week": "2026-W25",
   "sources": [
     {
@@ -11,6 +11,69 @@
           "url": "https://newsroom.gogla.org/tags/market-trends-insights/",
           "date": "2026-06-02",
           "summary": "GOGLA calls for coordinated support as off-grid solar sales hit 10 million kits in 2025, powering progress toward global energy access and SDG7 goals.",
+          "source_name": "GOGLA Newsroom"
+        },
+        {
+          "title": "New Coalition Formed to Power Food Systems with Clean Energy",
+          "url": "https://newsroom.gogla.org/tags/climate-impact/",
+          "date": "2025-09-01",
+          "summary": "Agri-Energy Coalition unites global leaders to advance sustainable agriculture and clean energy access, addressing food security and energy challenges in developing regions.",
+          "source_name": "GOGLA Newsroom"
+        },
+        {
+          "title": "GOGLA Report Reveals Blended Finance Solutions to Bridge $21 Billion Off-Grid Solar Gap",
+          "url": "https://newsroom.gogla.org/tags/investment/",
+          "date": "2025-07-10",
+          "summary": "Discover how investment schemes that strategically combine public, private and philanthropic capital to mobilize private capital, can accelerate energy access and sustainable development in the off...",
+          "source_name": "GOGLA Newsroom"
+        },
+        {
+          "title": "20 million people improved their energy access through off-grid solar in 2024, according to the new Global Off-Grid S...",
+          "url": "https://newsroom.gogla.org/tags/market-trends-insights/",
+          "date": "2025-05-27",
+          "summary": "The total number of people benefitting from access through affiliates reached 138 million generating $10B in new income, GOGLA reports.",
+          "source_name": "GOGLA Newsroom"
+        },
+        {
+          "title": "Amid funding dip and consolidation, $300M flows to off-grid solar as market gathers momentum",
+          "url": "https://newsroom.gogla.org/tags/investment/",
+          "date": "2025-04-16",
+          "summary": "GOGLA's 2024 report shows $300M investment in off-grid solar, despite funding decline. Scale-ups show maturity, while start-ups face challenges. New equity funds and subsidies boost market momentum...",
+          "source_name": "GOGLA Newsroom"
+        },
+        {
+          "title": "SAFDE 2025 opens with an urgent call for investment and policy support to scale up solar energy in South Asia",
+          "url": "https://newsroom.gogla.org/tags/events/",
+          "date": "2025-04-08",
+          "summary": "The event emphasizes DRE potential with insights from leaders, advocating for partnerships and finance to build a low-carbon future in South Asia.",
+          "source_name": "GOGLA Newsroom"
+        },
+        {
+          "title": "New report highlights how the energy and agriculture sectors working together will enhance food security across Africa",
+          "url": "https://newsroom.gogla.org/tags/climate-impact/",
+          "date": "2025-04-03",
+          "summary": "GOGLA and partners push for nexus approaches in Africa, emphasizing off-grid solar's role in transforming agri-food systems for sustainable development.",
+          "source_name": "GOGLA Newsroom"
+        },
+        {
+          "title": "GOGLA and IKEA Foundation unveil new resources to enhance off-grid solar’s climate impact",
+          "url": "https://newsroom.gogla.org/tags/climate-impact/",
+          "date": "2025-03-13",
+          "summary": "These resources can be used by companies, climate funds, governments, and development organisations to design and implement off-grid solar business models, investments and programmes to improve res...",
+          "source_name": "GOGLA Newsroom"
+        },
+        {
+          "title": "Off-grid Solar Could Provide First-time Electricity Access to Almost 400 million People Globally by 2030",
+          "url": "https://newsroom.gogla.org/tags/market-trends-insights/",
+          "date": "2024-10-08",
+          "summary": "Investment in off-grid solar must increase to $21 billion to electrify 398M people, as highlighted in the 2024 Off-Grid Solar Market Trends Report.",
+          "source_name": "GOGLA Newsroom"
+        },
+        {
+          "title": "GOGLA and e-MFP Forge Strategic Partnership to Drive Financial Inclusion and Off-Grid Solar Expansion",
+          "url": "https://newsroom.gogla.org/tags/climate-impact/",
+          "date": "2024-09-19",
+          "summary": "GOGLA and e-MFP collaborate to expand financial services and off-grid solar energy access, enhancing productivity and resilience for millions.",
           "source_name": "GOGLA Newsroom"
         }
       ]
@@ -113,78 +176,7 @@
     {
       "key": "afsia",
       "name": "AFSIA Solar Africa",
-      "articles": [
-        {
-          "title": "Trinasolar Returns to Africa Energy Forum 2026 with Next-Generation Integrated Energy Solutions",
-          "url": "https://www.afsiasolar.com/trinasolar-returns-to-africa-energy-forum-2026-with-next-generation-integrated-energy-solutions/?utm_source=rss&utm_medium=rss&utm_campaign=trinasolar-returns-to-africa-energy-forum-2026-with-next-generation-integrated-energy-solutions",
-          "date": "2026-06-17",
-          "summary": "Global solar leader to officially launch the Vertex N G3 &#38; Vertex S+ G3 modules at AEF 2026 in Cape Town Trinasolar, a global leader in smart PV and energy [&#8230;]",
-          "source_name": "AFSIA Solar Africa"
-        },
-        {
-          "title": "ARC Power Signs FUSE Agreement with Kiyona Energy to Accelerate Solar Generation in Zambia",
-          "url": "https://www.afsiasolar.com/arc-power-signs-fuse-agreement-with-kiyona-energy-to-accelerate-solar-generation-in-zambia/?utm_source=rss&utm_medium=rss&utm_campaign=arc-power-signs-fuse-agreement-with-kiyona-energy-to-accelerate-solar-generation-in-zambia",
-          "date": "2026-06-16",
-          "summary": "ARC Power has signed a FUSE Agreement with Kiyona Energy, targeting an initial US$60m investment, marking a significant step forward in accelerating solar generation infrastructure across Zambia. The agreement is [&#8230;]",
-          "source_name": "AFSIA Solar Africa"
-        },
-        {
-          "title": "Solis Concludes Successful SNEC PV+ 2026 with Strong Global Interest in Full-Scenario Energy Storage Portfolio",
-          "url": "https://www.afsiasolar.com/solis-concludes-successful-snec-pv-2026-with-strong-global-interest-in-full-scenario-energy-storage-portfolio/?utm_source=rss&utm_medium=rss&utm_campaign=solis-concludes-successful-snec-pv-2026-with-strong-global-interest-in-full-scenario-energy-storage-portfolio",
-          "date": "2026-06-12",
-          "summary": "Solis concluded a highly successful participation at SNEC PV+ 2026, attracting strong interest from customers, partners and industry stakeholders worldwide with its full-scenario energy storage portfolio covering residential, commercial and [&#8230;]",
-          "source_name": "AFSIA Solar Africa"
-        },
-        {
-          "title": "GameChange Energy Consolidates Solar, eBOS, Asset Monitoring, and Transformer Divisions Under Single Brand",
-          "url": "https://www.afsiasolar.com/gamechange-energy-consolidates-solar-ebos-asset-monitoring-and-transformer-divisions-under-single-brand/?utm_source=rss&utm_medium=rss&utm_campaign=gamechange-energy-consolidates-solar-ebos-asset-monitoring-and-transformer-divisions-under-single-brand",
-          "date": "2026-06-11",
-          "summary": "Rebrand Streamlines Procurement and Installation for Clients, Reflects GameChange’s Expanding Product Offerings GameChange Energy, a global energy infrastructure company, announces the consolidation of its solar tracker division (formerly GameChange Solar), [&#8230;]",
-          "source_name": "AFSIA Solar Africa"
-        },
-        {
-          "title": "Trinasolar and Ecohope Solar Sign 600MW MoU to Distribute Latest Vertex G3 Modules Across Southeast Asia, the Middle East and Africa",
-          "url": "https://www.afsiasolar.com/trinasolar-and-ecohope-solar-sign-600mw-mou-to-distribute-latest-vertex-g3-modules-across-southeast-asia-the-middle-east-and-africa/?utm_source=rss&utm_medium=rss&utm_campaign=trinasolar-and-ecohope-solar-sign-600mw-mou-to-distribute-latest-vertex-g3-modules-across-southea",
-          "date": "2026-06-10",
-          "summary": "Trinasolar, a global leader in smart PV and energy storage solutions, has signed a Memorandum of Understanding (MoU) with Ecohope Solar, a global PV and ESS solutions provider with offices [&#8230;]",
-          "source_name": "AFSIA Solar Africa"
-        },
-        {
-          "title": "South Africa’s Most Intelligent Hybrid Inverter Has Arrived – Meet Megatron AI",
-          "url": "https://www.afsiasolar.com/south-africas-most-intelligent-hybrid-inverter-has-arrived-meet-megatron-ai/?utm_source=rss&utm_medium=rss&utm_campaign=south-africas-most-intelligent-hybrid-inverter-has-arrived-meet-megatron-ai",
-          "date": "2026-06-10",
-          "summary": "Across South Africa, businesses and households are being forced to rethink how they manage energy. Rising electricity costs, unstable supply, equipment damage from voltage spikes and surges, and the constant [&#8230;]",
-          "source_name": "AFSIA Solar Africa"
-        },
-        {
-          "title": "Southern Africa’s Fastest-Growing Solar Brand, Megatron, Expands Its Solar Range",
-          "url": "https://www.afsiasolar.com/southern-africas-fastest-growing-solar-brand-megatron-expands-its-solar-range/?utm_source=rss&utm_medium=rss&utm_campaign=southern-africas-fastest-growing-solar-brand-megatron-expands-its-solar-range",
-          "date": "2026-06-09",
-          "summary": "The South African energy landscape is shifting toward more integrated and intelligent solutions. Following the successful introduction of the Megatron AI Full Hybrid Inverter—a launch that highlighted a clear demand [&#8230;]",
-          "source_name": "AFSIA Solar Africa"
-        },
-        {
-          "title": "Setting a New Benchmark in Shading Performance: Jinko Solar’s Tiger Neo 3 Earns TÜV Rheinland Class A+ Anti Shading Certification",
-          "url": "https://www.afsiasolar.com/setting-a-new-benchmark-in-shading-performance-jinko-solars-tiger-neo-3-earns-tuv-rheinland-class-a-anti-shading-certification/?utm_source=rss&utm_medium=rss&utm_campaign=setting-a-new-benchmark-in-shading-performance-jinko-solars-tiger-neo-3-earns-tuv-rheinland-class-a-an",
-          "date": "2026-06-04",
-          "summary": "Jinko Solar is proud to announce that its N-Type TopCon Tiger Neo 3 module has been awarded the prestigious Class A+ Certification for Shadow Resistance by TÜV Rheinland which is [&#8230;]",
-          "source_name": "AFSIA Solar Africa"
-        },
-        {
-          "title": "AlphaESSWelcomes Southern African Energy Leaders to China for “Energy Momentum 2026,  ” Deepening Long-Term Partnerships",
-          "url": "https://www.afsiasolar.com/alphaesswelcomes-southern-african-energy-leaders-to-china-for-energy-momentum-2026-deepening-long-term-partnerships/?utm_source=rss&utm_medium=rss&utm_campaign=alphaesswelcomes-southern-african-energy-leaders-to-china-for-energy-momentum-2026-deepening-long-term-partnershi",
-          "date": "2026-05-29",
-          "summary": "AlphaESS, a leading global green energy storage solution and service provider, has welcomed a delegation of leading EPCs, developers, financiers and distribution partners from South Africa and Zimbabwe for &#8220;Energy [&#8230;]",
-          "source_name": "AFSIA Solar Africa"
-        },
-        {
-          "title": "GoodWe Powers Solar Energy Project Empowering IT Training Centre in Nairobi’s Mathare Settlement",
-          "url": "https://www.afsiasolar.com/goodwe-powers-solar-energy-project-empowering-it-training-centre-in-nairobis-mathare-settlement/?utm_source=rss&utm_medium=rss&utm_campaign=goodwe-powers-solar-energy-project-empowering-it-training-centre-in-nairobis-mathare-settlement",
-          "date": "2026-05-25",
-          "summary": "GoodWe Technologies Co., Ltd., a global Tier 1 manufacturer of solar inverters and battery energy storage systems, has supplied solar solutions powering a new clean energy installation at Oasis Mathare, [&#8230;]",
-          "source_name": "AFSIA Solar Africa"
-        }
-      ]
+      "articles": []
     },
     {
       "key": "lighting-global",
@@ -277,13 +269,13 @@
     }
   ],
   "summary": {
-    "gogla": 1,
+    "gogla": 10,
     "techpoint": 1,
     "engie": 9,
     "pv-magazine": 1,
-    "afsia": 10,
+    "afsia": 0,
     "lighting-global": 10,
     "sunking": 1,
-    "total": 33
+    "total": 32
   }
 }
