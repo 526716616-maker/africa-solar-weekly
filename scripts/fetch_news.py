@@ -343,11 +343,7 @@ SOURCES = {
         "link_sel": "link",
         "date_sel": "pubDate",
         "summary_sel": "description",
-        "keywords": ["africa", "african", "solar", "off-grid", "renewable",
-                     "energy access", "electrification", "mini-grid",
-                     "climate", "clean energy", "green", "carbon",
-                     "nigeria", "kenya", "ghana", "tanzania", "ethiopia",
-                     "rwanda", "uganda", "zambia", "senegal", "mozambique"],
+        # 无需关键词过滤：RSS里挑第1条即可，ClimateNews天然覆盖气候能源
     },
     "worldbank-energy": {
         "name": "World Bank Energy Blog",
