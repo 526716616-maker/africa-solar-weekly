@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-19T15:38:33.926773+08:00",
+  "crawled_at": "2026-06-19T15:44:46.178804+08:00",
   "week": "2026-W25",
   "sources": [
     {
@@ -195,6 +195,87 @@
           "source_name": "Sun King"
         }
       ]
+    },
+    {
+      "key": "m-kopa",
+      "name": "M-KOPA",
+      "articles": [
+        {
+          "title": "M-KOPA Ghana Impact Report reveals smartphones are unlocking health insurance and economic opportunity for Every Day Earners",
+          "url": "",
+          "date": "",
+          "summary": "",
+          "source_name": "M-KOPA"
+        },
+        {
+          "title": "M-KOPA Ghana Impact Report reveals smartphones are unlocking health insurance and economic opportunity for Every Day Earners",
+          "url": "",
+          "date": "",
+          "summary": "",
+          "source_name": "M-KOPA"
+        },
+        {
+          "title": "M-KOPA achieves fifth consecutive FT fastest growing companies ranking",
+          "url": "",
+          "date": "",
+          "summary": "",
+          "source_name": "M-KOPA"
+        },
+        {
+          "title": "M-KOPA achieves fifth consecutive FT fastest growing companies ranking",
+          "url": "",
+          "date": "",
+          "summary": "",
+          "source_name": "M-KOPA"
+        },
+        {
+          "title": "M-KOPA South Africa Impact Report reveals women are driving the country's digital inclusion charge",
+          "url": "",
+          "date": "",
+          "summary": "",
+          "source_name": "M-KOPA"
+        },
+        {
+          "title": "M-KOPA South Africa Impact Report reveals women are driving the country's digital inclusion charge",
+          "url": "",
+          "date": "",
+          "summary": "",
+          "source_name": "M-KOPA"
+        },
+        {
+          "title": "How M-KOPA Put 5,000+ Electric Bikes On Kenyan Roads—Fast",
+          "url": "",
+          "date": "",
+          "summary": "",
+          "source_name": "M-KOPA"
+        },
+        {
+          "title": "How M-KOPA turned smartphones into Nigeria’s most enforceable collateral",
+          "url": "",
+          "date": "",
+          "summary": "",
+          "source_name": "M-KOPA"
+        },
+        {
+          "title": "Nigeria Becomes M-KOPA’s Fastest-Growing Market as over ₦230 Billion in Credit Unlocks Income Growth for over 1 Million Every Day Earners",
+          "url": "",
+          "date": "",
+          "summary": "",
+          "source_name": "M-KOPA"
+        },
+        {
+          "title": "Nigeria Becomes M-KOPA’s Fastest-Growing Market as over ₦230 Billion in Credit Unlocks Income Growth for over 1 Million Every Day Earners",
+          "url": "",
+          "date": "",
+          "summary": "",
+          "source_name": "M-KOPA"
+        }
+      ]
+    },
+    {
+      "key": "dlight",
+      "name": "d.light",
+      "articles": []
     },
     {
       "key": "bgfa",
@@ -454,6 +535,8 @@
     "afsia": 0,
     "lighting-global": 10,
     "sunking": 1,
+    "m-kopa": 10,
+    "dlight": 0,
     "bgfa": 10,
     "energynews-africa": 1,
     "africa-newsroom": 0,
@@ -465,6 +548,6 @@
     "how-we-made-it": 0,
     "allafrica-energy": 0,
     "esi-africa": 0,
-    "total": 49
+    "total": 59
   }
 }
