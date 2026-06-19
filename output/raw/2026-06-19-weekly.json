@@ -1,7 +1,7 @@
 {
   "week": "2026-W25",
   "date": "2026-06-19",
-  "issue": 7,
+  "issue": 8,
   "highlights": [
     {
       "num": "7",
@@ -103,7 +103,7 @@
         {
           "tag": "企业动态 · Ignite Power",
           "name": "福布斯：初创公司如何为非洲带来负担得起的清洁能源",
-          "description": null,
+          "description": "福布斯：初创公司如何为非洲带来负担得起的清洁能源",
           "source": "ENGIE / IgniteAccess",
           "source_url": "https://igniteaccess.com/how-startups-are-bringing-affordable-clean-energy-to-africa/",
           "date": ""
