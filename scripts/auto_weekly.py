@@ -318,8 +318,31 @@ if len(highlights) < 2:
     highlights = highlights[:4]
 
 # ── 分配文章到板块 ──
-industry_items = []  # 一、行业动态
-company_items = []   # 二、企业动态
+policy_items = []      # 一、政策规划
+investment_items = []  # 二、投资数据
+industry_items = []    # 三、行业动态
+company_items = []     # 四、企业动态
+
+# 子类目关键词
+policy_keywords = [
+    "policy", "regulation", "target", "goal", "plan", "strategy", "roadmap",
+    "commitment", "initiative", "agreement", "treaty", "accord", "framework",
+    "law", "decree", "mandate", "standard", "code", "act", "bill",
+    "政策", "规划", "目标", "路线图", "协议", "承诺", "法律", "法规",
+    "国家自主贡献", "ndc", "paris agreement", "unfccc", "cop",
+    "evisa", "ecowas", "african union", "au", "world bank", "undp",
+    "sustainable development", "sdg", "mission 300", "power africa",
+]
+investment_keywords = [
+    "investment", "funding", "grant", "loan", "financing", "capital",
+    "million", "billion", "usd", "euro", "fund", "investor", "equity",
+    "debt", "securitization", "bond", "credit", "microfinance", "paygo",
+    "subsidy", "aid", "dFC", "development finance", "climate finance",
+    "green bond", "blended finance", "grant", "私募", "融资", "投资",
+    "资金", "信贷", "债务", "证券化", "基金",
+    "market size", "market growth", "revenue", "valuation", "series",
+    "million", "billion", "trillion",
+]
 
 # 记录每个源已分配的文章数（无日期的源限制3篇）
 source_count = {}
@@ -396,7 +419,7 @@ for src in raw["sources"]:
                 "date": date,
             })
         else:
-            # 行业动态
+            # 行业动态 → 细分到政策/投资/行业
             tag_map = {
                 "gogla": "GOGLA · 行业报告",
                 "techpoint": "Techpoint · 非洲科技",
@@ -416,15 +439,26 @@ for src in raw["sources"]:
             }
             tag = tag_map.get(src["key"], src["name"])
 
-            industry_items.append({
+            item = {
                 "tag": tag,
                 "title": title[:120],
-                "summary": summary,  # format_rich 已生成HTML，不需要 clean_summary
+                "summary": summary,
                 "bullets": [],
                 "source": src["name"],
                 "source_url": url,
                 "date": date,
-            })
+            }
+
+            # 按关键词划分子类目
+            text = f"{title} {summary}".lower()
+            if any(kw in text for kw in policy_keywords):
+                item["sub_category"] = "policy"
+                policy_items.append(item)
+            elif any(kw in text for kw in investment_keywords):
+                item["sub_category"] = "investment"
+                investment_items.append(item)
+            else:
+                industry_items.append(item)
 
 # 如果企业动态不够，从 ENGIE 文章中也加到行业动态
 # 不重复添加
@@ -456,15 +490,27 @@ curated = {
     "sections": [],
 }
 
+if policy_items:
+    curated["sections"].append({
+        "title": "一、政策规划",
+        "items": policy_items,
+    })
+
+if investment_items:
+    curated["sections"].append({
+        "title": "二、投资数据",
+        "items": investment_items,
+    })
+
 if industry_items:
     curated["sections"].append({
-        "title": "一、行业动态",
+        "title": "三、行业动态",
         "items": industry_items,
     })
 
 if company_items:
     curated["sections"].append({
-        "title": "二、重点企业动态",
+        "title": "四、重点企业动态",
         "companies": company_items,  # 不限数量，全显示
     })
 
@@ -474,6 +520,8 @@ curated_path = os.path.abspath(curated_path)
 with open(curated_path, "w", encoding="utf-8") as f:
     json.dump(curated, f, ensure_ascii=False, indent=2)
 print(f"[OK] curated JSON: {curated_path}")
+print(f"  政策规划: {len(policy_items)} 条")
+print(f"  投资数据: {len(investment_items)} 条")
 print(f"  行业动态: {len(industry_items)} 条")
 print(f"  企业动态: {len(company_items)} 条")
 
@@ -536,8 +584,11 @@ for fname in sorted(os.listdir(os.path.abspath(raw_dir))):
         d = json.load(f)
     date_str = d.get("date", fname[:10])
     issue_num_2 = d.get("issue", 0)
-    ind_count = len(d["sections"][0].get("items", [])) if d.get("sections") else 0
-    comp_count = len(d["sections"][1].get("companies", [])) if len(d.get("sections", [])) > 1 else 0
+    ind_count = 0
+    comp_count = 0
+    for sec in d.get("sections", []):
+        ind_count += len(sec.get("items", []))
+        comp_count += len(sec.get("companies", []))
     html_file = f"week-{issue_num_2:02d}-{date_str}.html"
     issues.append({
         "file": html_file,
