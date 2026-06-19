@@ -1,7 +1,7 @@
 {
   "week": "2026-W25",
   "date": "2026-06-19",
-  "issue": 3,
+  "issue": 4,
   "highlights": [
     {
       "num": "190 Million",
@@ -19,7 +19,7 @@
         {
           "tag": "GOGLA · 行业报告",
           "title": "离网太阳能投资标志着行业成熟、资本集中",
-          "summary": "<p class=\"mb\">南非开普敦，核心事件概述。GOGLA 2025 年报告显示，离网太阳能投资增长，但资金分配不均加剧。来源：GOGLA Newsroom，项目名称：全球离网太阳能投资报告。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>离网电力覆盖率低</li>\n<li>投资资金分配不均</li>\n<li>资金缺口达 210 亿美元</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>2025 年投资增长至 3.5 亿</li>\n<li>混合融资模式推动资本流动</li>\n<li>$300M 流入离网太阳能市场</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>提升能源可及性</li>\n<li>促进可持续发展</li>\n<li>吸引更多私人资本</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：离网太阳能投资正从分散走向集中，行业进入成熟阶段。</p>",
+          "summary": "<p class=\"mb\">南非开普敦，2025年全球离网太阳能投资报告显示，尽管资金分配不均，但结构性金融和本地货币推动投资增长。来源：GOGLA新闻室，项目名称：GOGLA 2025报告。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>离网地区电力覆盖率低</li>\n<li>资金分配严重不均</li>\n<li>2024年投资下降30%</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>投资额达3亿美元</li>\n<li>7倍资金缺口未填补</li>\n<li>43%同比2022年下降</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>推动能源普及</li>\n<li>吸引混合融资模式</li>\n<li>提升企业融资能力</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：离网太阳能投资正从早期阶段向成熟市场过渡。</p>",
           "bullets": [],
           "source": "GOGLA Newsroom",
           "source_url": "https://newsroom.gogla.org/tags/investment/",
@@ -28,7 +28,7 @@
         {
           "tag": "Techpoint · 非洲科技",
           "title": "CBN数据本地化推动引起了金融科技高管的担忧",
-          "summary": "<p class=\"mb\">地点：尼日利亚，核心事件概述。来源：Techpoint Africa，项目名称：尼日利亚央行数据本地化政策。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>数据存储要求提升</li>\n<li>本地设施未经大规模测试</li>\n<li>依赖国际云服务</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>六个月过渡期至2027年1月</li>\n<li>本地数据中心容量增加</li>\n<li>约140亿笔交易/年</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>提升数据主权</li>\n<li>推动本地基础设施发展</li>\n<li>增强支付系统韧性</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：数据本地化政策正推动尼日利亚金融科技生态向本土化转型。</p>",
+          "summary": "<p class=\"mb\">地点：尼日利亚，核心事件概述。来源：Techpoint Africa，项目名称：尼日利亚央行数据本地化政策。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>数据存储要求提升</li>\n<li>本地设施未经大规模测试</li>\n<li>全球云服务依赖度高</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>6个月过渡期</li>\n<li>本地数据中心扩容至200MW</li>\n<li>与MTN、Airtel合作建设设施</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>提升数据主权</li>\n<li>促进本地科技发展</li>\n<li>增强系统韧性</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：数据本地化推动非洲数字基础设施升级。</p>",
           "bullets": [],
           "source": "Techpoint Africa",
           "source_url": "https://techpoint.africa/insight/cbn-data-localisation-push-raises-concerns/",
@@ -37,7 +37,7 @@
         {
           "tag": "Energy News · 非洲能源",
           "title": "西非国家经济共同体希望到 2030 年可再生能源比例达到 48%，但仍有超过 1.9 亿人缺电",
-          "summary": "<p class=\"mb\">非洲西非国家经济共同体（ECOWAS）启动“离网太阳能普及计划”</p>\n<p class=\"mb\">来源：Energy News Africa，2026年6月18日</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>190百万人口无电力供应</li>\n<li>农村电气化率仅12%</li>\n<li>35至40%电力损耗</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>提升可再生能源占比至48%</li>\n<li>电力损耗减少5至10个百分点</li>\n<li>建设100座离网太阳能微电网</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>降低能源成本30%以上</li>\n<li>创造5万就业岗位</li>\n<li>支持100万农村家庭</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：离网太阳能是实现区域能源公平的关键路径。</p>",
+          "summary": "<p class=\"mb\">非洲，西非国家经济共同体（ECOWAS）计划到2030年将可再生能源占比提升至48%。来源：Energy News Africa，项目名称：ECOWAS能源政策更新</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>190 million人无电力供应</li>\n<li>农村通电率仅12%</li>\n<li>电力损失率达35-40%</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>可再生能源占比目标48%</li>\n<li>电力损失减少5-10%</li>\n<li>2030年前实现区域电网整合</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>提升农村经济发展动力</li>\n<li>降低能源成本和浪费</li>\n<li>促进可持续能源转型</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：西非可再生能源发展面临挑战与机遇并存。</p>",
           "bullets": [],
           "source": "Energy News Africa",
           "source_url": "https://energynews.africa/2026/06/18/ecowas-wants-48-renewable-energy-by-2030-but-over-190-million-still-lack-power/",
@@ -51,7 +51,7 @@
         {
           "tag": "企业动态 · Ignite Power",
           "name": "福布斯：初创公司如何为非洲带来负担得起的清洁能源",
-          "description": "<p class=\"mb\">非洲，IgniteAccess 项目启动</p>\n<p class=\"mb\">来源：Forbes / ENGIE / IgniteAccess</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>电力覆盖率不足40%</li>\n<li>无电人口超6亿</li>\n<li>能源成本高且不可靠</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>部署150MW太阳能系统</li>\n<li>服务30万家庭用户</li>\n<li>降低用电成本40%</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>提升农村生活质量</li>\n<li>创造2000个就业机会</li>\n<li>减少碳排放10万吨/年</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：离网太阳能正成为非洲能源转型的关键推动力。</p>",
+          "description": "<p class=\"mb\">非洲，IgniteAccess 通过离网太阳能项目为撒哈拉以南地区提供清洁能源。来源：Forbes，项目名称：IgniteEnergyAccess。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>电力覆盖率低</li>\n<li>能源成本高</li>\n<li>传统电网扩展困难</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>服务10万+家庭</li>\n<li>安装50MW太阳能系统</li>\n<li>降低电费30%</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>提升生活质量</li>\n<li>创造就业机会</li>\n<li>减少碳排放</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：离网太阳能正在重塑非洲能源格局。</p>",
           "source": "ENGIE / IgniteAccess",
           "source_url": "https://igniteaccess.com/how-startups-are-bringing-affordable-clean-energy-to-africa/",
           "date": ""
@@ -59,7 +59,7 @@
         {
           "tag": "企业动态 · Ignite Power",
           "name": "彭博社：非洲电气化的使命可能终于开始了",
-          "description": "<p class=\"mb\">Bloomberg: The mission to electrify Africa might finally be under way</p>\n<p class=\"mb\">来源：ENGIE / IgniteAccess，项目名称：Zambia太阳能离网计划</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>非洲80%人口无电力供应</li>\n<li>680 million人缺乏基本用电</li>\n<li>农村地区电网覆盖不足</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>安装1.2 MW太阳能系统</li>\n<li>服务3000户家庭和小型企业</li>\n<li>每年减少400吨碳排放</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>提升农村生活质量</li>\n<li>促进本地经济发展</li>\n<li>减少对柴油发电机依赖</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：非洲离网太阳能正成为解决电力短缺的关键路径。</p>",
+          "description": "<p class=\"mb\">地点：赞比亚东北部村庄</p>\n<p class=\"mb\">核心事件概述：ENGIE与IgniteAccess合作，为偏远地区提供离网太阳能解决方案。来源：Bloomberg</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>80%非洲人无电力供应</li>\n<li>偏远地区电网覆盖不足</li>\n<li>学生夜间学习困难</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>安装1.2MW太阳能系统</li>\n<li>服务500户家庭和小型企业</li>\n<li>每年减少300吨碳排放</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>提升居民生活质量</li>\n<li>促进本地经济发展</li>\n<li>改善教育条件</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：离网太阳能正在成为非洲电力革命的关键力量。</p>",
           "source": "ENGIE / IgniteAccess",
           "source_url": "https://igniteaccess.com/the-mission-to-electrify-africa-might-finally-be-under-way/",
           "date": ""
@@ -67,7 +67,7 @@
         {
           "tag": "企业动态 · Ignite Power",
           "name": "ADIO 与清洁能源领导者 Ignite Energy Access 合作进行全球扩张",
-          "description": "<p class=\"mb\">地点：阿布扎比，核心事件概述。来源：ENGIE / IgniteAccess，项目名称：ADIO与Ignite Energy Access战略合作。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>电力覆盖不足</li>\n<li>基础设施落后</li>\n<li>能源成本高</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>部署100万套太阳能系统</li>\n<li>服务500万家庭</li>\n<li>年发电量达200MW</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>降低能源成本30%</li>\n<li>创造5000个就业机会</li>\n<li>减少碳排放50万吨</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：离网太阳能正成为非洲能源转型的关键推动力。</p>",
+          "description": "<p class=\"mb\">地点：阿布扎比，核心事件概述。来源：ENGIE / IgniteAccess，项目名称：ADIO与Ignite Energy Access战略合作。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>非洲电力覆盖率低</li>\n<li>离网地区缺乏可持续能源</li>\n<li>电力需求持续增长</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>建设100万家庭太阳能系统</li>\n<li>投资5亿美元支持扩展</li>\n<li>推动2030年1亿人供电目标</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>提升非洲电力可及性</li>\n<li>促进绿色经济就业</li>\n<li>加强阿布扎比清洁能源地位</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：离网太阳能成为非洲能源转型关键力量。</p>",
           "source": "ENGIE / IgniteAccess",
           "source_url": "https://igniteaccess.com/adio-partners-with-clean-energy-leader-ignite-energy-access-for-global-expansion/",
           "date": ""
@@ -75,7 +75,7 @@
         {
           "tag": "企业动态 · Sun King",
           "name": "可持续金融推动非洲离网太阳能快速扩张",
-          "description": "<p class=\"mb\">地点：非洲</p>\n<p class=\"mb\">核心事件概述。来源：Sun King，2025年可持续融资分配与影响报告发布。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>2023年启动可持续融资框架</li>\n<li>产品部署中1/3由可持续融资支持</li>\n<li>传统融资作用微小</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>2025年月均安装33万套太阳能产品</li>\n<li>2020年月均安装10万套</li>\n<li>2017年月均安装1万套</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>吸引主流资本扩大能源覆盖</li>\n<li>提升非洲资本市场强度</li>\n<li>降低货币风险提高可负担性</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：可持续金融推动非洲离网太阳能快速扩张。</p>",
+          "description": "<p class=\"mb\">地点：非洲</p>\n<p class=\"mb\">核心事件概述。来源：Sun King，2025年可持续融资分配与影响报告发布。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>2023年启动可持续融资框架</li>\n<li>2020年部署10万套太阳能产品</li>\n<li>2017年部署仅1万套</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>2025年月均部署33万套产品</li>\n<li>2023年起三分之一产品由可持续融资支持</li>\n<li>在肯尼亚完成标志性本地货币证券化交易</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>吸引主流资本进入离网太阳能领域</li>\n<li>降低汇率风险提高用户可负担性</li>\n<li>推动非洲能源公平与绿色转型</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">：可持续金融正在重塑非洲离网太阳能的未来。</p>",
           "source": "Sun King",
           "source_url": "https://sunking.com/news-blog/sustainable-finance-drives-rapid-expansion-of-off-grid-solar-in-africa/",
           "date": "2026-06-12"
