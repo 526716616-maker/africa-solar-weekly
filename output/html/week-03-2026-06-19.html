@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>非洲离网太阳能市场资讯 2026-06-19 第 3 期</title>
+<style>/* ===== 非洲离网太阳能市场资讯 - 样式 ===== */
+:root {
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --text: #1a1a2e;
+  --text-secondary: #555770;
+  --text-tertiary: #8e8ea0;
+  --border: #e8e8ee;
+  --green-dark: #0F6E56;
+  --green-light: #1D9E75;
+  --green-bg: #E1F5EE;
+  --green-tag-bg: rgba(15,110,86,0.08);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+/* ===== Header ===== */
+.header {
+  background: var(--green-dark);
+  color: #fff;
+  padding: 28px 28px 22px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+}
+.header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  letter-spacing: -0.01em;
+}
+.header .subtitle {
+  font-size: 13px;
+  opacity: 0.78;
+  font-weight: 400;
+}
+.header .meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.header .meta span {
+  background: rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  padding: 3px 10px;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+/* ===== Stats Row ===== */
+.section-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 28px 0 10px;
+}
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.stat-box {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 12px;
+  text-align: center;
+}
+.stat-box .num {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 4px;
+}
+.stat-box .lbl {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+@media (max-width: 560px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== News Card ===== */
+.news-card {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  transition: border-color 0.15s;
+}
+.news-card:hover { border-color: var(--green-light); }
+.news-card .tag {
+  display: inline-block;
+  background: var(--green-tag-bg);
+  color: var(--green-dark);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 100px;
+}
+.news-card .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.news-card .card-date {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+.news-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+/* ===== 通用：卡片内列表 & 段落样式 ===== */
+.news-card .summary,
+.company-card .summary {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+.news-card .bullets,
+.company-card .bullets {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.news-card .bullets li,
+.company-card .bullets li {
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 2px 0 2px 16px;
+  position: relative;
+  word-break: break-word;
+}
+.news-card .bullets li::before,
+.company-card .bullets li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--green-light);
+}
+.news-card .mb,
+.company-card .mb { margin-bottom: 8px; }
+.news-card .bullets,
+.company-card .bullets { margin-bottom: 0; }
+.news-card .source {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+.news-card .source a {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+.news-card .source a:hover { text-decoration: underline; }
+
+/* ===== Company Card ===== */
+.company-card {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  transition: border-color 0.15s;
+}
+.company-card:hover { border-color: var(--green-light); }
+.company-card .tag {
+  display: inline-block;
+  background: var(--green-tag-bg);
+  color: var(--green-dark);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 100px;
+}
+.company-card .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.company-card .card-date {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+.company-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.company-card .source {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-top: 8px;
+}
+.company-card .source a {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+.company-card .source a:hover { text-decoration: underline; }
+
+/* ===== Archive Nav ===== */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.nav-bar a {
+  font-size: 12px;
+  color: var(--green-dark);
+  text-decoration: none;
+  padding: 4px 0;
+}
+.nav-bar a:hover { text-decoration: underline; }
+
+/* ===== Archive Page ===== */
+.archive-list {
+  list-style: none;
+}
+.archive-item {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  transition: border-color 0.15s;
+}
+.archive-item:hover { border-color: var(--green-light); }
+.archive-item a {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.archive-item .issue-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.archive-item .issue-meta {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-top: 4px;
+}
+.archive-item .issue-count {
+  font-size: 12px;
+  color: var(--green-dark);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  border-top: 0.5px solid var(--border);
+  padding-top: 20px;
+  margin-top: 32px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="nav-bar">
+    <a href="archive.html">← 查看往期</a>
+    <span style="font-size:11px;color:var(--text-tertiary)">第 3 期</span>
+  </div>
+
+  <div class="header">
+    <h1>Africa Off-Grid Solar Market News</h1>
+    <p class="subtitle">非洲离网太阳能市场资讯</p>
+    <div class="meta">
+      <span>第 3 期</span>
+      <span>2026-06-19</span>
+      <span>行业动态 · 企业跟踪</span>
+    </div>
+  </div>
+
+  <div class="section-title">本期数据亮点</div>
+  <div class="stats-row"><div class="stat-box"><div class="num">190 Million</div><div class="lbl">西非国家经济共同体希望 48% 可再生能源</div></div><div class="stat-box"><div class="num">100 million</div><div class="lbl">连接亿人</div></div></div>
+
+  <div class="section-title">一、行业动态</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">GOGLA · 行业报告</span>
+    <span class="card-date">2026-06-15</span>
+  </div>
+  <h3>离网太阳能投资标志着行业成熟、资本集中</h3>
+  <div class="summary"><p class="mb">南非开普敦，2025年全球离网太阳能投资报告显示，尽管资金分配不均，但结构性金融和本地货币推动投资增长。来源：GOGLA新闻室，项目名称：GOGLA 2025报告</p>
+<p class="mb"><strong>该地区长期面临：</strong></p>
+<ul class="bullets">
+<li>离网太阳能需求激增</li>
+<li>资金分配不均加剧</li>
+<li>新兴企业融资困难</li>
+</ul>
+<p class="mb"><strong>解决方案：</strong></p>
+<ul class="bullets">
+<li>投资额达3.0亿美元（2024）</li>
+<li>7倍资金缺口需填补（2030目标）</li>
+<li>混合融资方案解决210亿美元缺口</li>
+</ul>
+<p class="mb"><strong>项目价值：</strong></p>
+<ul class="bullets">
+<li>加速能源普及覆盖</li>
+<li>推动可持续发展</li>
+<li>提升企业融资能力</li>
+</ul>
+<p class="mb">【趋势】</p>
+<p class="mb">：离网太阳能市场正从初创阶段向成熟阶段过渡。</p></div>
+  
+  <div class="source">来源：<a href="https://newsroom.gogla.org/tags/investment/" target="_blank" rel="noopener">GOGLA Newsroom</a></div>
+</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">Techpoint · 非洲科技</span>
+    <span class="card-date" style="color:#aaa">日期未知</span>
+  </div>
+  <h3>CBN数据本地化推动引起了金融科技高管的担忧</h3>
+  <div class="summary"><p class="mb">地点：尼日利亚，核心事件概述。来源：Techpoint Africa，项目名称：尼日利亚央行数据本地化政策。</p>
+<p class="mb"><strong>该地区长期面临：</strong></p>
+<ul class="bullets">
+<li>数据存储要求提升</li>
+<li>本地设施未经大规模测试</li>
+<li>依赖国际云服务</li>
+</ul>
+<p class="mb"><strong>解决方案：</strong></p>
+<ul class="bullets">
+<li>六个月过渡期至2027年1月</li>
+<li>本地数据中心容量增加</li>
+<li>约140亿笔交易/年</li>
+</ul>
+<p class="mb"><strong>项目价值：</strong></p>
+<ul class="bullets">
+<li>提升数据主权</li>
+<li>推动本地基础设施发展</li>
+<li>增强支付系统韧性</li>
+</ul>
+<p class="mb">【趋势】</p>
+<p class="mb">：数据本地化政策正推动尼日利亚金融科技生态向本土化转型。</p></div>
+  
+  <div class="source">来源：<a href="https://techpoint.africa/insight/cbn-data-localisation-push-raises-concerns/" target="_blank" rel="noopener">Techpoint Africa</a></div>
+</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">Energy News · 非洲能源</span>
+    <span class="card-date">2026-06-18</span>
+  </div>
+  <h3>西非国家经济共同体希望到 2030 年可再生能源比例达到 48%，但仍有超过 1.9 亿人缺电</h3>
+  <div class="summary"><p class="mb">非洲，西非国家经济共同体（ECOWAS）宣布到2030年将可再生能源占比提升至48%。来源：Energy News Africa，项目名称：ECOWAS能源政策更新。</p>
+<p class="mb"><strong>该地区长期面临：</strong></p>
+<ul class="bullets">
+<li>190 million人无电力供应</li>
+<li>农村通电率仅12%</li>
+<li>电力损失率达35-40%</li>
+</ul>
+<p class="mb"><strong>解决方案：</strong></p>
+<ul class="bullets">
+<li>可再生能源占比目标48%</li>
+<li>电力损失减少至35-40%</li>
+<li>190 million人将获得电力</li>
+</ul>
+<p class="mb"><strong>项目价值：</strong></p>
+<ul class="bullets">
+<li>推动清洁能源转型</li>
+<li>提升农村经济发展</li>
+<li>促进区域能源整合</li>
+</ul>
+<p class="mb">【趋势】</p>
+<p class="mb">：西非正通过政策与合作加速能源变革。</p></div>
+  
+  <div class="source">来源：<a href="https://energynews.africa/2026/06/18/ecowas-wants-48-renewable-energy-by-2030-but-over-190-million-still-lack-power/" target="_blank" rel="noopener">Energy News Africa</a></div>
+</div>
+<div class="section-title">二、重点企业动态</div>
+<div class="company-card">
+  <div class="card-top">
+    <span class="tag">企业动态 · Ignite Power</span>
+    <span class="card-date" style="color:#aaa">日期未知</span>
+  </div>
+  <h3>福布斯：初创公司如何为非洲带来负担得起的清洁能源</h3>
+  <div class="summary"><p class="mb">非洲，IgniteAccess 项目启动离网太阳能解决方案</p>
+<p class="mb">来源：Forbes / ENGIE / IgniteAccess</p>
+<p class="mb"><strong>该地区长期面临：</strong></p>
+<ul class="bullets">
+<li>非洲3亿人无电可用</li>
+<li>80%农村地区未接入电网</li>
+<li>电力成本高且不可靠</li>
+</ul>
+<p class="mb"><strong>解决方案：</strong></p>
+<ul class="bullets">
+<li>覆盖10万家庭提供太阳能服务</li>
+<li>年发电量达25MW</li>
+<li>电费降低60%以上</li>
+</ul>
+<p class="mb"><strong>项目价值：</strong></p>
+<ul class="bullets">
+<li>提升生活质量和教育机会</li>
+<li>创造2000个本地就业机会</li>
+<li>减少碳排放10万吨/年</li>
+</ul>
+<p class="mb">【趋势】</p>
+<p class="mb">：离网太阳能正成为非洲能源转型的关键力量。</p></div>
+  <div class="source">来源：<a href="https://igniteaccess.com/how-startups-are-bringing-affordable-clean-energy-to-africa/" target="_blank" rel="noopener">ENGIE / IgniteAccess</a></div>
+</div>
+<div class="company-card">
+  <div class="card-top">
+    <span class="tag">企业动态 · Ignite Power</span>
+    <span class="card-date" style="color:#aaa">日期未知</span>
+  </div>
+  <h3>彭博社：非洲电气化的使命可能终于开始了</h3>
+  <div class="summary"><p class="mb">地点：赞比亚东北部村庄，核心事件概述。来源：ENGIE / IgniteAccess，项目名称：离网太阳能推广计划。</p>
+<p class="mb"><strong>该地区长期面临：</strong></p>
+<ul class="bullets">
+<li>80%人口无电力供应</li>
+<li>农村地区电力覆盖率低</li>
+<li>教育和经济受限</li>
+</ul>
+<p class="mb"><strong>解决方案：</strong></p>
+<ul class="bullets">
+<li>安装1.2MW太阳能系统</li>
+<li>服务500户家庭</li>
+<li>带动10个小型商业发展</li>
+</ul>
+<p class="mb"><strong>项目价值：</strong></p>
+<ul class="bullets">
+<li>提高生活质量和教育水平</li>
+<li>创造本地就业机会</li>
+<li>降低对柴油发电机依赖</li>
+</ul>
+<p class="mb">【趋势】</p>
+<p class="mb">：非洲离网太阳能正成为推动电气化的重要力量。</p></div>
+  <div class="source">来源：<a href="https://igniteaccess.com/the-mission-to-electrify-africa-might-finally-be-under-way/" target="_blank" rel="noopener">ENGIE / IgniteAccess</a></div>
+</div>
+<div class="company-card">
+  <div class="card-top">
+    <span class="tag">企业动态 · Ignite Power</span>
+    <span class="card-date" style="color:#aaa">日期未知</span>
+  </div>
+  <h3>ADIO 与清洁能源领导者 Ignite Energy Access 合作进行全球扩张</h3>
+  <div class="summary"><p class="mb">地点：阿布扎比，核心事件概述。来源：ENGIE / IgniteAccess，项目名称：ADIO与Ignite Energy Access战略合作。</p>
+<p class="mb"><strong>该地区长期面临：</strong></p>
+<ul class="bullets">
+<li>非洲电力覆盖率低</li>
+<li>传统电网扩展成本高</li>
+<li>电力需求持续增长</li>
+</ul>
+<p class="mb"><strong>解决方案：</strong></p>
+<ul class="bullets">
+<li>建立全球总部在阿布扎比</li>
+<li>扩展非洲100万家庭供电</li>
+<li>2030年连接1亿人用电</li>
+</ul>
+<p class="mb"><strong>项目价值：</strong></p>
+<ul class="bullets">
+<li>推动清洁能源创新</li>
+<li>降低能源成本</li>
+<li>提升电力可及性</li>
+</ul>
+<p class="mb">【趋势】</p>
+<p class="mb">：离网太阳能正成为非洲电力发展的关键驱动力。</p></div>
+  <div class="source">来源：<a href="https://igniteaccess.com/adio-partners-with-clean-energy-leader-ignite-energy-access-for-global-expansion/" target="_blank" rel="noopener">ENGIE / IgniteAccess</a></div>
+</div>
+<div class="company-card">
+  <div class="card-top">
+    <span class="tag">企业动态 · Sun King</span>
+    <span class="card-date">2026-06-12</span>
+  </div>
+  <h3>可持续金融推动非洲离网太阳能快速扩张</h3>
+  <div class="summary"><p class="mb">地点：非洲，Sun King通过可持续融资推动离网太阳能快速扩张</p>
+<p class="mb">核心事件概述。来源：Sun King，2025年可持续融资分配与影响报告</p>
+<p class="mb"><strong>该地区长期面临：</strong></p>
+<ul class="bullets">
+<li>离网太阳能普及率低</li>
+<li>传统融资模式受限</li>
+<li>货币风险高</li>
+</ul>
+<p class="mb"><strong>解决方案：</strong></p>
+<ul class="bullets">
+<li>330,000台产品月均安装</li>
+<li>2023年后三成产品获可持续融资</li>
+<li>推出本地货币证券化交易</li>
+</ul>
+<p class="mb"><strong>项目价值：</strong></p>
+<ul class="bullets">
+<li>提升能源可及性</li>
+<li>吸引主流资本投资</li>
+<li>降低用户成本</li>
+</ul>
+<p class="mb">【趋势】</p>
+<p class="mb">：可持续金融正重塑非洲离网太阳能发展路径。</p></div>
+  <div class="source">来源：<a href="https://sunking.com/news-blog/sustainable-finance-drives-rapid-expansion-of-off-grid-solar-in-africa/" target="_blank" rel="noopener">Sun King</a></div>
+</div>
+
+
+  <div class="footer">
+    Africa Solar News · 2026-06-19 · 每日更新
+  </div>
+
+</div>
+</body>
+</html>
