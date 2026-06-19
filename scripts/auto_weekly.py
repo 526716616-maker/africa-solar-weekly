@@ -208,14 +208,20 @@ print(f"[INFO] 读取: {raw_files[0]}")
 with open(raw_path, "r", encoding="utf-8") as f:
     raw = json.load(f)
 
-# ── 自动计算期号（基于 JSON 文件，每个日期只算一期） ──
-# 计算已有多少个唯一的周刊日（按 weekly JSON 文件统计）
+# ── 自动计算期号（基于已有 weekly JSON 中的最大期号） ──
 raw_dir_abs = os.path.abspath(raw_dir)
-existing_weeklies = sorted([
-    f for f in os.listdir(raw_dir_abs)
-    if f.endswith("-weekly.json") and not f.startswith("latest")
-])
-issue_num = len(existing_weeklies) + 1
+max_issue = 0
+for f in os.listdir(raw_dir_abs):
+    if f.endswith("-weekly.json") and not f.startswith("latest"):
+        try:
+            with open(os.path.join(raw_dir_abs, f), "r", encoding="utf-8") as fp:
+                d = json.load(fp)
+            iss = d.get("issue", 0)
+            if iss > max_issue:
+                max_issue = iss
+        except Exception:
+            pass
+issue_num = max_issue + 1
 
 now = datetime.now(CST)
 
