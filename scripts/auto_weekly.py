@@ -180,6 +180,10 @@ def deep_read(title, source_url, source_name, retries=1):
                 'max_tokens': 1200,
             }, timeout=60)
             result = resp.json()
+            if 'choices' not in result:
+                err_msg = result.get('error', {}).get('message', str(result))
+                print(f'  [warn] Qwen API 返回错误: {err_msg}', file=sys.stderr)
+                return None
             return result['choices'][0]['message']['content'].strip()
         except Exception as e:
             if attempt < retries:
@@ -265,7 +269,10 @@ def num_value(s):
     """提取数字大小用于排序"""
     s_clean = s.replace("$", "").replace(",", "").strip()
     parts = s_clean.split()
-    val = float(parts[0]) if parts else 0
+    try:
+        val = float(parts[0]) if parts else 0
+    except (ValueError, IndexError):
+        return 0
     unit = parts[1].lower() if len(parts) > 1 else ""
     if unit in ("billion",):
         val *= 1000
@@ -310,13 +317,6 @@ context_pairs.sort(key=lambda x: num_value(x[0]), reverse=True)
 highlights = []
 for n, label in context_pairs[:4]:
     highlights.append({"num": n, "label": label})
-
-if len(highlights) < 2:
-    highlights += [
-        {"num": str(len(industry_items)), "label": "本期行业动态"},
-        {"num": str(len(company_items)), "label": "本期企业动态"},
-    ]
-    highlights = highlights[:4]
 
 # ── 分配文章到板块 ──
 policy_items = []      # 一、政策规划
@@ -470,6 +470,14 @@ for src in raw["sources"]:
 
 # 如果企业动态不够，从 ENGIE 文章中也加到行业动态
 # 不重复添加
+
+# ── 亮点兜底：如果数字亮点不足，用分类统计补充 ──
+if len(highlights) < 2:
+    highlights += [
+        {"num": str(len(industry_items) + len(policy_items) + len(investment_items)), "label": "本期行业动态"},
+        {"num": str(len(company_items)), "label": "本期企业动态"},
+    ]
+    highlights = highlights[:4]
 
 # ── 翻译为中文 ──
 all_industry_items = policy_items + investment_items + industry_items
