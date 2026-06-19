@@ -22,7 +22,8 @@ def _split_clean(text: str) -> list:
 
 def format_rich(text: str) -> str:
     # === 第0步：统一 emoji 标记 → 中文标记 ===
-    text = re.sub(r'[📍📌💡📈]\s*', '', text)
+    for emoji in ['\U0001F4CD', '\U0001F4CC', '\U0001F4A1', '\U0001F4C8']:
+        text = text.replace(emoji, '')
     text = re.sub(r'(?<!\w)背景[：:]', '\n【问题】\n', text)
     text = re.sub(r'(?<!\w)方案[：:]', '\n【方案】\n', text)
     text = re.sub(r'(?<!\w)价值[：:]', '\n【价值】\n', text)

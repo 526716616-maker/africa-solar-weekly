@@ -475,6 +475,11 @@ def extract_articles(soup: BeautifulSoup, cfg: dict, base_url: str) -> list[dict
         if link_el:
             href = link_el.get("href", "")
             link = href if href.startswith("http") else urljoin(base_url, href)
+        # 备选：card 本身是 <a> 标签时直接取 href
+        if not link and hasattr(card, 'get'):
+            card_href = card.get("href", "")
+            if card_href:
+                link = card_href if card_href.startswith("http") else urljoin(base_url, card_href)
 
         date_el = None
         for sel in cfg["date_sel"].split(", "):
