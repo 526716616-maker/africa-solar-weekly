@@ -293,7 +293,7 @@ for src in raw["sources"]:
                 print(f"  [deep] 回退原摘要")
 
         # 根据来源分类
-        company_sources = {"engie", "sunking", "bboxx"}
+        company_sources = {"engie", "sunking", "bboxx", "m-kopa", "dlight"}
         company_keywords = [
             "ignite power", "ignite energy", "sun king", "sunking",
             "bboxx", "d.light", "dlight", "m-kopa", "mkopa",
@@ -316,6 +316,10 @@ for src in raw["sources"]:
                 tag_prefix = "企业动态 · Sun King"
             elif src["key"] == "bboxx":
                 tag_prefix = "企业动态 · BBOXX"
+            elif src["key"] == "m-kopa":
+                tag_prefix = "企业动态 · M-KOPA"
+            elif src["key"] == "dlight":
+                tag_prefix = "企业动态 · d.light"
             else:
                 tag_prefix = "企业动态"
             company_items.append({

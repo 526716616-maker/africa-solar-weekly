@@ -111,6 +111,26 @@ SOURCES = {
         "date_sel": "time, .date",
         "summary_sel": "p, .excerpt",
     },
+    "m-kopa": {
+        "name": "M-KOPA",
+        "url": "https://www.m-kopa.com/newsroom",
+        "type": "html",
+        "selector": "a.w-dyn-item, a.collection-item, .news-item, a[href*='/newsroom/']",
+        "title_sel": "h2, h3, .title, .heading",
+        "link_sel": "a",
+        "date_sel": "time, .date, .published",
+        "summary_sel": "p, .summary, .excerpt",
+    },
+    "dlight": {
+        "name": "d.light",
+        "url": "https://www.dlight.com/news",
+        "type": "html",
+        "selector": "article, .post, .news-item, .press-item, div[class*=post]",
+        "title_sel": "h2, h3, .entry-title, .card-title",
+        "link_sel": "a",
+        "date_sel": "time, .date, .entry-date, .published",
+        "summary_sel": "p, .excerpt, .entry-summary",
+    },
     # ── 新增数据源 ──
     "bgfa": {
         "name": "BGFA (Beyond the Grid)",
