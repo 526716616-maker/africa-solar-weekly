@@ -1,7 +1,7 @@
 {
   "week": "2026-W25",
   "date": "2026-06-19",
-  "issue": 4,
+  "issue": 5,
   "highlights": [
     {
       "num": "7",
@@ -103,7 +103,7 @@
         {
           "tag": "企业动态 · Ignite Power",
           "name": "福布斯：初创公司如何为非洲带来负担得起的清洁能源",
-          "description": "<p class=\"mb\">---</p>\n<p class=\"mb\">地点：非洲。 Forbes报道Ignite Energy Access通过太阳能解决方案为偏远地区提供清洁能源。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>5.6亿人无电力供应</li>\n<li>农村电力覆盖率不足20%</li>\n<li>柴油发电成本高且污染大</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>建设1.2MW太阳能系统</li>\n<li>服务3000户家庭</li>\n<li>推出按月付费模式</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>降低能源成本40%</li>\n<li>提升教育与医疗条件</li>\n<li>减少碳排放量达1500吨/年</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">非洲离网太阳能初创企业正通过创新模式加速能源普及。</p>",
+          "description": "---",
           "source": "ENGIE / IgniteAccess",
           "source_url": "https://igniteaccess.com/how-startups-are-bringing-affordable-clean-energy-to-africa/",
           "date": ""
