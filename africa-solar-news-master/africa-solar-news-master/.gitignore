@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# WorkBuddy
+.workbuddy/
+
+# Test outputs
+output/raw/latest-raw.json
+output/raw/crawl-errors.log
+
+# OS
+.DS_Store
+Thumbs.db

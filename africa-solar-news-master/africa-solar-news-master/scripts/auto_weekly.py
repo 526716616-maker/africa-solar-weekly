@@ -20,8 +20,8 @@ def get_translator():
         _translator = GoogleTranslator(source='auto', target='zh-CN')
     return _translator
 
-def translate_text(text: str, retries: int = 3) -> str:
-    """翻译文本为中文，短文本跳过，失败返回原文（带重试+日志）"""
+def translate_text(text: str, retries: int = 2) -> str:
+    """翻译文本为中文，短文本跳过，失败返回原文"""
     if not text or len(text.strip()) < 5:
         return text
     if text in _cache:
@@ -32,143 +32,56 @@ def translate_text(text: str, retries: int = 3) -> str:
     for attempt in range(retries + 1):
         try:
             result = get_translator().translate(text)
-            if result and result != text:
-                _cache[text] = result
-                return result
+            _cache[text] = result
+            return result
         except Exception as e:
             if attempt < retries:
-                print(f"  [retry] 翻译重试 {attempt+1}/{retries}: {e}", file=sys.stderr)
-                time.sleep(3 * (attempt + 1))  # 指数退避
+                print(f"  [retry] 翻译重试 {attempt+1}: {e}", file=sys.stderr)
+                time.sleep(2)
             else:
-                print(f"  [warn] 翻译失败 ({type(e).__name__}): {str(e)[:80]}", file=sys.stderr)
+                print(f"  [warn] 翻译失败: {e}", file=sys.stderr)
                 return text
 
 
 # ── AI 精读 ──
-QWEN_KEY = os.environ.get('QWEN_API_KEY', '') or 'sk-f0d5f80034794f048e82c936ec3556f0'
+QWEN_KEY = 'sk-f0d5f80034794f048e82c936ec3556f0'
 QWEN_API = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions'
 
-DEEP_PROMPT = """你是非洲离网太阳能分析师。请用中文撰写一篇精读简报，严格使用以下格式，每组之间用一个空行分隔：
+DEEP_PROMPT = """你是非洲离网太阳能分析师。请用中文撰写一篇精读简报，严格使用以下格式，用一个空行分隔各小节：
 
 第一段：地点，核心事件概述。注明来源和项目名称。
 
-📍 背景：
-- 背景1（事实陈述或面临的问题，含具体数据）
-- 背景2
-- 背景3
+背景：
+- 问题1
+- 问题2
+- 问题3
 
-📌 方案：
-- 举措1（含具体数据）
-- 举措2（含具体数据）
-- 举措3（含具体数据）
+方案：
+- 成果1（具体数据）
+- 成果2（具体数据）
+- 成果3（具体数据）
 
-💡 价值：
+价值：
 - 价值1
 - 价值2
 - 价值3
 
-📈 趋势：一句话总结趋势。
+趋势总结：一句话收尾。
 
 要求：
 - 使用 - 符号开头列表项，每组之间空行分隔
-- 每个列表项不超过25字
-- 提取具体数字（MW、金额、户数、百分比等）
+- 每个列表项不超过20字
+- 提取具体数字（MW、金额、户数等）
 - 总字数300-500字
-
-参考示例（同一天的多篇文章可能共用相同背景）：
-
-示例1 - 行业报告类：
----
-地点：南非开普敦。GOGLA 2025年离网太阳能投资报告显示全球投资达3亿美元。
-📍 背景：
-- 离网太阳能需求激增
-- 资金分配不均加剧
-- 新兴企业融资困难
-📌 方案：
-- 投资额达3.0亿美元
-- 混合融资弥补210亿缺口
-- 本地货币证券化创新
-💡 价值：
-- 加速能源普及覆盖
-- 推动可持续发展
-- 提升企业融资能力
-📈 趋势：离网太阳能市场正从初创阶段向成熟阶段过渡。
-
-示例2 - 企业动态类：
----
-地点：赞比亚。Ignite Power启动离网太阳能推广计划。
-📍 背景：
-- 80%人口无电力供应
-- 农村电力覆盖率极低
-- 柴油发电成本高昂
-📌 方案：
-- 安装1.2MW太阳能系统
-- 服务500户家庭
-- 建立社区充电网络
-💡 价值：
-- 提升生活质量和教育
-- 创造本地就业
-- 降低碳排放
-📈 趋势：离网太阳能正成为非洲电气化的关键路径。
-
-示例3 - 政策分析类：
----
-地点：西非。ECOWAS宣布2030年可再生能源目标48%。
-📍 背景：
-- 1.9亿人无电力供应
-- 农村通电率仅12%
-- 电力损失率高达35%
-📌 方案：
-- 可再生能源占比48%
-- 电力损失降至35%以下
-- 区域电网互联互通
-💡 价值：
-- 推动清洁能源转型
-- 提升农村经济发展
-- 促进区域能源整合
-📈 趋势：西非正通过政策与合作加速能源变革。
----"""
-
-def deep_read_light(title, summary_text, source_name):
-    """用RSS摘要（无正文）直接调Qwen做轻量结构化改写"""
-    if not summary_text or len(summary_text) < 30:
-        return None
-    prompt = f"""你是非洲离网太阳能快讯编辑。根据以下标题和摘要，用中文生成一段150-200字的精简短讯，提取关键数据和事实。
-格式：地点/来源 + 核心事实 + 1-2个关键数字（如有）。不要编造数据，只基于给定内容。
-
-标题：{title}
-来源：{source_name}
-摘要：{summary_text[:800]}"""
-    
-    try:
-        resp = requests.post(QWEN_API, headers={
-            'Authorization': f'Bearer {QWEN_KEY}',
-            'Content-Type': 'application/json'
-        }, json={
-            'model': 'qwen-turbo',
-            'messages': [{'role': 'user', 'content': prompt}],
-            'temperature': 0.5,
-            'max_tokens': 400,
-        }, timeout=30)
-        result = resp.json()
-        if 'choices' in result:
-            return result['choices'][0]['message']['content'].strip()
-    except Exception as e:
-        print(f'  [warn] 轻量精读失败: {e}', file=sys.stderr)
-    return None
-
+- 直接输出内容"""
 
 def deep_read(title, source_url, source_name, retries=1):
     """获取文章全文并调用Qwen精读改写"""
     content = ''
-    # Google News 链接是重定向页，没有正文内容，直接跳过
-    if 'news.google.com' in source_url:
-        return None
-
     try:
         resp = requests.get(source_url, headers={
             'User-Agent': 'Mozilla/5.0 (compatible; AfricaSolarNews/1.0)'
-        }, timeout=15)
+        }, timeout=20)
         if resp.status_code == 200:
             from bs4 import BeautifulSoup
             soup = BeautifulSoup(resp.text, 'html.parser')
@@ -183,22 +96,7 @@ def deep_read(title, source_url, source_name, retries=1):
     except Exception as e:
         print(f'  [warn] 抓取原文失败 {source_url}: {e}', file=sys.stderr)
 
-    if not content or len(content) < 300:
-        return None
-
-    # 关键词密度检测：内容太泛（广告/导航文字）则跳过精读
-    solar_keywords = ["solar", "energy", "power", "electrification", "off.grid",
-                      "mini.grid", "renewable", "electricity", "grid", "africa",
-                      "sun", "pv", "photovoltaic", "battery", "storage",
-                      "climate", "emission", "carbon", "clean energy", "green",
-                      "rural", "offgrid", "paygo", "pay-as-you-go", "kwh",
-                      "kilowatt", "megawatt", "gigawatt", "generator", "diesel",
-                      "subsidy", "tariff", "utility", "distribution", "household"]
-    text_lower = content.lower()
-    kw_count = sum(1 for kw in solar_keywords if kw in text_lower)
-    density = kw_count / max(len(text_lower.split()), 1)
-    if density < 0.01:  # 1%阈值（网页含大量导航/页脚稀释）
-        print(f'  [warn] 关键词密度 {density:.1%} 过低，跳过精读', file=sys.stderr)
+    if not content or len(content) < 100:
         return None
 
     for attempt in range(retries + 1):
@@ -216,10 +114,6 @@ def deep_read(title, source_url, source_name, retries=1):
                 'max_tokens': 1200,
             }, timeout=60)
             result = resp.json()
-            if 'choices' not in result:
-                err_msg = result.get('error', {}).get('message', str(result))
-                print(f'  [warn] Qwen API 返回错误: {err_msg}', file=sys.stderr)
-                return None
             return result['choices'][0]['message']['content'].strip()
         except Exception as e:
             if attempt < retries:
@@ -244,32 +138,16 @@ print(f"[INFO] 读取: {raw_files[0]}")
 with open(raw_path, "r", encoding="utf-8") as f:
     raw = json.load(f)
 
-# ── 自动计算期号（基于已有 weekly JSON 中的最大期号） ──
-raw_dir_abs = os.path.abspath(raw_dir)
-max_issue = 0
-for f in os.listdir(raw_dir_abs):
-    if f.endswith("-weekly.json") and not f.startswith("latest"):
-        try:
-            with open(os.path.join(raw_dir_abs, f), "r", encoding="utf-8") as fp:
-                d = json.load(fp)
-            iss = d.get("issue", 0)
-            if iss > max_issue:
-                max_issue = iss
-        except Exception:
-            pass
-issue_num = max_issue + 1
+# ── 自动计算期号 ──
+html_dir = os.path.join(os.path.dirname(__file__), "..", "output", "html")
+existing = [f for f in os.listdir(os.path.abspath(html_dir)) if f.startswith("week-") and f.endswith(".html")]
+issue_num = len(existing) + 1
 
 now = datetime.now(CST)
 
 # ── 清洗工具 ──
 def clean_summary(text: str, max_len: int = 600) -> str:
     """清洗 RSS/HTML 摘要：去标签、去垃圾文字、截断"""
-    if not text:
-        return ""
-    # Google News RSS: 摘要被 <a href="..."> 包裹，提取 a 标签内文本
-    a_match = re.search(r'<a\s[^>]*href="[^"]*"[^>]*>(.*?)</a>', text, re.DOTALL)
-    if a_match and len(a_match.group(1).strip()) > 10:
-        text = a_match.group(1).strip()
     # 去掉 HTML 标签
     text = re.sub(r'<[^>]+>', ' ', text)
     # 解码 HTML 实体
@@ -317,10 +195,7 @@ def num_value(s):
     """提取数字大小用于排序"""
     s_clean = s.replace("$", "").replace(",", "").strip()
     parts = s_clean.split()
-    try:
-        val = float(parts[0]) if parts else 0
-    except (ValueError, IndexError):
-        return 0
+    val = float(parts[0]) if parts else 0
     unit = parts[1].lower() if len(parts) > 1 else ""
     if unit in ("billion",):
         val *= 1000
@@ -366,32 +241,16 @@ highlights = []
 for n, label in context_pairs[:4]:
     highlights.append({"num": n, "label": label})
 
-# ── 分配文章到板块 ──
-policy_items = []      # 一、政策规划
-investment_items = []  # 二、投资数据
-industry_items = []    # 三、行业动态
-company_items = []     # 四、企业动态
+if len(highlights) < 2:
+    highlights += [
+        {"num": str(len(industry_items)), "label": "本期行业动态"},
+        {"num": str(len(company_items)), "label": "本期企业动态"},
+    ]
+    highlights = highlights[:4]
 
-# 子类目关键词
-policy_keywords = [
-    "policy", "regulation", "target", "goal", "plan", "strategy", "roadmap",
-    "commitment", "initiative", "agreement", "treaty", "accord", "framework",
-    "law", "decree", "mandate", "standard", "code", "act", "bill",
-    "政策", "规划", "目标", "路线图", "协议", "承诺", "法律", "法规",
-    "国家自主贡献", "ndc", "paris agreement", "unfccc", "cop",
-    "evisa", "ecowas", "african union", "au", "world bank", "undp",
-    "sustainable development", "sdg", "mission 300", "power africa",
-]
-investment_keywords = [
-    "investment", "funding", "grant", "loan", "financing", "capital",
-    "million", "billion", "usd", "euro", "fund", "investor", "equity",
-    "debt", "securitization", "bond", "credit", "microfinance", "paygo",
-    "subsidy", "aid", "dFC", "development finance", "climate finance",
-    "green bond", "blended finance", "grant", "私募", "融资", "投资",
-    "资金", "信贷", "债务", "证券化", "基金",
-    "market size", "market growth", "revenue", "valuation", "series",
-    "million", "billion", "trillion",
-]
+# ── 分配文章到板块 ──
+industry_items = []  # 一、行业动态
+company_items = []   # 二、企业动态
 
 # 记录每个源已分配的文章数（无日期的源限制3篇）
 source_count = {}
@@ -399,8 +258,7 @@ source_count = {}
 for src in raw["sources"]:
     for a in src["articles"]:
         title = a["title"]
-        raw_summary = a.get("summary", "") or ""
-        summary = clean_summary(raw_summary)  # 清洗HTML/Google News链接
+        summary = a.get("summary", "")[:600] if a.get("summary") else ""
         url = a.get("url", "")
         date = a.get("date", "")
 
@@ -420,31 +278,18 @@ for src in raw["sources"]:
         if any(kw in title.lower() for kw in skip_keywords):
             continue
 
-        # AI 精读：抓原文+Qwen改写（失败则用RSS摘要做轻量精读，再失败回退原摘要）
-        deep_succeeded = False
-        deep_text = ""
+        # AI 精读：抓原文+Qwen改写（失败则回退原摘要）
         if url:
             print(f"  [deep] 精读: {title[:60]}...")
             deep = deep_read(title, url, src["name"])
             if deep:
-                deep_text = translate_text(deep[:1000])
-                deep_succeeded = True
-                print(f"  [deep] OK ({len(deep_text)}字)")
-            elif summary and len(summary) >= 30:
-                # 正文抓取失败 → 用RSS摘要做轻量精读
-                print(f"  [light] 轻量精读...")
-                light = deep_read_light(title, summary, src["name"])
-                if light:
-                    deep_text = translate_text(light[:600])
-                    deep_succeeded = True
-                    print(f"  [light] OK ({len(deep_text)}字)")
-                else:
-                    print(f"  [deep] 回退原摘要")
+                summary = format_rich(deep[:1000])  # AI输出转HTML
+                print(f"  [deep] OK ({len(deep)}字)")
             else:
                 print(f"  [deep] 回退原摘要")
 
         # 根据来源分类
-        company_sources = {"engie", "sunking", "bboxx", "m-kopa", "dlight"}
+        company_sources = {"engie", "sunking", "bboxx"}
         company_keywords = [
             "ignite power", "ignite energy", "sun king", "sunking",
             "bboxx", "d.light", "dlight", "m-kopa", "mkopa",
@@ -460,49 +305,25 @@ for src in raw["sources"]:
         )
 
         if is_company_article:
-            # 企业动态 tag
+            # 企业动态
             if src["key"] == "engie":
                 tag_prefix = "企业动态 · Ignite Power"
             elif src["key"] == "sunking":
                 tag_prefix = "企业动态 · Sun King"
             elif src["key"] == "bboxx":
                 tag_prefix = "企业动态 · BBOXX"
-            elif src["key"] == "m-kopa":
-                tag_prefix = "企业动态 · M-KOPA"
-            elif src["key"] == "dlight":
-                tag_prefix = "企业动态 · d.light"
             else:
                 tag_prefix = "企业动态"
-            # 精简描述（最多200字纯文本，不用AI精读格式）
-            company_desc = ""
-            if deep_succeeded and deep_text:
-                # 摘取AI精读第一段（地点+概述），去掉后续分段和分隔符
-                cleaned = (deep_text or "").strip()
-                # 去掉开头的 --- 分隔线
-                if cleaned.startswith('---'):
-                    cleaned = cleaned[3:].strip()
-                # 取第一段（双换行分隔）或第一行
-                first_para = cleaned.split('\n\n')[0] if '\n\n' in cleaned else cleaned.split('\n')[0]
-                # 去掉emoji标记
-                for emoji in ['\U0001F4CD', '\U0001F4CC', '\U0001F4A1', '\U0001F4C8']:
-                    first_para = first_para.replace(emoji, '')
-                company_desc = first_para.strip()[:200]
-            elif summary:
-                company_desc = summary[:200]
-            else:
-                company_desc = title[:200]
-            # 安全兜底：确保不为None或空
-            company_desc = (company_desc or title[:200] or "暂无描述")
             company_items.append({
                 "tag": tag_prefix,
                 "name": title[:100],
-                "description": company_desc,
+                "description": summary if summary else title[:400],
                 "source": src["name"],
                 "source_url": url,
                 "date": date,
             })
         else:
-            # 行业动态 → 细分到政策/投资/行业
+            # 行业动态
             tag_map = {
                 "gogla": "GOGLA · 行业报告",
                 "techpoint": "Techpoint · 非洲科技",
@@ -513,80 +334,34 @@ for src in raw["sources"]:
                 "energynews-africa": "Energy News · 非洲能源",
                 "africa-newsroom": "Africa Newsroom · 能源新闻",
                 "techcabal-energy": "TechCabal · 能源科技",
-                "renewable-energy-world": "REW · 全球太阳能",
-                "solar-industry-mag": "Solar Industry · 行业杂志",
-                "freeing-energy": "Freeing Energy · 离网能源",
-                "how-we-made-it": "How We Made It · 非洲商业",
-                "allafrica-energy": "AllAfrica · 非洲能源",
-                "esi-africa": "ESI Africa · 非洲电力",
             }
             tag = tag_map.get(src["key"], src["name"])
 
-            # 行业类文章：AI精读成功后用 format_rich 格式化
-            industry_summary = summary  # 默认用原摘要
-            if deep_succeeded and deep_text:
-                industry_summary = format_rich(deep_text)
-
-            item = {
+            industry_items.append({
                 "tag": tag,
                 "title": title[:120],
-                "summary": industry_summary,
+                "summary": summary,  # format_rich 已生成HTML，不需要 clean_summary
                 "bullets": [],
                 "source": src["name"],
                 "source_url": url,
                 "date": date,
-            }
-
-            # 按关键词划分子类目
-            text = f"{title} {summary}".lower()
-            if any(kw in text for kw in policy_keywords):
-                item["sub_category"] = "policy"
-                policy_items.append(item)
-            elif any(kw in text for kw in investment_keywords):
-                item["sub_category"] = "investment"
-                investment_items.append(item)
-            else:
-                industry_items.append(item)
+            })
 
 # 如果企业动态不够，从 ENGIE 文章中也加到行业动态
 # 不重复添加
 
-# ── 亮点兜底：如果数字亮点不足，用分类统计补充 ──
-if len(highlights) < 2:
-    highlights += [
-        {"num": str(len(industry_items) + len(policy_items) + len(investment_items)), "label": "本期行业动态"},
-        {"num": str(len(company_items)), "label": "本期企业动态"},
-    ]
-    highlights = highlights[:4]
-
 # ── 翻译为中文 ──
-all_industry_items = policy_items + investment_items + industry_items
-total_to_translate = len(all_industry_items) + len(company_items)
+total_to_translate = len(industry_items) + len(company_items)
 print(f"[INFO] 正在翻译 {total_to_translate} 篇文章为中文...")
-
-def translate_summary_html(html_text: str) -> str:
-    """翻译 HTML 摘要：提取纯文本翻译后放回"""
-    if not html_text:
-        return ""
-    if "<" not in html_text:
-        return translate_text(html_text)
-    # 保留HTML结构，只翻译纯文本部分
-    import re
-    parts = re.split(r'(<[^>]+>)', html_text)
-    for i, part in enumerate(parts):
-        if not part.startswith('<'):
-            translated = translate_text(part.strip())
-            if translated and translated != part.strip():
-                parts[i] = translated
-    return ''.join(parts)
-
-for item in all_industry_items:
+for item in industry_items:
     item["title"] = translate_text(item["title"])
-    item["summary"] = translate_summary_html(item["summary"])
-
+    # 已格式化的 HTML（含<ul>标签）直接跳过翻译
+    if "<ul" not in item["summary"]:
+        item["summary"] = translate_text(item["summary"])
 for item in company_items:
     item["name"] = translate_text(item["name"])
-    item["description"] = translate_summary_html(item.get("description") or "") or item["name"]
+    if "<ul" not in item["description"]:
+        item["description"] = translate_text(item["description"])
 
 # 翻译亮点标签
 for h in highlights:
@@ -602,27 +377,15 @@ curated = {
     "sections": [],
 }
 
-if policy_items:
-    curated["sections"].append({
-        "title": "一、政策规划",
-        "items": policy_items,
-    })
-
-if investment_items:
-    curated["sections"].append({
-        "title": "二、投资数据",
-        "items": investment_items,
-    })
-
 if industry_items:
     curated["sections"].append({
-        "title": "三、行业动态",
+        "title": "一、行业动态",
         "items": industry_items,
     })
 
 if company_items:
     curated["sections"].append({
-        "title": "四、重点企业动态",
+        "title": "二、重点企业动态",
         "companies": company_items,  # 不限数量，全显示
     })
 
@@ -632,8 +395,6 @@ curated_path = os.path.abspath(curated_path)
 with open(curated_path, "w", encoding="utf-8") as f:
     json.dump(curated, f, ensure_ascii=False, indent=2)
 print(f"[OK] curated JSON: {curated_path}")
-print(f"  政策规划: {len(policy_items)} 条")
-print(f"  投资数据: {len(investment_items)} 条")
 print(f"  行业动态: {len(industry_items)} 条")
 print(f"  企业动态: {len(company_items)} 条")
 
@@ -696,11 +457,8 @@ for fname in sorted(os.listdir(os.path.abspath(raw_dir))):
         d = json.load(f)
     date_str = d.get("date", fname[:10])
     issue_num_2 = d.get("issue", 0)
-    ind_count = 0
-    comp_count = 0
-    for sec in d.get("sections", []):
-        ind_count += len(sec.get("items", []))
-        comp_count += len(sec.get("companies", []))
+    ind_count = len(d["sections"][0].get("items", [])) if d.get("sections") else 0
+    comp_count = len(d["sections"][1].get("companies", [])) if len(d.get("sections", [])) > 1 else 0
     html_file = f"week-{issue_num_2:02d}-{date_str}.html"
     issues.append({
         "file": html_file,

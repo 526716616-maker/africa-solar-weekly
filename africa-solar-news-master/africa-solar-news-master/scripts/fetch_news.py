@@ -111,26 +111,6 @@ SOURCES = {
         "date_sel": "time, .date",
         "summary_sel": "p, .excerpt",
     },
-    "m-kopa": {
-        "name": "M-KOPA",
-        "url": "https://www.m-kopa.com/newsroom",
-        "type": "html",
-        "selector": "a.w-dyn-item, a.collection-item, .news-item, a[href*='/newsroom/']",
-        "title_sel": "h2, h3, .title, .heading",
-        "link_sel": "a",
-        "date_sel": "time, .date, .published",
-        "summary_sel": "p, .summary, .excerpt",
-    },
-    "dlight": {
-        "name": "d.light",
-        "url": "https://www.dlight.com/news",
-        "type": "html",
-        "selector": "article, .post, .news-item, .press-item, div[class*=post]",
-        "title_sel": "h2, h3, .entry-title, .card-title",
-        "link_sel": "a",
-        "date_sel": "time, .date, .entry-date, .published",
-        "summary_sel": "p, .excerpt, .entry-summary",
-    },
     # ── 新增数据源 ──
     "bgfa": {
         "name": "BGFA (Beyond the Grid)",
@@ -189,91 +169,6 @@ SOURCES = {
         "keywords": ["solar", "off-grid", "clean energy", "renewable", "mini-grid",
                      "paygo", "energy access", "power", "electric", "grid"],
     },
-    # ──────────────────────────────────────────────────────────────
-    # 新增数据源（2026-06-19 扩展）
-    # ──────────────────────────────────────────────────────────────
-    "renewable-energy-world": {
-        "name": "Renewable Energy World Solar",
-        "url": "https://www.renewableenergyworld.com/solar/feed/",
-        "type": "rss",
-        "item_sel": "item",
-        "title_sel": "title",
-        "link_sel": "link",
-        "date_sel": "pubDate",
-        "summary_sel": "description",
-        "keywords": ["africa", "african", "nigeria", "kenya", "ghana", "senegal",
-                     "uganda", "tanzania", "rwanda", "ethiopia", "zambia", "mozambique",
-                     "off-grid", "mini-grid", "minigrid", "solar home", "paygo",
-                     "electrification", "energy access", "sub-saharan"],
-    },
-    "solar-industry-mag": {
-        "name": "Solar Industry Magazine",
-        "url": "https://solarindustrymag.com/feed",
-        "type": "rss",
-        "item_sel": "item",
-        "title_sel": "title",
-        "link_sel": "link",
-        "date_sel": "pubDate",
-        "summary_sel": "description",
-        "keywords": ["africa", "african", "nigeria", "kenya", "off-grid",
-                     "mini-grid", "minigrid", "microgrid", "solar home",
-                     "electrification", "energy access", "rural"],
-    },
-    "freeing-energy": {
-        "name": "Freeing Energy",
-        "url": "https://freeingenergy.com/feed/",
-        "type": "rss",
-        "item_sel": "item",
-        "title_sel": "title",
-        "link_sel": "link",
-        "date_sel": "pubDate",
-        "summary_sel": "description",
-        "keywords": ["africa", "african", "off-grid", "mini-grid", "solar home",
-                     "paygo", "electrification", "energy access", "rural",
-                     "nigeria", "kenya", "tanzania", "ghana", "ethiopia"],
-    },
-    "how-we-made-it": {
-        "name": "How We Made It In Africa",
-        "url": "https://www.howwemadeitinafrica.com/feed/",
-        "type": "rss",
-        "item_sel": "item",
-        "title_sel": "title",
-        "link_sel": "link",
-        "date_sel": "pubDate",
-        "summary_sel": "description",
-        "keywords": ["solar", "off-grid", "mini-grid", "renewable", "clean energy",
-                     "energy access", "electrification", "power", "electricity",
-                     "climate", "green energy"],
-    },
-    "allafrica-energy": {
-        "name": "AllAfrica Energy",
-        "url": "https://allafrica.com/energy/",
-        "type": "html",
-        "selector": ".story-item, .list-item, article, tr.story",
-        "title_sel": "a.story-title, a, h2, h3",
-        "link_sel": "a",
-        "date_sel": ".story-date, .date, time, small",
-        "summary_sel": ".story-summary, p, .summary",
-        "keywords": ["solar", "off-grid", "mini-grid", "minigrid", "microgrid",
-                     "renewable", "clean energy", "electrification", "energy access",
-                     "paygo", "solar home", "mission 300", "power africa"],
-    },
-    "esi-africa": {
-        "name": "ESI Africa",
-        "url": "https://www.esi-africa.com/",
-        "type": "html",
-        "selector": "article, .post, .td_module_wrap, .item-details, div[class*=post]",
-        "title_sel": "h2, h3, .entry-title, .td-module-title",
-        "link_sel": "a",
-        "date_sel": "time, .td-post-date, .date, .entry-date",
-        "summary_sel": "p, .td-excerpt, .excerpt, .entry-summary",
-        "keywords": ["solar", "off-grid", "mini-grid", "minigrid", "renewable",
-                     "clean energy", "electrification", "energy access", "microgrid",
-                     "pv", "photovoltaic", "energy storage", "battery"],
-    },
-    # ──────────────────────────────────────────────────────────────
-    # 第3批：各国+非洲综合媒体
-    # Google News ×4 已移除 → 全是重定向页无正文；The Africa Report 已移除 → GitHub Actions 网络不通
 }
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "output", "raw")
@@ -351,7 +246,7 @@ def extract_articles(soup: BeautifulSoup, cfg: dict, base_url: str) -> list[dict
         items = soup.select(cfg["item_sel"])
         keywords = [k.lower() for k in cfg.get("keywords", [])]
 
-        for item in items[:1]:
+        for item in items[:15]:
             title_el = item.select_one(cfg["title_sel"])
             title = safe_text(title_el)
             if not title:
@@ -401,7 +296,7 @@ def extract_articles(soup: BeautifulSoup, cfg: dict, base_url: str) -> list[dict
     if not cards:
         cards = soup.select("article, .post, .news-item, .td_module_wrap, .gb-query-loop-item")
 
-    for card in cards[:1]:
+    for card in cards[:10]:
         title_el = None
         for sel in cfg["title_sel"].split(", "):
             title_el = card.select_one(sel)
@@ -418,11 +313,6 @@ def extract_articles(soup: BeautifulSoup, cfg: dict, base_url: str) -> list[dict
         if link_el:
             href = link_el.get("href", "")
             link = href if href.startswith("http") else urljoin(base_url, href)
-        # 备选：card 本身是 <a> 标签时直接取 href
-        if not link and hasattr(card, 'get'):
-            card_href = card.get("href", "")
-            if card_href:
-                link = card_href if card_href.startswith("http") else urljoin(base_url, card_href)
 
         date_el = None
         for sel in cfg["date_sel"].split(", "):
@@ -469,9 +359,6 @@ def extract_articles(soup: BeautifulSoup, cfg: dict, base_url: str) -> list[dict
 def crawl_source(source_key: str) -> list[dict]:
     """爬取单个数据源"""
     cfg = SOURCES[source_key]
-    if cfg.get("skip"):
-        print(f"[SKIP] {cfg['name']}: 暂时跳过")
-        return []
     print(f"[INFO] 正在抓取 {cfg['name']} ...")
 
     is_rss = cfg.get("type") == "rss"
@@ -532,27 +419,6 @@ def main():
         results["summary"][key] = len(articles)
         total += len(articles)
 
-    # ── 跨源去重：URL 相同的只保留第一篇（按源顺序优先） ──
-    seen_urls = set()
-    dedup_total = 0
-    for src in results["sources"]:
-        before = len(src["articles"])
-        unique = []
-        for a in src["articles"]:
-            url = a.get("url", "").strip().rstrip("/")
-            if url and url in seen_urls:
-                continue
-            if url:
-                seen_urls.add(url)
-            unique.append(a)
-        src["articles"] = unique
-        results["summary"][src["key"]] = len(unique)
-        dedup_total += len(unique)
-        deduped = before - len(unique)
-        if deduped:
-            print(f"  [dedup] {src['name']}: 去重 {deduped} 篇")
-
-    total = dedup_total
     results["summary"]["total"] = total
 
     if args.json_only:

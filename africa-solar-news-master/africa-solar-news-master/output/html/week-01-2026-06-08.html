@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>非洲离网太阳能市场资讯 2026-06-08 第 1 期</title>
+<style>/* ===== 非洲离网太阳能市场资讯 - 样式 ===== */
+:root {
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --text: #1a1a2e;
+  --text-secondary: #555770;
+  --text-tertiary: #8e8ea0;
+  --border: #e8e8ee;
+  --green-dark: #0F6E56;
+  --green-light: #1D9E75;
+  --green-bg: #E1F5EE;
+  --green-tag-bg: rgba(15,110,86,0.08);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+/* ===== Header ===== */
+.header {
+  background: var(--green-dark);
+  color: #fff;
+  padding: 28px 28px 22px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+}
+.header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  letter-spacing: -0.01em;
+}
+.header .subtitle {
+  font-size: 13px;
+  opacity: 0.78;
+  font-weight: 400;
+}
+.header .meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.header .meta span {
+  background: rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  padding: 3px 10px;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+/* ===== Stats Row ===== */
+.section-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 28px 0 10px;
+}
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.stat-box {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 12px;
+  text-align: center;
+}
+.stat-box .num {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 4px;
+}
+.stat-box .lbl {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+@media (max-width: 560px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== News Card ===== */
+.news-card {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  transition: border-color 0.15s;
+}
+.news-card:hover { border-color: var(--green-light); }
+.news-card .tag {
+  display: inline-block;
+  background: var(--green-tag-bg);
+  color: var(--green-dark);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 100px;
+}
+.news-card .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.news-card .card-date {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+.news-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.news-card .summary {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+.news-card .bullets {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.news-card .bullets li {
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 2px 0 2px 16px;
+  position: relative;
+}
+.news-card .bullets li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--green-light);
+}
+.news-card .source {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+.news-card .source a {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+.news-card .source a:hover { text-decoration: underline; }
+
+/* ===== Company Card ===== */
+.company-card {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  transition: border-color 0.15s;
+}
+.company-card:hover { border-color: var(--green-light); }
+.company-card .tag {
+  display: inline-block;
+  background: var(--green-tag-bg);
+  color: var(--green-dark);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 100px;
+}
+.company-card .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.company-card .card-date {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+.company-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.company-card p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.company-card .source {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-top: 8px;
+}
+.company-card .source a {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+.company-card .source a:hover { text-decoration: underline; }
+
+/* ===== Archive Nav ===== */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.nav-bar a {
+  font-size: 12px;
+  color: var(--green-dark);
+  text-decoration: none;
+  padding: 4px 0;
+}
+.nav-bar a:hover { text-decoration: underline; }
+
+/* ===== Archive Page ===== */
+.archive-list {
+  list-style: none;
+}
+.archive-item {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  transition: border-color 0.15s;
+}
+.archive-item:hover { border-color: var(--green-light); }
+.archive-item a {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.archive-item .issue-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.archive-item .issue-meta {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-top: 4px;
+}
+.archive-item .issue-count {
+  font-size: 12px;
+  color: var(--green-dark);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  border-top: 0.5px solid var(--border);
+  padding-top: 20px;
+  margin-top: 32px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="nav-bar">
+    <a href="archive.html">← 查看往期</a>
+    <span style="font-size:11px;color:var(--text-tertiary)">第 1 期</span>
+  </div>
+
+  <div class="header">
+    <h1>Africa Off-Grid Solar Market News</h1>
+    <p class="subtitle">非洲离网太阳能市场资讯</p>
+    <div class="meta">
+      <span>第 1 期</span>
+      <span>2026-06-08</span>
+      <span>行业动态 · 企业跟踪</span>
+    </div>
+  </div>
+
+  <div class="section-title">本期数据亮点</div>
+  <div class="stats-row"><div class="stat-box"><div class="num">1000万+</div><div class="lbl">GOGLA成员年销售套数</div></div><div class="stat-box"><div class="num">1.5亿</div><div class="lbl">全球累计服务人口</div></div><div class="stat-box"><div class="num">1100万</div><div class="lbl">2025年新增服务人口</div></div><div class="stat-box"><div class="num">$4100亿</div><div class="lbl">尼日利亚ETP投资规模</div></div></div>
+
+  <div class="section-title">一、行业动态</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">GOGLA · 市场报告</span>
+    <span class="card-date">2026-06-03</span>
+  </div>
+  <h3>GOGLA发布2025全球离网太阳能市场报告：行业销售创历史新高</h3>
+  <p class="summary">6月3日，GOGLA正式发布《Global Off-Grid Solar Market Report》。2025年GOGLA成员企业累计销售超过1000万套太阳能产品，创行业历史最高纪录。全球累计服务人口接近1.5亿人，2025年新增约1100万人。推动增长的核心因素并非单纯硬件降价，而是PAYGo融资模式成熟、RBF持续扩大、政府补贴优化及Productive Use需求增长。非洲客户已越来越多将离网太阳能用于商店经营、农产品冷藏、手机充电和数字金融服务，行业正从“能源获取”向“生产力赋能”转变。</p>
+  <ul class="bullets"><li>PAYGo融资模式成熟 · 降低终端用户门槛</li><li>结果导向融资（RBF）持续扩大 · 吸引更多机构资金</li><li>Productive Use产品需求增长 · 太阳能冷柜/灌溉/动力系统</li></ul>
+  <div class="source">来源：<a href="https://newsroom.gogla.org/266354-record-sales-highlight-off-grid-solar-s-critical-role-in-electrification/" target="_blank" rel="noopener">GOGLA Newsroom</a></div>
+</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">Nigeria REA · 政策</span>
+    <span class="card-date" style="color:#aaa">日期未知</span>
+  </div>
+  <h3>尼日利亚可再生能源局推动2026脱碳峰会微电网战略</h3>
+  <p class="summary">尼日利亚可再生能源局（REA）明确表示，将在脱碳与能源转型峰会上全面推行分布式太阳能微电网战略。尼日利亚正通过其《能源转型计划》（ETP）杠杆化高达4100亿美元投资，借助去中心化太阳能和高效储能系统解决国家电网脆弱性问题，替代高污染高成本的汽油/柴油发电机。</p>
+  
+  <div class="source">来源：<a href="https://techpoint.africa/guide/climate-tech-africa-2026-clean-energy-beats-fintech/" target="_blank" rel="noopener">Techpoint Africa</a></div>
+</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">Africa Energy Forum · 展会</span>
+    <span class="card-date">2026-06-16</span>
+  </div>
+  <h3>Africa Energy Forum开幕在即，议题向工业化与Productive Use转型</h3>
+  <p class="summary">6月16日Africa Energy Forum即将开幕。从已公布议程来看，讨论重点从过去的Energy Access和Rural Electrification，转向Industrialisation、Productive Use、Energy for SMEs和Distributed Renewable Energy。行业认为未来离网太阳能企业的竞争重点将从“卖设备”转向“提供生产力解决方案”，太阳能冷柜、灌溉、动力系统及农村微型企业能源包等产品需求将持续增长。</p>
+  <ul class="bullets"><li>核心议题：工业化 · Productive Use · 中小企业能源</li><li>产品趋势：太阳能冷柜 · 灌溉系统 · 动力系统 · 微型企业能源包</li></ul>
+  <div class="source">来源：<a href="https://members.gogla.org/event/aef2026/" target="_blank" rel="noopener">Africa Energy Forum / GOGLA Members</a></div>
+</div>
+<div class="section-title">二、重点企业动态</div>
+<div class="company-card">
+  <div class="card-top">
+    <span class="tag">企业动态</span>
+    <span class="card-date" style="color:#aaa">日期未知</span>
+  </div>
+  <h3>MySol / ENGIE Energy Access — 离网→微电网升级计划</h3>
+  <p>跨国能源巨头ENGIE旗下离网品牌MySol在赞比亚和肯尼亚启动“SHS向微电网过渡”计划。MySol目前在非洲拥有超900万用户，工程团队在赞比亚农村试点将密集型家用太阳能系统（SHS）用户通过局域小微电网物理连接，使原本只具备照明和充电功能的客户，升级为可使用冰箱、农业抽水机等大功率生产力设备的弱网/微网用户。</p>
+  
+</div>
+
+
+  <div class="footer">
+    Africa Solar News · 2026-06-08 · 每日更新
+  </div>
+
+</div>
+</body>
+</html>
