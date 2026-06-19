@@ -1,7 +1,7 @@
 {
   "week": "2026-W25",
   "date": "2026-06-19",
-  "issue": 12,
+  "issue": 13,
   "highlights": [
     {
       "num": "7",
@@ -44,21 +44,11 @@
         {
           "tag": "GOGLA · 行业报告",
           "title": "离网太阳能投资标志着行业成熟、资本集中",
-          "summary": "<p class=\"mb\">---</p>\n<p class=\"mb\">地点：全球。 GOGLA 2025年报告指出离网太阳能投资增长，但资金集中度上升。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>2025年投资达3.0亿美元</li>\n<li>2024年投资下降30%</li>\n<li>$210亿资金缺口待填补</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>混合融资方案解决缺口</li>\n<li>本地货币融资增加</li>\n<li>新型股权基金启动</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>加速能源普及覆盖</li>\n<li>提升企业融资能力</li>\n<li>促进可持续发展</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">离网太阳能投资正从分散走向集中化。</p>",
+          "summary": "<p class=\"mb\">---</p>\n<p class=\"mb\">地点：全球。 GOGLA 2025年报告指出离网太阳能投资增长，但资金集中度上升。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>2025年投资达3.0亿美元</li>\n<li>资金分配不均加剧</li>\n<li>新兴企业融资困难</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>混合融资弥补210亿缺口</li>\n<li>本地货币证券化创新</li>\n<li>启动ELEVATE计划提升融资能力</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>加速能源普及覆盖</li>\n<li>推动可持续发展</li>\n<li>提升企业融资能力</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">离网太阳能市场正从初创阶段向成熟阶段过渡。</p>",
           "bullets": [],
           "source": "GOGLA Newsroom",
           "source_url": "https://newsroom.gogla.org/tags/investment/",
           "date": "2026-06-15",
-          "sub_category": "investment"
-        },
-        {
-          "tag": "Google News · 离网太阳能",
-          "title": "能源转型中没有成为欧洲头条新闻的部分发生在 Kiambu 县，该县的太阳能发电成本为 1,300 美元",
-          "summary": "能源转型中没有成为欧洲头条新闻的部分发生在 Kiambu 县，那里一座价值 1,300 美元的太阳能谷物磨坊可以在六到十二个月内收回成本",
-          "bullets": [],
-          "source": "Google News · 非洲离网太阳能",
-          "source_url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOaWVUTGd2NVlWUmYtUGYyTUVGX1RBcHVoZ2lVcDBVRFVKRXcwbjYzbm5kMENRRE8yaU0yXzVoZEMtaGluM3dRbUtLWC1BMHFZOGRXSVFDd05kbUFmVzlUdUZDdUxfblNJREtEc251U0VWMUlzTS1Fd1BmdVlKODhPaTZFUDZyY1hQYWp0LWlwbkdXck1BUFJqN2RIT3l1QzQ1M29aWXB1RVBrSkxpeW0xX1BPNnRTYWFmTV9NXzE5NThmdWoyMW01aC1NNDVtY0JHSmtUMVR0VU11a21RQWk0ZEpmVEFmZEQxNWV6X2I4Y3JWbnc0WG9WT2NRTFl6MGRzckF3QWtZaEZRY2FMMUxUZTZHZ1dMQktRbTV4eTF6M0FLSHp6U2JOVXRyeGU?oc=5",
-          "date": "Fri, 19 Ju",
           "sub_category": "investment"
         }
       ]
@@ -76,8 +66,17 @@
           "date": ""
         },
         {
+          "tag": "Google News · 离网太阳能",
+          "title": "随着尼日利亚推动经济复苏，全球每售出 10 套离网太阳能套件，非洲就会购买 9 套 - Business Insider Africa",
+          "summary": "随着尼日利亚推动经济复苏，全球每售出 10 套离网太阳能套件，非洲就会购买 9 套",
+          "bullets": [],
+          "source": "Google News · 非洲离网太阳能",
+          "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSm1oN2V2N1g4eUxSc08zdDE3ZERJWXM3X2hYdzJFMHBhZlRaUUNISEJDelBKZmZ6b19GbnRFejFsY0xibTN5NmlwaHRoUnNXWFU5U2J6d1ZPenBjblZrUURPajFsTWdpVHJjcXVTTGNYbVdzY2hzU1J5Ul9iQXdrbG9uZDBWRldvbEVvVG1heFNSN0t5QWxCVS1MZ28tWlF3RktxRVlWVkY1bUJldGJvZ0pqSnpNTnFFb3dVZVFjZDVRWHY4ei1lY1QycUtMeXEwcnZTMQ?oc=5",
+          "date": "Tue, 09 Ju"
+        },
+        {
           "tag": "Google News · 太阳能投资",
-          "title": "按量付费太阳能行业的发展不应让非洲最弱势群体落后 - Nature",
+          "title": "即用即付太阳能行业的发展不应让非洲最弱势群体落后 - nature.com",
           "summary": "即用即付太阳能行业的发展不应让非洲最脆弱的群体落后",
           "bullets": [],
           "source": "Google News · 非洲太阳能投资",
