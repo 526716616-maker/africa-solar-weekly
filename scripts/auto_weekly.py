@@ -439,6 +439,11 @@ for src in raw["sources"]:
                 "how-we-made-it": "How We Made It · 非洲商业",
                 "allafrica-energy": "AllAfrica · 非洲能源",
                 "esi-africa": "ESI Africa · 非洲电力",
+                "google-solar-offgrid": "Google News · 离网太阳能",
+                "google-solar-investment": "Google News · 太阳能投资",
+                "google-solar-policy": "Google News · 太阳能政策",
+                "google-clean-energy": "Google News · 清洁能源",
+                "the-africa-report": "The Africa Report · 非洲综合",
             }
             tag = tag_map.get(src["key"], src["name"])
 
