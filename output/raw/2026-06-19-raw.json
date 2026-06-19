@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-19T22:07:35.562395+08:00",
+  "crawled_at": "2026-06-19T22:12:31.037295+08:00",
   "week": "2026-W25",
   "sources": [
     {
@@ -223,10 +223,10 @@
       "name": "The Africa Report",
       "articles": [
         {
-          "title": "Is the World Bank retreating on climate finance?",
-          "url": "https://www.theafricareport.com/422502/is-the-world-bank-retreating-on-climate-finance/",
+          "title": "TotalEnergies doubles down on Africa in hunt for  oil and gas discoveries",
+          "url": "https://www.theafricareport.com/422565/totalenergies-doubles-down-on-africa-in-hunt-for-oil-and-gas-discoveries/",
           "date": "2026-06-19",
-          "summary": "Washington wants the institution to prioritize growth and energy security over climate goals, raising questions about a 45% finance target and curbs on gas projects.",
+          "summary": "TotalEnergies is self-funding its African oil and gas expansion by reinvesting regional profits, balancing traditional upstream projects with long-term renewable investments despite tightening Western capital.",
           "source_name": "The Africa Report"
         }
       ]

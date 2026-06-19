@@ -1,7 +1,7 @@
 {
   "week": "2026-W25",
   "date": "2026-06-19",
-  "issue": 14,
+  "issue": 15,
   "highlights": [
     {
       "num": "7",
@@ -25,16 +25,6 @@
           "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNDhDMkp3b3VRVllTZ0VKZXNDVXo2M0M4c1MxNTRuZ3NLSFZNOU00Nm85X0dRTWlMblpFNk9JN0swLWpXWkwtd2laTkFvVi1JRFZKYy1JZXJSanVCek5iVHZCMEZNNDhoQkRyOEtETUlOZ1ZpODhpVkR0V05jenMwdDM5YkZ0cGNnajB5ZGtlZlRkVEZWaHE3NnNpa0x2YXdaVHZLc0FxWHNvSzFU?oc=5",
           "date": "Fri, 05 Ju",
           "sub_category": "policy"
-        },
-        {
-          "tag": "The Africa Report · 非洲综合",
-          "title": "世界银行在气候融资方面是否有所退缩？",
-          "summary": "华盛顿希望该机构将增长和能源安全置于气候目标之上，这对 45% 的融资目标和天然气项目限制提出了质疑。",
-          "bullets": [],
-          "source": "The Africa Report",
-          "source_url": "https://www.theafricareport.com/422502/is-the-world-bank-retreating-on-climate-finance/",
-          "date": "2026-06-19",
-          "sub_category": "policy"
         }
       ]
     },
@@ -44,11 +34,21 @@
         {
           "tag": "GOGLA · 行业报告",
           "title": "离网太阳能投资标志着行业成熟、资本集中",
-          "summary": "<p class=\"mb\">---</p>\n<p class=\"mb\">地点：全球。 GOGLA 2025年报告指出离网太阳能投资增长，但资金集中化加剧。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>2025年投资达3.0亿美元</li>\n<li>资金分配不均加剧</li>\n<li>新兴企业融资困难</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>混合融资弥补210亿缺口</li>\n<li>本地货币证券化创新</li>\n<li>启动ELEVATE计划提升融资能力</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>加速能源普及覆盖</li>\n<li>推动可持续发展</li>\n<li>提升企业融资能力</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">离网太阳能市场正从初创阶段向成熟阶段过渡。</p>",
+          "summary": "<p class=\"mb\">---</p>\n<p class=\"mb\">地点：全球。 GOGLA 2025年报告指出离网太阳能投资增长，但资金分配不均加剧。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>2025年投资达3亿美元</li>\n<li>2024年投资下降30%至3亿</li>\n<li>资金集中于成熟企业</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>混合融资弥补210亿缺口</li>\n<li>本地货币证券化创新</li>\n<li>新增股权基金和补贴</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>加速能源普及覆盖</li>\n<li>推动可持续发展</li>\n<li>提升企业融资能力</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">离网太阳能市场正从初创阶段向成熟阶段过渡。</p>",
           "bullets": [],
           "source": "GOGLA Newsroom",
           "source_url": "https://newsroom.gogla.org/tags/investment/",
           "date": "2026-06-15",
+          "sub_category": "investment"
+        },
+        {
+          "tag": "The Africa Report · 非洲综合",
+          "title": "TotalEnergies加倍努力在非洲寻找石油和天然气发现",
+          "summary": "<p class=\"mb\">---</p>\n<p class=\"mb\">地点：非洲。 TotalEnergies加大在非洲的油气投资，以应对西方银行减少化石燃料融资的趋势。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>2026年宣布多项新油气项目</li>\n<li>西方银行减少化石燃料资金</li>\n<li>非洲仍依赖化石能源供应</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>投资现金用于新勘探</li>\n<li>扩展多国业务覆盖</li>\n<li>与本地企业合作开发</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>稳定能源供应保障</li>\n<li>促进区域经济发展</li>\n<li>增强能源自主性</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">非洲油气投资正从传统模式转向多元化战略。</p>",
+          "bullets": [],
+          "source": "The Africa Report",
+          "source_url": "https://www.theafricareport.com/422565/totalenergies-doubles-down-on-africa-in-hunt-for-oil-and-gas-discoveries/",
+          "date": "2026-06-19",
           "sub_category": "investment"
         }
       ]
