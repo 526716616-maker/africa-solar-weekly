@@ -231,6 +231,12 @@ now = datetime.now(CST)
 # ── 清洗工具 ──
 def clean_summary(text: str, max_len: int = 600) -> str:
     """清洗 RSS/HTML 摘要：去标签、去垃圾文字、截断"""
+    if not text:
+        return ""
+    # Google News RSS: 摘要被 <a href="..."> 包裹，提取 a 标签内文本
+    a_match = re.search(r'<a\s[^>]*href="[^"]*"[^>]*>(.*?)</a>', text, re.DOTALL)
+    if a_match and len(a_match.group(1).strip()) > 10:
+        text = a_match.group(1).strip()
     # 去掉 HTML 标签
     text = re.sub(r'<[^>]+>', ' ', text)
     # 解码 HTML 实体
