@@ -129,6 +129,35 @@ DEEP_PROMPT = """你是非洲离网太阳能分析师。请用中文撰写一篇
 📈 趋势：西非正通过政策与合作加速能源变革。
 ---"""
 
+def deep_read_light(title, summary_text, source_name):
+    """用RSS摘要（无正文）直接调Qwen做轻量结构化改写"""
+    if not summary_text or len(summary_text) < 30:
+        return None
+    prompt = f"""你是非洲离网太阳能快讯编辑。根据以下标题和摘要，用中文生成一段150-200字的精简短讯，提取关键数据和事实。
+格式：地点/来源 + 核心事实 + 1-2个关键数字（如有）。不要编造数据，只基于给定内容。
+
+标题：{title}
+来源：{source_name}
+摘要：{summary_text[:800]}"""
+    
+    try:
+        resp = requests.post(QWEN_API, headers={
+            'Authorization': f'Bearer {QWEN_KEY}',
+            'Content-Type': 'application/json'
+        }, json={
+            'model': 'qwen-turbo',
+            'messages': [{'role': 'user', 'content': prompt}],
+            'temperature': 0.5,
+            'max_tokens': 400,
+        }, timeout=30)
+        result = resp.json()
+        if 'choices' in result:
+            return result['choices'][0]['message']['content'].strip()
+    except Exception as e:
+        print(f'  [warn] 轻量精读失败: {e}', file=sys.stderr)
+    return None
+
+
 def deep_read(title, source_url, source_name, retries=1):
     """获取文章全文并调用Qwen精读改写"""
     content = ''
@@ -391,7 +420,7 @@ for src in raw["sources"]:
         if any(kw in title.lower() for kw in skip_keywords):
             continue
 
-        # AI 精读：抓原文+Qwen改写（失败则回退原摘要）
+        # AI 精读：抓原文+Qwen改写（失败则用RSS摘要做轻量精读，再失败回退原摘要）
         deep_succeeded = False
         deep_text = ""
         if url:
@@ -401,6 +430,16 @@ for src in raw["sources"]:
                 deep_text = translate_text(deep[:1000])
                 deep_succeeded = True
                 print(f"  [deep] OK ({len(deep_text)}字)")
+            elif summary and len(summary) >= 30:
+                # 正文抓取失败 → 用RSS摘要做轻量精读
+                print(f"  [light] 轻量精读...")
+                light = deep_read_light(title, summary, src["name"])
+                if light:
+                    deep_text = translate_text(light[:600])
+                    deep_succeeded = True
+                    print(f"  [light] OK ({len(deep_text)}字)")
+                else:
+                    print(f"  [deep] 回退原摘要")
             else:
                 print(f"  [deep] 回退原摘要")
 

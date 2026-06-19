@@ -343,7 +343,7 @@ SOURCES = {
         "link_sel": "link",
         "date_sel": "pubDate",
         "summary_sel": "description",
-        # 无需关键词过滤：RSS里挑第1条即可，ClimateNews天然覆盖气候能源
+        "skip": True,  # GitHub Actions 网络不通，本地可用
     },
     "worldbank-energy": {
         "name": "World Bank Energy Blog",
@@ -354,9 +354,9 @@ SOURCES = {
         "link_sel": "a.blog_teaser__link_container, a[href*='/en/energy/']",
         "date_sel": "time, .date",
         "summary_sel": "p, .blog_teaser__content p, .teaser",
-        "keywords": ["solar", "off-grid", "mini-grid", "minigrid", "energy access",
-                     "electrification", "africa", "renewable", "clean energy",
-                     "mission 300", "rural", "power"],
+        "keywords": ["solar", "off-grid", "mini-grid", "energy access",
+                     "electrification", "africa", "renewable", "mission 300"],
+        "skip": True,  # GitHub Actions 上HTML selector不匹配
     },
     "renewablesnow-africa": {
         "name": "Renewables Now Africa",
