@@ -424,7 +424,7 @@ for src in raw["sources"]:
             company_desc = ""
             if deep_succeeded and deep_text:
                 # 摘取AI精读第一段（地点+概述），去掉后续分段和分隔符
-                cleaned = deep_text.strip()
+                cleaned = (deep_text or "").strip()
                 # 去掉开头的 --- 分隔线
                 if cleaned.startswith('---'):
                     cleaned = cleaned[3:].strip()
@@ -438,6 +438,8 @@ for src in raw["sources"]:
                 company_desc = summary[:200]
             else:
                 company_desc = title[:200]
+            # 安全兜底：确保不为None或空
+            company_desc = company_desc or title[:200]
             company_items.append({
                 "tag": tag_prefix,
                 "name": title[:100],

@@ -412,7 +412,7 @@ def generate_html(data: dict) -> str:
         # 企业卡片
         for company in sec.get("companies", []):
             name = company.get("name", "")
-            desc = company.get("description", "")
+            desc = company.get("description") or ""
             tag = company.get("tag", "企业动态")
             source = company.get("source", "")
             source_url = company.get("source_url", "")
