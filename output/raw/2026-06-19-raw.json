@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-19T19:26:20.212365+08:00",
+  "crawled_at": "2026-06-19T20:37:25.049663+08:00",
   "week": "2026-W25",
   "sources": [
     {
@@ -38,69 +38,21 @@
           "date": "",
           "summary": "Bringing electricity, let alone that from renewable sources, to some of the most energy poor parts of sub-Saharan Africa is a vexing question and daunting",
           "source_name": "ENGIE / IgniteAccess"
-        },
-        {
-          "title": "Bloomberg: The mission to electrify Africa might finally be under way",
-          "url": "https://igniteaccess.com/the-mission-to-electrify-africa-might-finally-be-under-way/",
-          "date": "",
-          "summary": "When strips of solar panels arrived in his remote village in northeast Zambia, Damaseke Mwale saw an opportunity. He bought land, built a house and",
-          "source_name": "ENGIE / IgniteAccess"
-        },
-        {
-          "title": "ADIO partners with clean energy leader Ignite Energy Access for global expansion",
-          "url": "https://igniteaccess.com/adio-partners-with-clean-energy-leader-ignite-energy-access-for-global-expansion/",
-          "date": "",
-          "summary": "The Abu Dhabi Investment Office (ADIO) has signed a strategic agreement with Ignite Energy Access, a leading pan-African provider of the full range of Distributed",
-          "source_name": "ENGIE / IgniteAccess"
-        },
-        {
-          "title": "Connecting 100 million people to clean energy by 2030 to tackle energy poverty",
-          "url": "https://igniteaccess.com/connecting-100-million-people-to-clean-energy-by-2030-to-tackle-energy-poverty/",
-          "date": "",
-          "summary": "Ignite Energy Access aims to connect 100 million people to clean energy by 2030. What inspired this target, and how are you ensuring you stay",
-          "source_name": "ENGIE / IgniteAccess"
-        },
-        {
-          "title": "Ignite Power advances acquisition of ENGIE Energy Access to create Africa’s largest renewable energy provider",
-          "url": "https://igniteaccess.com/ignite-power-advances-acquisition-of-engie-energy-access-to-create-africas-largest-renewable-energy-provider/",
-          "date": "",
-          "summary": "The establishment of Africa’s largest distributed renewable energy provider has taken a significant step forward as Kenyan regulators have approved Ignite Power’s acquisition of ENGIE Energy",
-          "source_name": "ENGIE / IgniteAccess"
-        },
-        {
-          "title": "Power to the People: How Yariv Cohen is Shining a Light on Last-mile Communities",
-          "url": "https://igniteaccess.com/power-to-the-people-how-yariv-cohen-is-shining-a-light-on-last-mile-communities/",
-          "date": "",
-          "summary": "Yariv Cohen is not in the business of wasting time. He can’t afford to; he’s working toward an ambitious goal. And while the deadline is",
-          "source_name": "ENGIE / IgniteAccess"
-        },
-        {
-          "title": "Ignite Shortlisted for the 2025 Energy Heroes Award",
-          "url": "https://igniteaccess.com/ignite-shortlisted-for-the-2025-energy-heroes-award/",
-          "date": "",
-          "summary": "Sustainable Energy for All (SEforALL) is pleased to unveil the 2025 Energy Heroes Award shortlist, featuring groundbreaking solutions that promise to accelerate the transition to a greener",
-          "source_name": "ENGIE / IgniteAccess"
-        },
-        {
-          "title": "INTERVIEW – Ignite Power aims to reach 100m with distributed clean energy in Africa",
-          "url": "https://igniteaccess.com/interview-ignite-power-aims-to-reach-100m-with-distributed-clean-energy-in-africa/",
-          "date": "",
-          "summary": "Abu Dhabi-based distributed renewable energy (DRE) solutions provider Ignite Power will pursue both organic and inorganic growth, alongside results-based financing (RBF), to advance its goal",
-          "source_name": "ENGIE / IgniteAccess"
-        },
-        {
-          "title": "Rwanda’s Ministries of ICT and Education Partner with Ignite Power to Implement School Connectivity Initiative",
-          "url": "https://igniteaccess.com/rwandas-ministries-of-ict-and-education-partner-with-ignite-power-to-implement-school-connectivity-initiative/",
-          "date": "",
-          "summary": "KIGALI, RWANDA, December 12, 2023 /EINPresswire.com/ — The Government of Rwanda has forged a transformative partnership with Ignite Power, a leading provider of global solar-based solutions",
-          "source_name": "ENGIE / IgniteAccess"
         }
       ]
     },
     {
       "key": "pv-magazine",
       "name": "PV Magazine",
-      "articles": []
+      "articles": [
+        {
+          "title": "Developing El Niño set to reshape global solar resource",
+          "url": "https://www.pv-magazine.com/2026/06/19/developing-el-nino-set-to-reshape-global-solar-resource/",
+          "date": "2026-06-19",
+          "summary": "<p>A developing El Niño is expected to strengthen through 2026 and reshape solar resource globally, according to analysis using the <a href=\"https://solcast.com/?utm_source=pvmag&amp;utm_medium=Content&amp;utm_campaign=ghimap\">Solcast API</a>. Analysis of past strong El Niño events from July to September shows clear regional differences in irradiance, with higher than normal solar resource in most of India, and parts of Australia, equatorial Africa and Central America, and reductions across southern South America and East Asia. These historical patterns are broadly consistent with the regional direction of current seasonal forecasts, indicating likely trends for solar performance in the coming months as the current event develops.</p>\n\n\n\n<p>Sea surface temperatures and atmospheric conditio",
+          "source_name": "PV Magazine"
+        }
+      ]
     },
     {
       "key": "afsia",
@@ -117,84 +69,13 @@
           "date": "2024-10-08",
           "summary": "<p>Nairobi, 8 October 2024—Off-grid solar is the most cost-effective way to power 41% of people globally by 2030 who are still living without energy access. The sector already provided 55%<a class=\"moretag\"\n href=\"https://www.lightingglobal.org/off-grid-solar-could-provide-first-time-electricity-access-to-almost-400-million-people-globally-by-2030/\"> ...Read More<span></span></a></p>\n<p>The post <a href=\"https://www.lightingglobal.org/off-grid-solar-could-provide-first-time-electricity-access-to-almost-400-million-people-globally-by-2030/\">Off-grid Solar Could Provide First-time Electricity Access to Almost 400 Million People Globally by 2030</a> first appeared on <a href=\"https://www.lightingglobal.org\">Lighting Global</a>.</p>",
           "source_name": "Lighting Global"
-        },
-        {
-          "title": "New Report Stresses the Need for Responsibly Designed End-User Subsidies",
-          "url": "https://www.lightingglobal.org/new-report-stresses-the-need-for-responsibly-designed-subsidies/",
-          "date": "2024-09-16",
-          "summary": "<p>A new report, Designing Responsible End-User Subsidies for Energy Access: A toolkit featuring case studies for the design of subsidies in off-grid solar and clean cooking, was just released. Produced<a class=\"moretag\"\n href=\"https://www.lightingglobal.org/new-report-stresses-the-need-for-responsibly-designed-subsidies/\"> ...Read More<span></span></a></p>\n<p>The post <a href=\"https://www.lightingglobal.org/new-report-stresses-the-need-for-responsibly-designed-subsidies/\">New Report Stresses the Need for Responsibly Designed End-User Subsidies</a> first appeared on <a href=\"https://www.lightingglobal.org\">Lighting Global</a>.</p>",
-          "source_name": "Lighting Global"
-        },
-        {
-          "title": "Lighting Global at Zambia’s Decentralized Renewable Energy Days Conference",
-          "url": "https://www.lightingglobal.org/lighting-global-at-zambias-decentralized-renewable-energy-days-conference/",
-          "date": "2024-04-13",
-          "summary": "<p>On April 11-12, 2024, Lighting Global’s REACH partnership provided support to Zambia’s Decentralized Renewable Energy Days conference in Lusaka. The conference was opened by the Minister of Livestock and Fisheries,<a class=\"moretag\"\n href=\"https://www.lightingglobal.org/lighting-global-at-zambias-decentralized-renewable-energy-days-conference/\"> ...Read More<span></span></a></p>\n<p>The post <a href=\"https://www.lightingglobal.org/lighting-global-at-zambias-decentralized-renewable-energy-days-conference/\">Lighting Global at Zambia’s Decentralized Renewable Energy Days Conference</a> first appeared on <a href=\"https://www.lightingglobal.org\">Lighting Global</a>.</p>",
-          "source_name": "Lighting Global"
-        },
-        {
-          "title": "End User Subsidy Lab Webinar Series",
-          "url": "https://www.lightingglobal.org/end-user-subsidy-lab-webinar-series/",
-          "date": "2023-11-16",
-          "summary": "<p>While hundreds of millions of lives have been energized by off-grid solar, hundreds of millions more are in danger of being left behind. Pro-poor end-user subsidies can make off-grid solar<a class=\"moretag\"\n href=\"https://www.lightingglobal.org/end-user-subsidy-lab-webinar-series/\"> ...Read More<span></span></a></p>\n<p>The post <a href=\"https://www.lightingglobal.org/end-user-subsidy-lab-webinar-series/\">End User Subsidy Lab Webinar Series </a> first appeared on <a href=\"https://www.lightingglobal.org\">Lighting Global</a>.</p>",
-          "source_name": "Lighting Global"
-        },
-        {
-          "title": "Lighting Global Discusses ROGEAP at ECOWAS’ Sustainable Energy Forum",
-          "url": "https://www.lightingglobal.org/lighting-global-discusses-rogeap-at-ecowas-sustainable-energy-forum/",
-          "date": "2023-10-17",
-          "summary": "<p>ESMAP’s Lighting Global Program Manager, Raihan Elahi, spoke at ECOWAS’ Sustainable Energy Forum 2023 held in Praia, Cabo Verde on October 13 and 14, 2023, about access to finance in<a class=\"moretag\"\n href=\"https://www.lightingglobal.org/lighting-global-discusses-rogeap-at-ecowas-sustainable-energy-forum/\"> ...Read More<span></span></a></p>\n<p>The post <a href=\"https://www.lightingglobal.org/lighting-global-discusses-rogeap-at-ecowas-sustainable-energy-forum/\">Lighting Global Discusses ROGEAP at ECOWAS’ Sustainable Energy Forum</a> first appeared on <a href=\"https://www.lightingglobal.org\">Lighting Global</a>.</p>",
-          "source_name": "Lighting Global"
-        },
-        {
-          "title": "Blog | (Em)powering Women and Their Communities: The Off-Grid Solar Service-Based Model",
-          "url": "https://www.lightingglobal.org/blog-empowering-women-and-their-communities-the-off-grid-solar-service-based-model/",
-          "date": "2023-03-08",
-          "summary": "<p>by Raihan Elahi, Jennifer Lynch, and Andrea Arricale The Key Role of Electricity in Healthcare  When Mwanakombo Kassim was in labour, she went to her local health facility. At 11 o’clock<a class=\"moretag\"\n href=\"https://www.lightingglobal.org/blog-empowering-women-and-their-communities-the-off-grid-solar-service-based-model/\"> ...Read More<span></span></a></p>\n<p>The post <a href=\"https://www.lightingglobal.org/blog-empowering-women-and-their-communities-the-off-grid-solar-service-based-model/\">Blog | (Em)powering Women and Their Communities: The Off-Grid Solar Service-Based Model</a> first appeared on <a href=\"https://www.lightingglobal.org\">Lighting Global</a>.</p>",
-          "source_name": "Lighting Global"
-        },
-        {
-          "title": "New Report | Off-grid solar expected to electrify 624 million people by 2030 but ‘game changers’ are needed to achieve universal access goals",
-          "url": "https://www.lightingglobal.org/new-report-off-grid-solar-expected-to-electrify-624-million-people-by-2030-but-game-changers-are-needed-to-achieve-universal-access-goals/",
-          "date": "2022-10-18",
-          "summary": "<p>18 October, Kigali: Released today at the Global Off-Grid Solar Forum and Expo in Rwanda, the second part of the Off-Grid Solar Market Trends Report 2022, ‘Outlook’, published by the World Bank’s Lighting<a class=\"moretag\"\n href=\"https://www.lightingglobal.org/new-report-off-grid-solar-expected-to-electrify-624-million-people-by-2030-but-game-changers-are-needed-to-achieve-universal-access-goals/\"> ...Read More<span></span></a></p>\n<p>The post <a href=\"https://www.lightingglobal.org/new-report-off-grid-solar-expected-to-electrify-624-million-people-by-2030-but-game-changers-are-needed-to-achieve-universal-access-goals/\">New Report | Off-grid solar expected to electrify 624 million people by 2030 but ‘game changers’ are needed to achieve universal access goals</a> first appeared on <a hr",
-          "source_name": "Lighting Global"
-        },
-        {
-          "title": "70 Million People Gained Energy via Off-Grid Solar Despite COVID – New Report Shows",
-          "url": "https://www.lightingglobal.org/70-million-people-gained-energy-via-off-grid-solar-despite-covid-new-report-shows/",
-          "date": "2022-10-07",
-          "summary": "<p>Amsterdam/Washington DC, 7 October 2022 A new report shows that the off-grid solar industry continues to grow, with 70 million more people having gained access to electricity through off-grid solar<a class=\"moretag\"\n href=\"https://www.lightingglobal.org/70-million-people-gained-energy-via-off-grid-solar-despite-covid-new-report-shows/\"> ...Read More<span></span></a></p>\n<p>The post <a href=\"https://www.lightingglobal.org/70-million-people-gained-energy-via-off-grid-solar-despite-covid-new-report-shows/\">70 Million People Gained Energy via Off-Grid Solar Despite COVID – New Report Shows</a> first appeared on <a href=\"https://www.lightingglobal.org\">Lighting Global</a>.</p>",
-          "source_name": "Lighting Global"
-        },
-        {
-          "title": "Sneak Peek | A look at the findings of the up-coming Off-Grid Solar Market Trends Report 2022 ‘State of the Sector’",
-          "url": "https://www.lightingglobal.org/sneak-peek-a-look-at-the-findings-of-the-up-coming-off-grid-solar-market-trends-report-2022-state-of-the-sector/",
-          "date": "2022-09-14",
-          "summary": "<p>Lighting Global/ESMAP, International Finance Corporation, Efficiency for Access Coalition, GOGLA, and Open Capital Advisors are pleased to invite you to a sneak peek to discuss the findings of the upcoming<a class=\"moretag\"\n href=\"https://www.lightingglobal.org/sneak-peek-a-look-at-the-findings-of-the-up-coming-off-grid-solar-market-trends-report-2022-state-of-the-sector/\"> ...Read More<span></span></a></p>\n<p>The post <a href=\"https://www.lightingglobal.org/sneak-peek-a-look-at-the-findings-of-the-up-coming-off-grid-solar-market-trends-report-2022-state-of-the-sector/\">Sneak Peek | A look at the findings of the up-coming Off-Grid Solar Market Trends Report 2022 ‘State of the Sector’</a> first appeared on <a href=\"https://www.lightingglobal.org\">Lighting Global</a>.</p>",
-          "source_name": "Lighting Global"
-        },
-        {
-          "title": "Learn how to better design and apply end-user subsidies through our series of case studies",
-          "url": "https://www.lightingglobal.org/learn-how-to-better-design-and-apply-end-user-subsidies-through-our-series-of-case-studies/",
-          "date": "2022-08-04",
-          "summary": "<p>Following our webinars on the experiences of implementing demand-side subsidies in Bangladesh, Kenya, Rwanda and Togo; the End-User Subsidy Lab is pleased to share in-depth case studies on these programs through our resources<a class=\"moretag\"\n href=\"https://www.lightingglobal.org/learn-how-to-better-design-and-apply-end-user-subsidies-through-our-series-of-case-studies/\"> ...Read More<span></span></a></p>\n<p>The post <a href=\"https://www.lightingglobal.org/learn-how-to-better-design-and-apply-end-user-subsidies-through-our-series-of-case-studies/\">Learn how to better design and apply end-user subsidies through our series of case studies</a> first appeared on <a href=\"https://www.lightingglobal.org\">Lighting Global</a>.</p>",
-          "source_name": "Lighting Global"
         }
       ]
     },
     {
       "key": "sunking",
       "name": "Sun King",
-      "articles": [
-        {
-          "title": "Sustainable Finance Drives Rapid Expansion of Off-Grid Solar in Africa",
-          "url": "https://sunking.com/news-blog/sustainable-finance-drives-rapid-expansion-of-off-grid-solar-in-africa/",
-          "date": "2026-06-12",
-          "summary": "",
-          "source_name": "Sun King"
-        }
-      ]
+      "articles": []
     },
     {
       "key": "m-kopa",
@@ -202,70 +83,7 @@
       "articles": [
         {
           "title": "M-KOPA Ghana Impact Report reveals smartphones are unlocking health insurance and economic opportunity for Every Day Earners",
-          "url": "",
-          "date": "",
-          "summary": "",
-          "source_name": "M-KOPA"
-        },
-        {
-          "title": "M-KOPA Ghana Impact Report reveals smartphones are unlocking health insurance and economic opportunity for Every Day Earners",
-          "url": "",
-          "date": "",
-          "summary": "",
-          "source_name": "M-KOPA"
-        },
-        {
-          "title": "M-KOPA achieves fifth consecutive FT fastest growing companies ranking",
-          "url": "",
-          "date": "",
-          "summary": "",
-          "source_name": "M-KOPA"
-        },
-        {
-          "title": "M-KOPA achieves fifth consecutive FT fastest growing companies ranking",
-          "url": "",
-          "date": "",
-          "summary": "",
-          "source_name": "M-KOPA"
-        },
-        {
-          "title": "M-KOPA South Africa Impact Report reveals women are driving the country's digital inclusion charge",
-          "url": "",
-          "date": "",
-          "summary": "",
-          "source_name": "M-KOPA"
-        },
-        {
-          "title": "M-KOPA South Africa Impact Report reveals women are driving the country's digital inclusion charge",
-          "url": "",
-          "date": "",
-          "summary": "",
-          "source_name": "M-KOPA"
-        },
-        {
-          "title": "How M-KOPA Put 5,000+ Electric Bikes On Kenyan Roads—Fast",
-          "url": "",
-          "date": "",
-          "summary": "",
-          "source_name": "M-KOPA"
-        },
-        {
-          "title": "How M-KOPA turned smartphones into Nigeria’s most enforceable collateral",
-          "url": "",
-          "date": "",
-          "summary": "",
-          "source_name": "M-KOPA"
-        },
-        {
-          "title": "Nigeria Becomes M-KOPA’s Fastest-Growing Market as over ₦230 Billion in Credit Unlocks Income Growth for over 1 Million Every Day Earners",
-          "url": "",
-          "date": "",
-          "summary": "",
-          "source_name": "M-KOPA"
-        },
-        {
-          "title": "Nigeria Becomes M-KOPA’s Fastest-Growing Market as over ₦230 Billion in Credit Unlocks Income Growth for over 1 Million Every Day Earners",
-          "url": "",
+          "url": "https://www.m-kopa.com/newsroom/m-kopa-ghana-impact-report-reveals-smartphones-are-unlocking-health-insurance-and-economic-opportunity-for-every-day-earners",
           "date": "",
           "summary": "",
           "source_name": "M-KOPA"
@@ -287,91 +105,13 @@
           "date": "2026-06-09",
           "summary": "<p class=\"wp-block-paragraph\"><em>A female small business owner and customer of one of our financed portfolio companies in Burkina Faso, Oolu by Ignite, can now contribute to the household economy thanks to an installed off-grid solar kit that provides electricity for running a refrigerator.</em></p>\n\n\n\n<p class=\"wp-block-paragraph\">In a neighbourhood of Bobo-Dioulasso, where grid infrastructure exists but electricity has yet to arrive, <strong>Tinta Setou</strong> and her family used to rely on charcoal, gas and small solar lamps for their daily energy needs. The lamps provided only a few hours of light each night, limiting household activities and business opportunities.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Her husband, a state security officer, invested their savings in a small, informa",
           "source_name": "BGFA (Beyond the Grid)"
-        },
-        {
-          "title": "Mid-term evaluation confirms BGFA programme is on track and delivering results",
-          "url": "https://beyondthegrid.africa/news/mid-term-evaluation-confirms-bgfa-programme-is-on-track-and-delivering-results/",
-          "date": "2026-05-28",
-          "summary": "<p class=\"wp-block-paragraph\"><em>An independent mid-term evaluation of the Beyond the Grid Fund for Africa (BGFA) confirms that the programme is delivering strong results in expanding access to off-grid clean energy in Sub-Saharan Africa.</em></p>\n\n\n\n<p class=\"wp-block-paragraph\">The evaluation, carried out by Oxford Policy Management, confirms that BGFA is on the right track to reach its programme target of establishing 1.7 million new energy service subscriptions by 2028 across five countries; Burkina Faso, the Democratic Republic of the Congo (DRC), Liberia, Uganda and Zambia. The evaluation also highlights that the programme has generated valuable insights and lessons for the sector and for future results-based financing programmes supporting the scale-up of clean energy.</p>\n\n\n\n<p cl",
-          "source_name": "BGFA (Beyond the Grid)"
-        },
-        {
-          "title": "BGFA Annual Results report: Over 4.3 million people had received access to electricity by the end of 2025",
-          "url": "https://beyondthegrid.africa/news/bgfa-annual-results-report-over-4-3-million-people-had-received-access-to-electricity-by-the-end-of-2025/",
-          "date": "2026-05-06",
-          "summary": "<p>The Beyond the Grid Fund for Africa (BGFA) continues to demonstrate the power of market-based, results-driven financing to expand access to clean and affordable energy in Sub-Saharan Africa. According to the BGFA Annual Results Report 2025, companies supported by the programme established over 845,800 connections and enabled electricity access for over 4.3 million people by the end of 2025, despite increasingly challenging operating environments.</p>\n<p>The post <a href=\"https://beyondthegrid.africa/news/bgfa-annual-results-report-over-4-3-million-people-had-received-access-to-electricity-by-the-end-of-2025/\">BGFA Annual Results report: Over 4.3 million people had received access to electricity by the end of 2025</a> appeared first on <a href=\"https://beyondthegrid.africa\">BGFA</a>.</p>",
-          "source_name": "BGFA (Beyond the Grid)"
-        },
-        {
-          "title": "Mini-grid provider will scale-up access to electricity in rural DRC",
-          "url": "https://beyondthegrid.africa/news/mini-grid-provider-will-scale-up-access-to-electricity-in-rural-drc/",
-          "date": "2026-03-03",
-          "summary": "<p class=\"wp-block-paragraph\"><em>The Beyond the Grid Fund for Africa (BGFA) is supporting the scale-up of a mini-grid site in the north-eastern part of the Democratic Republic of the Congo to provide schools, health clinics, businesses, and households with access to electricity.</em></p>\n\n\n\n<p class=\"wp-block-paragraph\">BGFA has signed its fourth project in the Democratic Republic of the Congo (DRC) with the mini-grid provider Les Soleils de la Garamba S.A.S.U, the local operational subsidiary of MyJouleBox. The company is a Special Purpose Vehicle, established to implement and deploy a 1.2 MWp solar mini-grid site in Dungu, in the Haut-Uélé province in the north-eastern part of the DRC.</p>\n\n\n\n<p class=\"wp-block-paragraph\">“Bringing reliable electricity to Dungu is not just about install",
-          "source_name": "BGFA (Beyond the Grid)"
-        },
-        {
-          "title": "Lessons learned and future recommendations for incentivising mini-grid projects to scale up energy access in Africa",
-          "url": "https://beyondthegrid.africa/news/lessons-learned-and-future-recommendations-for-incentivising-mini-grid-projects/",
-          "date": "2025-11-05",
-          "summary": "<p class=\"wp-block-paragraph\"><em>A new study ‘Lessons learned from 12 years of mini-grid results-based financing in Africa’, conducted by The Future of Energy, offers lessons and future recommendations for incentivising mini-grid projects through results-based financing mechanisms to scale up energy access in Africa.</em></p>\n\n\n\n<p class=\"wp-block-paragraph\">Despite collective commitments of over EUR 250 million to mini-grid project development in Africa and ambitious goals to catalyse private investment, current results-based financing approaches are failing to deliver results at scale and speed up implementation to achieve universal energy access by 2030.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Mini-grids are seen as one of the most cost-effective and scalable energy solutions to provide e",
-          "source_name": "BGFA (Beyond the Grid)"
-        },
-        {
-          "title": "Advancing energy access and empowerment in Uganda",
-          "url": "https://beyondthegrid.africa/news/advancing-energy-access-and-empowerment-in-uganda/",
-          "date": "2025-10-02",
-          "summary": "<h2 class=\"wp-block-heading\"><strong>Insight article: The BGFA job creation and skills development sub-programme</strong></h2>\n\n\n\n<p class=\"wp-block-paragraph\">BGFA has implemented a <em>Job creation and skills development </em>sub-programme in Uganda as a transformative initiative to address two critical challenges in Uganda: first, limited energy access for the Ugandan people, and second, the need for gender-inclusive job creation, including more women. With only 47 per cent of Uganda’s population having access to electricity in 2022, the programme targeted capacity building in the off-grid solar energy sector to accelerate rural electrification, while fostering local employment and gender inclusion at the same time.</p>\n\n\n\n<p class=\"wp-block-paragraph\">This initiative forms a vital part",
-          "source_name": "BGFA (Beyond the Grid)"
-        },
-        {
-          "title": "Study shows that BGFA-financed companies are substantially improving quality of life for electricity customers",
-          "url": "https://beyondthegrid.africa/insight/study-shows-that-bgfa-financed-companies-are-substantially-improving-quality-of-life-for-electricity-customers/",
-          "date": "2025-08-14",
-          "summary": "<p class=\"wp-block-paragraph\"><em>In a customer satisfaction survey of end users of BGFA-financed companies, 96% of those living in rural Liberia, Uganda and Zambia said their lives had improved as a result of access to electricity through the off-grid appliances provided by the companies.</em></p>\n\n\n\n<p class=\"wp-block-paragraph\">An independent assessment was conducted on the impact of BGFA-financed companies providing electricity access to rural users in Sub-Saharan Africa. The study concludes that through the results-based financing provided to the companies by BGFA, the quality of life for end users with access to off-grid electricity appliances has significantly increased.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The study was commissioned by Nefco in 2024 and carried out during September",
-          "source_name": "BGFA (Beyond the Grid)"
-        },
-        {
-          "title": "BGFA in 2024: Over 3 million people with access to electricity",
-          "url": "https://beyondthegrid.africa/news/bgfa-in-2024-over-3-million-people-with-access-to-electricity/",
-          "date": "2025-06-12",
-          "summary": "<p class=\"wp-block-paragraph\"><em>The Annual Results Report of the Beyond the Grid Fund for Africa (BGFA) programme in 2024 shows successful progress of the programme implementation. In total, over 610,000 energy connections had been established by year end, impacting a total of 3.15 million lives and benefitting almost 5,000 African businesses across five countries in Sub-Saharan Africa.</em></p>\n\n\n\n<p class=\"wp-block-paragraph\">In 2024, the implementation of the BGFA programme advanced well, despite challenging circumstances in several BGFA countries. During 2024, the BGFA programme provided 370,000 new energy connections – typically small solar home systems – bringing total subscriptions to over 610,000 by the end of the year. In total, the established energy connections have brought el",
-          "source_name": "BGFA (Beyond the Grid)"
-        },
-        {
-          "title": "BGFA team update",
-          "url": "https://beyondthegrid.africa/news/dennis-hamro-drotz-appointed-as-acting-head-of-special-funds-at-nefco/",
-          "date": "2025-03-25",
-          "summary": "<p class=\"wp-block-paragraph\"><strong>Dennis Hamro-Drotz, </strong>Senior Programme Manager at Nefco, has been appointed as Acting Head of Department for Nefco’s Special Funds department effective 24 March 2025 and is taking over the leadership of the Department at Nefco after Ash Sharma.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Kari Hämekoski</strong>, Senior Programme Manager and Fund Manager of BGFA continues to lead the BGFA programme implementation as before.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Special Funds department works as a facility manager for various financing programmes focused on results-based financing and catalytic grants, such as BGFA and <a href=\"https://www.moderncooking.africa/\" target=\"_blank\" rel=\"noreferrer noopener\">the Modern Cooking Facility for Africa</a>.<",
-          "source_name": "BGFA (Beyond the Grid)"
-        },
-        {
-          "title": "BGFA sub-programme in Uganda has improved technical and business skills within the country’s off-grid energy sector",
-          "url": "https://beyondthegrid.africa/news/bgfa-sub-programme-in-uganda-has-improved-technical-and-business-skills-within-the-countrys-off-grid-energy-sector/",
-          "date": "2025-02-25",
-          "summary": "<p class=\"wp-block-paragraph\"><em>The Beyond the Grid Fund for Africa (BGFA) has successfully completed the Job creation and skills development sub-programme in Uganda together with its partners. Over 300 participants attended the arranged courses in 2023-2024 to enhance both technical and business skills as well as gender inclusion within the off-grid energy sector to support businesses to scale their operations to increase access to off-grid energy for the rural population in Uganda.</em></p>\n\n\n\n<p class=\"wp-block-paragraph\">A tailored training programme for BGFA-funded companies in Uganda and other stakeholders developing and selling off-grid energy solutions in Uganda was implemented in 2023-2024, with the aim to increase capacity building. In total, 20 courses related to technical, sa",
-          "source_name": "BGFA (Beyond the Grid)"
         }
       ]
     },
     {
       "key": "energynews-africa",
       "name": "Energy News Africa",
-      "articles": [
-        {
-          "title": "World Bank, AfDB and IFC Back a $176 Million Fund to Power 30 Million Africans",
-          "url": "https://energynews.africa/2026/06/19/world-bank-afdb-and-ifc-back-a-176-million-fund-to-power-30-million-africans/",
-          "date": "2026-06-19",
-          "summary": "<hr class=\"wp-block-separator has-alpha-channel-opacity is-style-wide\" />\n\n\n\n<p class=\"wp-block-paragraph\"><strong>KEY POINTS</strong></p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity is-style-wide\" />\n\n\n\n<ul class=\"wp-block-list\">\n<li>Zafiri launched at $176 million at the Africa Energy Forum in Cape Town on June 17.</li>\n\n\n\n<li>The fund targets a final close of $300 million within 12 months and $1 billion long-term.</li>\n\n\n\n<li>Zafiri will provide patient equity to mini-grids, solar home systems and clean cooking enterprises.</li>\n</ul>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity is-style-wide\" />\n\n\n\n<p class=\"wp-block-paragraph\">The Africa Energy Forum in Cape Town produced a headline announcement on June 17. A $176 million fund designed to reach people that",
-          "source_name": "Energy News Africa"
-        },
-        {
-          "title": "ECOWAS Wants 48% Renewable Energy by 2030 but Over 190 Million Still Lack Power",
-          "url": "https://energynews.africa/2026/06/18/ecowas-wants-48-renewable-energy-by-2030-but-over-190-million-still-lack-power/",
-          "date": "2026-06-18",
-          "summary": "<hr class=\"wp-block-separator has-alpha-channel-opacity is-style-wide\" />\n\n\n\n<p class=\"wp-block-paragraph\"><strong>KEY POINTS</strong></p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity is-style-wide\" />\n\n\n\n<ul class=\"wp-block-list\">\n<li>ECOWAS targets a 48 percent renewable energy share in the regional electricity mix by 2030.</li>\n\n\n\n<li>Over 190 million West Africans lack electricity access and rural electrification averages only 12 percent.</li>\n\n\n\n<li>ECOWAS also aims to cut electricity losses of 35 to 40 percent caused by outdated infrastructure across the region.</li>\n</ul>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity is-style-wide\" />\n\n\n\n<p class=\"wp-block-paragraph\">West Africa is rich in solar, wind and hydroelectric potential. It is also home to over 19",
-          "source_name": "Energy News Africa"
-        }
-      ]
+      "articles": []
     },
     {
       "key": "africa-newsroom",
@@ -388,69 +128,6 @@
           "date": "2026-02-02",
           "summary": "<p><strong>Lagos, 2 February 2026</strong> — Bboxx has appointed Ene Adesanya to the role of Managing Director for Bboxx Energy Access Nigeria (Bboxx Nigeria), as part of its ongoing focus on growing and strengthening its key markets.</p>\n\n\n\n<p>In her new role, Ene will lead Bboxx Nigeria’s participation in the Distributed Access through Renewable Energy Scale-up (DARES) fund, with a focus on extending Bboxx’s impact to more than 100,000 households in 2026 through a diversified product offering spanning solar energy access, solar-powered irrigation solutions for agribusinesses, and smartphone financing.</p>\n\n\n\n<p><strong>Anthony Osijo, Group CEO, Abci-Nexus, said:</strong></p>\n\n\n\n<p>“I am delighted to welcome Ene into the role of Managing Director for Bboxx Nigeria. This transition highlig",
           "source_name": "BBOXX"
-        },
-        {
-          "title": "Abci-Nexus launches software company Asopo Technologies to power Africa’s financed future",
-          "url": "https://www.bboxx.com/press-releases/abci-nexus-launches-software-company-asopo-technologies-to-power-africa-s-financed-future/",
-          "date": "2026-01-29",
-          "summary": "<ul class=\"wp-block-list\">\n<li>Spinout company targets new partners across the continent</li>\n\n\n\n<li>Backed by more than 10-year track record in retail and consumer credit software in Africa</li>\n\n\n\n<li>Bboxx will continue serving customers with essential products and services</li>\n</ul>\n\n\n\n<p></p>\n\n\n\n<p><strong>Kigali, Rwanda, 29<sup>th</sup> January 2026 </strong>– Abci-Nexus, the technology-enabled holding company, today introduces Asopo Technologies, bringing its proprietary Pulse software to market as a standalone offering. The holding company also includes&nbsp;Bboxx,&nbsp;a retail and consumer credit company focussed on the provision of essential services across Africa.</p>\n\n\n\n<p>Building on the legacy of Bboxx built up over 15 years, this latest move by Abci-Nexus marks a major evo",
-          "source_name": "BBOXX"
-        },
-        {
-          "title": "Government of Rwanda Partners with Bboxx to Deliver 50,000 Clean Cooking Kits in Landmark National Program",
-          "url": "https://www.bboxx.com/news/government-of-rwanda-partners-with-bboxx-to-deliver-50-000-clean-cooking-kits-in-landmark-national-program/",
-          "date": "2025-11-04",
-          "summary": "<p><strong>Kigali, 5 November 2025</strong> <strong>—</strong> The Government of Rwanda has partnered with Bboxx, a data-driven super platform transforming lives across Africa, to deliver 50,000 affordable liquefied petroleum gas (LPG) cooking kits to low-income households across five districts over the next 18 months.</p>\n\n\n\n<p>The programme, implemented in collaboration with Forward7, an initiative of the Kingdom of Saudi Arabia, marks a major step in Rwanda’s clean cooking drive and builds on Bboxx’s long-standing partnership with the Government of Rwanda to expand access to clean, reliable energy.</p>\n\n\n\n<p><strong>Anthony Osijo, Group CEO of Bboxx, said:</strong></p>\n\n\n\n<p><em>“We are proud to deepen our partnership with the Government of Rwanda through this landmark initiative. It de",
-          "source_name": "BBOXX"
-        },
-        {
-          "title": "Resetting the approach to PAYGo for the long-term sustainability of the sector",
-          "url": "https://www.bboxx.com/news/resetting-the-approach-to-paygo-for-the-long-term-sustainability-of-the-sector/",
-          "date": "2025-10-15",
-          "summary": "<p><strong>By <em>Simone Vaccari</em>, Chief Credit Officer, Bboxx</strong></p>\n\n\n\n<p>We all need to reboot. In the past years the whole PAYGo sector in growth markets has been based on a false premise.</p>\n\n\n\n<p>The “hard sell” that pushes a product onto an ill-suited customer is not success – it gives a short term shot in the arm in terms of on the surface impact but is not a medium or a long-term play. At worst it is just failure delayed.</p>\n\n\n\n<p>The off-grid solar sector has come a long way since the early days of PAYGo. Back then, our collective success was often measured by one metric alone: sales volume. How many households could we reach, how quickly could we distribute solar home systems, how fast could we grow? While this approach brought millions of people into energy access, ",
-          "source_name": "BBOXX"
-        },
-        {
-          "title": "Bboxx Ghana, Kofa and Yango Partner to Accelerate E-Mobility Adoption in Ghana’s Delivery Sector",
-          "url": "https://www.bboxx.com/local-news/bboxx-ghana-kofa-partner-and-yango-ghana-to-accelerate-e-mobility-adoption-in-ghana-s-delivery-sector/",
-          "date": "2025-10-10",
-          "summary": "<p><strong>Accra, Ghana – October 7, 2025:</strong> Bboxx Ghana, in collaboration with Yango Ghana and Kofa, has announced a groundbreaking partnership aimed at scaling the adoption of electric vehicles (EVs) among delivery couriers operating on the Yango Delivery platform. This initiative highlights Bboxx’s commitment to advancing environmental sustainability within Ghana’s fast-growing logistics sector.</p>\n\n\n\n<p>Through this tripartite partnership, Yango will leverage its expansive delivery network, Bboxx will provide a PAYGO sales offer for e-bikes, and Kofa will supply cutting-edge JIDI electric bikes and battery-swapping infrastructure to power the transition to cleaner, cost-efficient transport.</p>\n\n\n\n<p>“<em>This collaboration represents a pivotal moment for sustainable mobility i",
-          "source_name": "BBOXX"
-        },
-        {
-          "title": "Bboxx reignites growth with appointment of Justus Mucyo as Chief Operating Officer",
-          "url": "https://www.bboxx.com/news/bboxx-reignites-growth-with-appointment-of-justus-mucyo-as-chief-operating-officer/",
-          "date": "2025-08-22",
-          "summary": "<p><strong>Kigali, 22 August 2025</strong> – Bboxx, a data-driven super platform transforming lives across Africa, has appointed Justus Mucyo as Chief Operating Officer.</p>\n\n\n\n<p>Justus will be responsible for driving operational excellence and sustainable growth across Bboxx’s markets, working closely with the Group CEO and country Managing Directors to enhance performance, profitability, and impact.</p>\n\n\n\n<p>Justus returns after previously leading Bboxx Rwanda and Bboxx Kenya as Managing Director and driving Bboxx’s expansion into other markets.</p>\n\n\n\n<p>With extensive experience leading multi-country businesses in East Africa, and having served as Chairman of the Solar sub-sector under the industry association Energy Private Developers (EPD), Justus brings a unique combination of str",
-          "source_name": "BBOXX"
-        },
-        {
-          "title": "Bboxx and University of Oxford launch “UniBatt” to unlock longer‑lasting, interoperable batteries for Africa’s e‑mobility revolution",
-          "url": "https://www.bboxx.com/news/bboxx-and-university-of-oxford-launch-unibatt-to-unlock-longer-lasting-interoperable-batteries-for-africa-s-e-mobility-revolution/",
-          "date": "2025-08-01",
-          "summary": "<p><em>Kigali, Rwanda &amp; London, UK – 1st August 2025</em> — Bboxx, the next‑generation utility transforming lives through technology and finance, today announced the launch of <strong><a href=\"https://www.faraday.ac.uk/research/batteries-emerging-economies-demonstrator-calls/#UniBatt\">UniBatt</a></strong>, a <a href=\"https://www.faraday.ac.uk/\">Faraday Institution</a>‑backed concept‑to‑demonstrator project that will prove new ways to diagnose, control and extend the life of swappable lithium‑ion batteries for electric motorcycles in Rwanda and Kenya.</p>\n\n\n\n<p>Led by Professor David Howey of the University of Oxford and co‑developed with Bboxx’s e‑mobility division, UniBatt will:</p>\n\n\n\n<p>The project is one of only five selected worldwide by the Faraday Institution to demonstrate batt",
-          "source_name": "BBOXX"
-        },
-        {
-          "title": "Bboxx lays new foundations for future growth",
-          "url": "https://www.bboxx.com/news/bboxx-lays-new-foundations/",
-          "date": "2025-05-20",
-          "summary": "<p><strong>Kigali, 20 May 2025 – </strong>Bboxx has announced it is laying new foundations for future growth by undertaking a company restructure.</p>\n\n\n\n<p>In order to reposition the business for future growth, a restructuring process was initiated and completed through which Bboxx 2.0., a newly formed holding company, has acquired substantially all assets of Bboxx Limited from the appointed administrators, Paul Williams and Stephen Goderski of PKF Littlejohn Advisory</p>\n\n\n\n<p>Bboxx is a data-driven super platform, which transforms lives and unlocks potential by connecting consumers and deploying innovative products across Africa. It was announced last year that the company was moving its global headquarters from London, UK, to Kigali, Rwanda.</p>\n\n\n\n<p>The move comes against challenging",
-          "source_name": "BBOXX"
-        },
-        {
-          "title": "Bboxx releases groundbreaking AI driven payment behavioral tool onto its Bboxx Pulse ® platform, based on collaboration with University College London.",
-          "url": "https://www.bboxx.com/news/bboxx-releases-groundbreaking-ai-driven-payment-behavioral-tool-onto-its-bboxx-pulse-platform-based-on-collaboration-with-university-college-london/",
-          "date": "2025-04-08",
-          "summary": "<ul class=\"wp-block-list\">\n<li><strong>Bboxx releases AI driven payment behavioral tool to provide new insights on customer payment patterns.</strong></li>\n\n\n\n<li><strong>Developed in conjunction with the team at University College London following a </strong><a href=\"https://www.ucl.ac.uk/civil-environmental-geomatic-engineering/news/2019/mar/cege-senior-lecturer-awarded-royal-academy-engineering-senior-research-fellowship\"><strong>5 year long partnership</strong></a><strong> co-funded by Bboxx and the Royal Academy of Engineering.</strong></li>\n\n\n\n<li><strong>The new tool allows for earlier interventions for customers who are struggling to pay for their system on time, increasing overall repayment rates by up to 10% and improving customer satisfaction.</strong></li>\n</ul>\n\n\n\n<div style=\"",
-          "source_name": "BBOXX"
-        },
-        {
-          "title": "Bboxx and RADIANT YACU Partnership Accelerates EV Transition for 130,000 Motorbike Riders with Affordable Insurance",
-          "url": "https://www.bboxx.com/news/bboxx-and-radiant-yacu-partnership-accelerates-ev-transition-for-130-000-motorbike-riders-with-affordable-insurance/",
-          "date": "2024-12-17",
-          "summary": "<ul class=\"wp-block-list\">\n<li>First-of-its-kind offering, Bboxx Protect, offers extensive protection to EV motorbike users and significant savings of over 40%</li>\n\n\n\n<li>Partnership with underwriter RADIANT YACU to impact 130,000 motorbike riders across Rwanda, encouraging a switch from traditional internal combustion engine to EVs, supporting a green transition</li>\n\n\n\n<li>New insurance model set to increase insurance penetration in Rwanda, promoting financial inclusion and economic development</li>\n</ul>\n\n\n\n<p><strong>Kigali, 17 December 2024</strong> – Bboxx, the data-driven super platform, is introducing a transformative microinsurance product, Bboxx Protect, offering comprehensive and affordable coverage for electric motorbike (EV) riders in Rwanda.</p>\n\n\n\n<p>Bboxx Protect, Bboxx’s ",
-          "source_name": "BBOXX"
         }
       ]
     },
@@ -464,49 +141,13 @@
           "date": "2026-05-15",
           "summary": "<p>Africa has been here before. Oil climbs above $100, import bills balloon, Finance ministers across the continent convene emergency sessions, and somewhere in a development bank boardroom, a clean energy investment pipeline gets quietly deprioritised while everyone waits for the price to come back down.</p>\n\n\n\n<p>In 2008, the global financial crisis interrupted a Brent spike that had touched $147. In 2014, the <a href=\"https://www.bakerinstitute.org/research/market-impacts-new-natural-gas-directed-policies-united-states\" target=\"_blank\" rel=\"noreferrer noopener\">shale revolution</a> drove prices from nearly $100 to below $40 in eighteen months, pulling the fiscal rug from under the African governments that had been using commodity revenues to fund energy access programmes.&nbsp;</p>\n\n\n\n<",
           "source_name": "TechCabal Energy"
-        },
-        {
-          "title": "This missing tech is why Nigeria’s grid keeps collapsing",
-          "url": "https://techcabal.com/2025/09/22/why-cant-nigerias-power-grid-stay-on/",
-          "date": "2025-09-22",
-          "summary": "<p>On September 10, Nigeria’s national electricity grid collapsed for the third time this year, plunging much of the country into darkness. For many Nigerians, such blackouts have become routine—typically explained away in vague official statements about “system disturbances.” Yet energy experts argue that these failures stem from outdated technology, decades of chronic underinvestment, and policies that have failed to keep pace with modern power systems.</p>\n\n\n\n<p>The grid—an interconnected network that delivers electricity from power stations to consumers across the country—was originally built from the early 1960s to move bulk electricity cheaply across long distances, spreading generation costs over millions of users. But what once served fewer than 50 million Nigerians is now expected",
-          "source_name": "TechCabal Energy"
-        },
-        {
-          "title": "This Yoruba king’s palace is fully solar powered; now he wants to electrify his community",
-          "url": "https://techcabal.com/2025/08/08/yoruba-king-solar-powered-palace/",
-          "date": "2025-08-08",
-          "summary": "<p><em>&#8211; By Muhammed Bello</em></p>\n\n\n\n<p>In 2024, Nigeria’s national grid <a href=\"https://guardian.ng/news/timeline-the-12-times-national-grid-collapsed-in-2024/\" target=\"_blank\" rel=\"noreferrer noopener nofollow\">collapsed 12 times</a>, thrice in October alone. Across the country, the resulting blackouts plunged homes and businesses into prolonged blackouts, crippling critical health services among others. So far in 2025, the grid, which supplies power to nearly 200 million residents, has experienced two disturbances but no outright collapse.&nbsp;</p>\n\n\n\n<p>The Transmission Commission of Nigeria (TCN) often <a href=\"https://techcabal.com/2024/10/19/reasons-the-nigeria-national-grid-keeps-collapsing-a-lot-recently/\" target=\"_blank\" rel=\"noreferrer noopener\">blames</a> ageing infra",
-          "source_name": "TechCabal Energy"
-        },
-        {
-          "title": "👨🏿‍🚀TechCabal Daily – South Africa’s $315 billion power plan",
-          "url": "https://techcabal.com/2024/01/08/techcabal-daily-south-africas-power-plan/",
-          "date": "2024-01-08",
-          "summary": "<div id=\"wrapper\" style=\"width: 100%; max-width:700px; background-color: #FFFFFF; color:#000000; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Courier New', Courier, monospace, 'Open Sans', sans-serif; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; margin: 0 auto; padding: 10px; box-sizing: border-box;\">\n    <div class=\"content_date\" id=\"intro\" style=\"font-weight: 500; border-bottom: 0.5px solid #f9bfb0; padding: 15px 0; display: table; width: 100%; background-color: transparent; margin-bottom: 20px; z-index: 100\">\n        <div style=\"display: table-cell; vertical-align: middle\">\n            <img decoding=\"async\" \n     \tloading=\"lazy\" src=\"https://c76c7bbc41.mjedge.net/wp-content/uploads/tc/2023/05/tc-daily-logo.png\" alt=\"\" widt",
-          "source_name": "TechCabal Energy"
-        },
-        {
-          "title": "Electricity access in Africa exceeds previous estimates",
-          "url": "https://techcabal.com/2023/12/01/electricity-access-in-africa-exceeds-previous-estimates/",
-          "date": "2023-12-01",
-          "summary": "<p><strong><em>This article was contributed to TechCabal by </em>Seth Onyango<em> via</em></strong><a href=\"https://www.bird.africanofilter.org/stories/\"><strong><em> bird story agency</em></strong></a><strong>.</strong></p>\n\n\n\n<p>Emerging data is shedding new light on the electricity landscape in Africa, indicating the oft-cited statistics of those without power might be considerably lower than recent figures indicated.</p>\n\n\n\n<p>Fresh analysis suggests that more and more homes and businesses are being powered by off-grid solutions, a factor that was not accounted for in past estimates.</p>\n\n\n\n<script \n     \tloading=\"lazy\" src=\"https://bird.africanofilter.org/hits/counter.js\" id=\"bird-counter\" data-counter=\"https://bird.africanofilter.org/hits/story?id=1453&#038;slug=electricity-access-in",
-          "source_name": "TechCabal Energy"
         }
       ]
     },
     {
       "key": "renewable-energy-world",
       "name": "Renewable Energy World Solar",
-      "articles": [
-        {
-          "title": "Solar and wind are overtaking coal and hydropower projects across Africa, industry leaders say",
-          "url": "https://www.renewableenergyworld.com/hydro-power/solar-and-wind-are-overtaking-coal-and-hydropower-projects-across-africa-industry-leaders-say/",
-          "date": "2026-06-01",
-          "summary": "African governments and investors are shifting away from coal and large hydropower dams in search of cheaper and faster electricity.",
-          "source_name": "Renewable Energy World Solar"
-        }
-      ]
+      "articles": []
     },
     {
       "key": "solar-industry-mag",
@@ -532,29 +173,99 @@
       "key": "esi-africa",
       "name": "ESI Africa",
       "articles": []
+    },
+    {
+      "key": "google-solar-offgrid",
+      "name": "Google News · 非洲离网太阳能",
+      "articles": [
+        {
+          "title": "The part of the energy transition that doesn't make European headlines is happening in Kiambu County, where a $1,300 solar grain mill can pay itself off in six to twelve months - Silicon Canals",
+          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOaWVUTGd2NVlWUmYtUGYyTUVGX1RBcHVoZ2lVcDBVRFVKRXcwbjYzbm5kMENRRE8yaU0yXzVoZEMtaGluM3dRbUtLWC1BMHFZOGRXSVFDd05kbUFmVzlUdUZDdUxfblNJREtEc251U0VWMUlzTS1Fd1BmdVlKODhPaTZFUDZyY1hQYWp0LWlwbkdXck1BUFJqN2RIT3l1QzQ1M29aWXB1RVBrSkxpeW0xX1BPNnRTYWFmTV9NXzE5NThmdWoyMW01aC1NNDVtY0JHSmtUMVR0VU11a21RQWk0ZEpmVEFmZEQxNWV6X2I4Y3JWbnc0WG9WT2NRTFl6MGRzckF3QWtZaEZRY2FMMUxUZTZHZ1dMQktRbTV4eTF6M0FLSHp6U2JOVXRyeGU?oc=5",
+          "date": "Fri, 19 Ju",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAJBVV95cUxOaWVUTGd2NVlWUmYtUGYyTUVGX1RBcHVoZ2lVcDBVRFVKRXcwbjYzbm5kMENRRE8yaU0yXzVoZEMtaGluM3dRbUtLWC1BMHFZOGRXSVFDd05kbUFmVzlUdUZDdUxfblNJREtEc251U0VWMUlzTS1Fd1BmdVlKODhPaTZFUDZyY1hQYWp0LWlwbkdXck1BUFJqN2RIT3l1QzQ1M29aWXB1RVBrSkxpeW0xX1BPNnRTYWFmTV9NXzE5NThmdWoyMW01aC1NNDVtY0JHSmtUMVR0VU11a21RQWk0ZEpmVEFmZEQxNWV6X2I4Y3JWbnc0WG9WT2NRTFl6MGRzckF3QWtZaEZRY2FMMUxUZTZHZ1dMQktRbTV4eTF6M0FLSHp6U2JOVXRyeGU?oc=5\" target=\"_blank\">The part of the energy transition that doesn't make European headlines is happening in Kiambu County, where a $1,300 solar grain mill can pay itself off in six to twelve months</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Silicon Canals</font>",
+          "source_name": "Google News · 非洲离网太阳能"
+        }
+      ]
+    },
+    {
+      "key": "google-solar-investment",
+      "name": "Google News · 非洲太阳能投资",
+      "articles": [
+        {
+          "title": "The Pay-As-You-Go solar power sector evolution should not leave Africa’s most vulnerable behind - Nature",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JZEdzQUFCN0pIczFHTHlmRWtleWN4WXlTQXJLa0dsdXV3aDgyNS1yS05fTmVYWm5ac3N4aFRaa3ZxNjZqbjBZUlQyTDA0Q3VsVHJ1VF9vTkloUzZIVmx3?oc=5",
+          "date": "Sat, 09 Ma",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JZEdzQUFCN0pIczFHTHlmRWtleWN4WXlTQXJLa0dsdXV3aDgyNS1yS05fTmVYWm5ac3N4aFRaa3ZxNjZqbjBZUlQyTDA0Q3VsVHJ1VF9vTkloUzZIVmx3?oc=5\" target=\"_blank\">The Pay-As-You-Go solar power sector evolution should not leave Africa’s most vulnerable behind</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Nature</font>",
+          "source_name": "Google News · 非洲太阳能投资"
+        }
+      ]
+    },
+    {
+      "key": "google-solar-policy",
+      "name": "Google News · 非洲太阳能政策",
+      "articles": [
+        {
+          "title": "NERC commences implementation of net billing regulations 2026 - CNBC Africa",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNDhDMkp3b3VRVllTZ0VKZXNDVXo2M0M4c1MxNTRuZ3NLSFZNOU00Nm85X0dRTWlMblpFNk9JN0swLWpXWkwtd2laTkFvVi1JRFZKYy1JZXJSanVCek5iVHZCMEZNNDhoQkRyOEtETUlOZ1ZpODhpVkR0V05jenMwdDM5YkZ0cGNnajB5ZGtlZlRkVEZWaHE3NnNpa0x2YXdaVHZLc0FxWHNvSzFU?oc=5",
+          "date": "Fri, 05 Ju",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPNDhDMkp3b3VRVllTZ0VKZXNDVXo2M0M4c1MxNTRuZ3NLSFZNOU00Nm85X0dRTWlMblpFNk9JN0swLWpXWkwtd2laTkFvVi1JRFZKYy1JZXJSanVCek5iVHZCMEZNNDhoQkRyOEtETUlOZ1ZpODhpVkR0V05jenMwdDM5YkZ0cGNnajB5ZGtlZlRkVEZWaHE3NnNpa0x2YXdaVHZLc0FxWHNvSzFU?oc=5\" target=\"_blank\">NERC commences implementation of net billing regulations 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC Africa</font>",
+          "source_name": "Google News · 非洲太阳能政策"
+        }
+      ]
+    },
+    {
+      "key": "google-clean-energy",
+      "name": "Google News · 非洲清洁能源",
+      "articles": [
+        {
+          "title": "SOGREA Bidders Workshop Signals a New Era for Off-Grid Renewable Energy in Sierra Leone - Sustainable Energy for All | SEforALL",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdWl3YzhzeU1VcUE5dExqdTB4cHhuVXF1SE5xc0l2QVZTZElsWm9SV0dDRFhWM1BESWdXanFIWlVYci1yTDVZZVFPRllnRzBZQW9vaTU4REZwdnNBLW1Wd2dDaWRrZnpseHp6eV9FZ2NmV0NCQzhBWlVmc053OEs1SEo0a0RmSC1uNDVneGt0ZDRXaGZ6a3Y2LXZodlRKem9qdnpMSmFLaUhqX1VCMG53SEd1Q3FYS3l0?oc=5",
+          "date": "Wed, 10 Ju",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdWl3YzhzeU1VcUE5dExqdTB4cHhuVXF1SE5xc0l2QVZTZElsWm9SV0dDRFhWM1BESWdXanFIWlVYci1yTDVZZVFPRllnRzBZQW9vaTU4REZwdnNBLW1Wd2dDaWRrZnpseHp6eV9FZ2NmV0NCQzhBWlVmc053OEs1SEo0a0RmSC1uNDVneGt0ZDRXaGZ6a3Y2LXZodlRKem9qdnpMSmFLaUhqX1VCMG53SEd1Q3FYS3l0?oc=5\" target=\"_blank\">SOGREA Bidders Workshop Signals a New Era for Off-Grid Renewable Energy in Sierra Leone</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sustainable Energy for All | SEforALL</font>",
+          "source_name": "Google News · 非洲清洁能源"
+        }
+      ]
+    },
+    {
+      "key": "the-africa-report",
+      "name": "The Africa Report",
+      "articles": [
+        {
+          "title": "Is the World Bank retreating on climate finance?",
+          "url": "https://www.theafricareport.com/422502/is-the-world-bank-retreating-on-climate-finance/",
+          "date": "2026-06-19",
+          "summary": "Washington wants the institution to prioritize growth and energy security over climate goals, raising questions about a 45% finance target and curbs on gas projects.",
+          "source_name": "The Africa Report"
+        }
+      ]
     }
   ],
   "summary": {
     "gogla": 1,
     "techpoint": 1,
-    "engie": 9,
-    "pv-magazine": 0,
+    "engie": 1,
+    "pv-magazine": 1,
     "afsia": 0,
-    "lighting-global": 10,
-    "sunking": 1,
-    "m-kopa": 10,
+    "lighting-global": 1,
+    "sunking": 0,
+    "m-kopa": 1,
     "dlight": 0,
-    "bgfa": 10,
-    "energynews-africa": 2,
+    "bgfa": 1,
+    "energynews-africa": 0,
     "africa-newsroom": 0,
-    "bboxx": 10,
-    "techcabal-energy": 5,
-    "renewable-energy-world": 1,
+    "bboxx": 1,
+    "techcabal-energy": 1,
+    "renewable-energy-world": 0,
     "solar-industry-mag": 0,
     "freeing-energy": 0,
     "how-we-made-it": 0,
     "allafrica-energy": 0,
     "esi-africa": 0,
-    "total": 60
+    "google-solar-offgrid": 1,
+    "google-solar-investment": 1,
+    "google-solar-policy": 1,
+    "google-clean-energy": 1,
+    "the-africa-report": 1,
+    "total": 14
   }
 }
