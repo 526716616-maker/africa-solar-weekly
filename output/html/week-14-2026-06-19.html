@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>非洲离网太阳能市场资讯 2026-06-19 第 14 期</title>
+<style>/* ===== 非洲离网太阳能市场资讯 - 样式 ===== */
+:root {
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --text: #1a1a2e;
+  --text-secondary: #555770;
+  --text-tertiary: #8e8ea0;
+  --border: #e8e8ee;
+  --green-dark: #0F6E56;
+  --green-light: #1D9E75;
+  --green-bg: #E1F5EE;
+  --green-tag-bg: rgba(15,110,86,0.08);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 32px 24px 56px;
+}
+
+/* ===== Header ===== */
+.header {
+  background: var(--green-dark);
+  color: #fff;
+  padding: 36px 32px 28px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 28px;
+}
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+.header .subtitle {
+  font-size: 15px;
+  opacity: 0.78;
+  font-weight: 400;
+}
+.header .meta {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+.header .meta span {
+  background: rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  padding: 4px 12px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+/* ===== Stats Row ===== */
+.section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 36px 0 14px;
+}
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.stat-box {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 16px;
+  text-align: center;
+}
+.stat-box .num {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--green-dark);
+  margin-bottom: 6px;
+}
+.stat-box .lbl {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+@media (max-width: 560px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== News Card ===== */
+.news-card {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  margin-bottom: 16px;
+  transition: border-color 0.15s;
+}
+.news-card:hover { border-color: var(--green-light); }
+.news-card .tag {
+  display: inline-block;
+  background: var(--green-tag-bg);
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 12px;
+  border-radius: 100px;
+}
+.news-card .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.news-card .card-date {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+.news-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+/* ===== 通用：卡片内列表 & 段落样式 ===== */
+.news-card .summary,
+.company-card .summary {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+.news-card .bullets,
+.company-card .bullets {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.news-card .bullets li,
+.company-card .bullets li {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 3px 0 3px 18px;
+  position: relative;
+  word-break: break-word;
+}
+.news-card .bullets li::before,
+.company-card .bullets li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-light);
+}
+.news-card .mb,
+.company-card .mb { margin-bottom: 10px; }
+.news-card .bullets,
+.company-card .bullets { margin-bottom: 0; }
+.news-card .source {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-top: 4px;
+}
+.news-card .source a {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+.news-card .source a:hover { text-decoration: underline; }
+
+/* ===== Company Card ===== */
+.company-card {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  margin-bottom: 16px;
+  transition: border-color 0.15s;
+}
+.company-card:hover { border-color: var(--green-light); }
+.company-card .tag {
+  display: inline-block;
+  background: var(--green-tag-bg);
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 12px;
+  border-radius: 100px;
+}
+.company-card .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.company-card .card-date {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+.company-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.company-card .source {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-top: 10px;
+}
+.company-card .source a {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+.company-card .source a:hover { text-decoration: underline; }
+
+/* ===== Archive Nav ===== */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.nav-bar a {
+  font-size: 14px;
+  color: var(--green-dark);
+  text-decoration: none;
+  padding: 4px 0;
+  font-weight: 500;
+}
+.nav-bar a:hover { text-decoration: underline; }
+
+/* ===== Archive Page ===== */
+.archive-list {
+  list-style: none;
+}
+.archive-item {
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+  margin-bottom: 12px;
+  transition: border-color 0.15s;
+}
+.archive-item:hover { border-color: var(--green-light); }
+.archive-item a {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.archive-item .issue-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.archive-item .issue-meta {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin-top: 6px;
+}
+.archive-item .issue-count {
+  font-size: 14px;
+  color: var(--green-dark);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-tertiary);
+  border-top: 0.5px solid var(--border);
+  padding-top: 24px;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="nav-bar">
+    <a href="archive.html">← 查看往期</a>
+    <span style="font-size:13px;color:var(--text-tertiary)">第 14 期</span>
+  </div>
+
+  <div class="header">
+    <h1>Africa Off-Grid Solar Market News</h1>
+    <p class="subtitle">非洲离网太阳能市场资讯</p>
+    <div class="meta">
+      <span>第 14 期</span>
+      <span>2026-06-19</span>
+      <span>行业动态 · 企业跟踪</span>
+    </div>
+  </div>
+
+  <div class="section-title">本期数据亮点</div>
+  <div class="stats-row"><div class="stat-box"><div class="num">7</div><div class="lbl">本期行业动态</div></div><div class="stat-box"><div class="num">2</div><div class="lbl">本期企业动态</div></div></div>
+
+  <div class="section-title">一、政策规划</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">Google News · 太阳能政策</span>
+    <span class="card-date">Fri, 05 Ju</span>
+  </div>
+  <h3>NERC 开始实施 2026 年净计费法规 - CNBC Africa</h3>
+  <div class="summary">NERC 于 2026 年开始实施净计费法规</div>
+  
+  <div class="source">来源：<a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPNDhDMkp3b3VRVllTZ0VKZXNDVXo2M0M4c1MxNTRuZ3NLSFZNOU00Nm85X0dRTWlMblpFNk9JN0swLWpXWkwtd2laTkFvVi1JRFZKYy1JZXJSanVCek5iVHZCMEZNNDhoQkRyOEtETUlOZ1ZpODhpVkR0V05jenMwdDM5YkZ0cGNnajB5ZGtlZlRkVEZWaHE3NnNpa0x2YXdaVHZLc0FxWHNvSzFU?oc=5" target="_blank" rel="noopener">Google News · 非洲太阳能政策</a></div>
+</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">The Africa Report · 非洲综合</span>
+    <span class="card-date">2026-06-19</span>
+  </div>
+  <h3>世界银行在气候融资方面是否有所退缩？</h3>
+  <div class="summary">华盛顿希望该机构将增长和能源安全置于气候目标之上，这对 45% 的融资目标和天然气项目限制提出了质疑。</div>
+  
+  <div class="source">来源：<a href="https://www.theafricareport.com/422502/is-the-world-bank-retreating-on-climate-finance/" target="_blank" rel="noopener">The Africa Report</a></div>
+</div>
+<div class="section-title">二、投资数据</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">GOGLA · 行业报告</span>
+    <span class="card-date">2026-06-15</span>
+  </div>
+  <h3>离网太阳能投资标志着行业成熟、资本集中</h3>
+  <div class="summary"><p class="mb">---</p>
+<p class="mb">地点：全球。 GOGLA 2025年报告指出离网太阳能投资增长，但资金集中化加剧。</p>
+<p class="mb"><strong>该地区长期面临：</strong></p>
+<ul class="bullets">
+<li>2025年投资达3.0亿美元</li>
+<li>资金分配不均加剧</li>
+<li>新兴企业融资困难</li>
+</ul>
+<p class="mb"><strong>解决方案：</strong></p>
+<ul class="bullets">
+<li>混合融资弥补210亿缺口</li>
+<li>本地货币证券化创新</li>
+<li>启动ELEVATE计划提升融资能力</li>
+</ul>
+<p class="mb"><strong>项目价值：</strong></p>
+<ul class="bullets">
+<li>加速能源普及覆盖</li>
+<li>推动可持续发展</li>
+<li>提升企业融资能力</li>
+</ul>
+<p class="mb">【趋势】</p>
+<p class="mb">离网太阳能市场正从初创阶段向成熟阶段过渡。</p></div>
+  
+  <div class="source">来源：<a href="https://newsroom.gogla.org/tags/investment/" target="_blank" rel="noopener">GOGLA Newsroom</a></div>
+</div>
+<div class="section-title">三、行业动态</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">Techpoint · 非洲科技</span>
+    <span class="card-date" style="color:#aaa">日期未知</span>
+  </div>
+  <h3>CBN 数据本地化推动引起了尼日利亚金融科技高管的担忧</h3>
+  <div class="summary">独家的</div>
+  
+  <div class="source">来源：<a href="https://techpoint.africa/insight/cbn-data-localisation-push-raises-concerns/" target="_blank" rel="noopener">Techpoint Africa</a></div>
+</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">Google News · 离网太阳能</span>
+    <span class="card-date">Tue, 09 Ju</span>
+  </div>
+  <h3>随着尼日利亚推动经济复苏，全球每售出 10 套离网太阳能套件，非洲就会购买 9 套 - Business Insider Africa</h3>
+  
+  
+  <div class="source">来源：<a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSm1oN2V2N1g4eUxSc08zdDE3ZERJWXM3X2hYdzJFMHBhZlRaUUNISEJDelBKZmZ6b19GbnRFejFsY0xibTN5NmlwaHRoUnNXWFU5U2J6d1ZPenBjblZrUURPajFsTWdpVHJjcXVTTGNYbVdzY2hzU1J5Ul9iQXdrbG9uZDBWRldvbEVvVG1heFNSN0t5QWxCVS1MZ28tWlF3RktxRVlWVkY1bUJldGJvZ0pqSnpNTnFFb3dVZVFjZDVRWHY4ei1lY1QycUtMeXEwcnZTMQ?oc=5" target="_blank" rel="noopener">Google News · 非洲离网太阳能</a></div>
+</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">Google News · 太阳能投资</span>
+    <span class="card-date">Sat, 09 Ma</span>
+  </div>
+  <h3>按量付费太阳能行业的发展不应让非洲最弱势群体落后 - Nature</h3>
+  <div class="summary">即用即付太阳能行业的发展不应让非洲最脆弱的群体落后</div>
+  
+  <div class="source">来源：<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JZEdzQUFCN0pIczFHTHlmRWtleWN4WXlTQXJLa0dsdXV3aDgyNS1yS05fTmVYWm5ac3N4aFRaa3ZxNjZqbjBZUlQyTDA0Q3VsVHJ1VF9vTkloUzZIVmx3?oc=5" target="_blank" rel="noopener">Google News · 非洲太阳能投资</a></div>
+</div>
+<div class="news-card">
+  <div class="card-top">
+    <span class="tag">Google News · 清洁能源</span>
+    <span class="card-date">Wed, 10 Ju</span>
+  </div>
+  <h3>SOGREA 投标人研讨会标志着塞拉利昂离网可再生能源新时代的到来 - 人人享有可持续能源 | S</h3>
+  <div class="summary">SOGREA 投标人研讨会标志着塞拉利昂离网可再生能源的新时代</div>
+  
+  <div class="source">来源：<a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdWl3YzhzeU1VcUE5dExqdTB4cHhuVXF1SE5xc0l2QVZTZElsWm9SV0dDRFhWM1BESWdXanFIWlVYci1yTDVZZVFPRllnRzBZQW9vaTU4REZwdnNBLW1Wd2dDaWRrZnpseHp6eV9FZ2NmV0NCQzhBWlVmc053OEs1SEo0a0RmSC1uNDVneGt0ZDRXaGZ6a3Y2LXZodlRKem9qdnpMSmFLaUhqX1VCMG53SEd1Q3FYS3l0?oc=5" target="_blank" rel="noopener">Google News · 非洲清洁能源</a></div>
+</div>
+<div class="section-title">四、重点企业动态</div>
+<div class="company-card">
+  <div class="card-top">
+    <span class="tag">企业动态 · Ignite Power</span>
+    <span class="card-date" style="color:#aaa">日期未知</span>
+  </div>
+  <h3>福布斯：初创公司如何为非洲带来负担得起的清洁能源</h3>
+  
+  <div class="source">来源：<a href="https://igniteaccess.com/how-startups-are-bringing-affordable-clean-energy-to-africa/" target="_blank" rel="noopener">ENGIE / IgniteAccess</a></div>
+</div>
+<div class="company-card">
+  <div class="card-top">
+    <span class="tag">企业动态 · M-KOPA</span>
+    <span class="card-date" style="color:#aaa">日期未知</span>
+  </div>
+  <h3>M-KOPA 加纳影响报告显示智能手机正在释放健康保险和经济机会</h3>
+  <div class="summary">M-KOPA 加纳影响报告显示，智能手机正在为日常收入者带来健康保险和经济机会</div>
+  <div class="source">来源：<a href="https://www.m-kopa.com/newsroom/m-kopa-ghana-impact-report-reveals-smartphones-are-unlocking-health-insurance-and-economic-opportunity-for-every-day-earners" target="_blank" rel="noopener">M-KOPA</a></div>
+</div>
+
+
+  <div class="footer">
+    Africa Solar News · 2026-06-19 · 每日更新
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-19T21:58:55.040037+08:00",
+  "crawled_at": "2026-06-19T22:07:35.562395+08:00",
   "week": "2026-W25",
   "sources": [
     {
@@ -184,10 +184,10 @@
       "name": "Google News · 非洲太阳能投资",
       "articles": [
         {
-          "title": "The Pay-As-You-Go solar power sector evolution should not leave Africa’s most vulnerable behind - nature.com",
+          "title": "The Pay-As-You-Go solar power sector evolution should not leave Africa’s most vulnerable behind - Nature",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JZEdzQUFCN0pIczFHTHlmRWtleWN4WXlTQXJLa0dsdXV3aDgyNS1yS05fTmVYWm5ac3N4aFRaa3ZxNjZqbjBZUlQyTDA0Q3VsVHJ1VF9vTkloUzZIVmx3?oc=5",
           "date": "Sat, 09 Ma",
-          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JZEdzQUFCN0pIczFHTHlmRWtleWN4WXlTQXJLa0dsdXV3aDgyNS1yS05fTmVYWm5ac3N4aFRaa3ZxNjZqbjBZUlQyTDA0Q3VsVHJ1VF9vTkloUzZIVmx3?oc=5\" target=\"_blank\">The Pay-As-You-Go solar power sector evolution should not leave Africa’s most vulnerable behind</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">nature.com</font>",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JZEdzQUFCN0pIczFHTHlmRWtleWN4WXlTQXJLa0dsdXV3aDgyNS1yS05fTmVYWm5ac3N4aFRaa3ZxNjZqbjBZUlQyTDA0Q3VsVHJ1VF9vTkloUzZIVmx3?oc=5\" target=\"_blank\">The Pay-As-You-Go solar power sector evolution should not leave Africa’s most vulnerable behind</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Nature</font>",
           "source_name": "Google News · 非洲太阳能投资"
         }
       ]
@@ -230,6 +230,26 @@
           "source_name": "The Africa Report"
         }
       ]
+    },
+    {
+      "key": "climate-change-news",
+      "name": "Climate Change News",
+      "articles": []
+    },
+    {
+      "key": "worldbank-energy",
+      "name": "World Bank Energy Blog",
+      "articles": []
+    },
+    {
+      "key": "renewablesnow-africa",
+      "name": "Renewables Now Africa",
+      "articles": []
+    },
+    {
+      "key": "africa-minigrids",
+      "name": "Africa Minigrids Program",
+      "articles": []
     }
   ],
   "summary": {
@@ -258,6 +278,10 @@
     "google-solar-policy": 1,
     "google-clean-energy": 1,
     "the-africa-report": 1,
+    "climate-change-news": 0,
+    "worldbank-energy": 0,
+    "renewablesnow-africa": 0,
+    "africa-minigrids": 0,
     "total": 13
   }
 }
