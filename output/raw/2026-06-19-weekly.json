@@ -1,7 +1,7 @@
 {
   "week": "2026-W25",
   "date": "2026-06-19",
-  "issue": 9,
+  "issue": 10,
   "highlights": [
     {
       "num": "7",
@@ -17,43 +17,13 @@
       "title": "一、政策规划",
       "items": [
         {
-          "tag": "Google News · 离网太阳能",
-          "title": "能源转型中没有成为欧洲头条新闻的部分发生在 Kiambu 县，该县的太阳能发电成本为 1,300 美元",
-          "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAJBVV95cUxOaWVUTGd2NVlWUmYtUGYyTUVGX1RBcHVoZ2lVcDBVRFVKRXcwbjYzbm5kMENRRE8yaU0yXzVoZEMtaGluM3dRbUtLWC1BMHFZOGRXSVFDd05kbUFmVzlUdUZDdUxfblNJREtEc251U0VWMUlzTS1Fd1BmdVlKODhPaTZFUDZyY1hQYWp0LWlwbkdXck1BUFJqN2RIT3l1QzQ1M29aWXB1RVBrSkxpeW0xX1BPNnRTYWFmTV9NXzE5NThmdWoyMW01aC1NNDVtY0JHSmtUMVR0VU11a21RQWk0ZEpmVEFmZEQxNWV6X2I4Y3JWbnc0WG9WT2NRTFl6MGRzckF3QWtZaEZRY2FMMUxUZTZHZ1dMQktRbTV4eTF6M0FLSHp6U2JOVXRyeGU?oc=5\" target=\"_blank\">能源转型中没有成为欧洲头条新闻的部分发生在 Kiambu 县，该县的太阳能发电成本为 1,300 美元",
-          "bullets": [],
-          "source": "Google News · 非洲离网太阳能",
-          "source_url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOaWVUTGd2NVlWUmYtUGYyTUVGX1RBcHVoZ2lVcDBVRFVKRXcwbjYzbm5kMENRRE8yaU0yXzVoZEMtaGluM3dRbUtLWC1BMHFZOGRXSVFDd05kbUFmVzlUdUZDdUxfblNJREtEc251U0VWMUlzTS1Fd1BmdVlKODhPaTZFUDZyY1hQYWp0LWlwbkdXck1BUFJqN2RIT3l1QzQ1M29aWXB1RVBrSkxpeW0xX1BPNnRTYWFmTV9NXzE5NThmdWoyMW01aC1NNDVtY0JHSmtUMVR0VU11a21RQWk0ZEpmVEFmZEQxNWV6X2I4Y3JWbnc0WG9WT2NRTFl6MGRzckF3QWtZaEZRY2FMMUxUZTZHZ1dMQktRbTV4eTF6M0FLSHp6U2JOVXRyeGU?oc=5",
-          "date": "Fri, 19 Ju",
-          "sub_category": "policy"
-        },
-        {
-          "tag": "Google News · 太阳能投资",
-          "title": "按量付费太阳能行业的发展不应让非洲最弱势群体落后 - Nature",
-          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JZEdzQUFCN0pIczFHTHlmRWtleWN4WXlTQXJLa0dsdXV3aDgyNS1yS05fTmVYWm5ac3N4aFRaa3ZxNjZqbjBZUlQyTDA0Q3VsVHJ1VF9vTkloUzZIVmx3?oc=5\" target=\"_blank\">即用即付太阳能行业的发展不应让非洲最脆弱的群体落后</a>&nbsp; &nbsp;<font color=\"#6f6f6f\">自然</font>",
-          "bullets": [],
-          "source": "Google News · 非洲太阳能投资",
-          "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JZEdzQUFCN0pIczFHTHlmRWtleWN4WXlTQXJLa0dsdXV3aDgyNS1yS05fTmVYWm5ac3N4aFRaa3ZxNjZqbjBZUlQyTDA0Q3VsVHJ1VF9vTkloUzZIVmx3?oc=5",
-          "date": "Sat, 09 Ma",
-          "sub_category": "policy"
-        },
-        {
           "tag": "Google News · 太阳能政策",
           "title": "NERC 开始实施 2026 年净计费法规 - CNBC Africa",
-          "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPNDhDMkp3b3VRVllTZ0VKZXNDVXo2M0M4c1MxNTRuZ3NLSFZNOU00Nm85X0dRTWlMblpFNk9JN0swLWpXWkwtd2laTkFvVi1JRFZKYy1JZXJSanVCek5iVHZCMEZNNDhoQkRyOEtETUlOZ1ZpODhpVkR0V05jenMwdDM5YkZ0cGNnajB5ZGtlZlRkVEZWaHE3NnNpa0x2YXdaVHZLc0FxWHNvSzFU?oc=5\" target=\"_blank\">NERC 于 2026 年开始实施净计费法规</a>&nbsp; &nbsp;<font color=\"#6f6f6f\">CNBC 非洲</font>",
+          "summary": "NERC 开始实施 2026 年净计费法规 CNBC Africa",
           "bullets": [],
           "source": "Google News · 非洲太阳能政策",
           "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNDhDMkp3b3VRVllTZ0VKZXNDVXo2M0M4c1MxNTRuZ3NLSFZNOU00Nm85X0dRTWlMblpFNk9JN0swLWpXWkwtd2laTkFvVi1JRFZKYy1JZXJSanVCek5iVHZCMEZNNDhoQkRyOEtETUlOZ1ZpODhpVkR0V05jenMwdDM5YkZ0cGNnajB5ZGtlZlRkVEZWaHE3NnNpa0x2YXdaVHZLc0FxWHNvSzFU?oc=5",
           "date": "Fri, 05 Ju",
-          "sub_category": "policy"
-        },
-        {
-          "tag": "Google News · 清洁能源",
-          "title": "SOGREA 投标人研讨会标志着塞拉利昂离网可再生能源新时代的到来 - 人人享有可持续能源 | S",
-          "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdWl3YzhzeU1VcUE5dExqdTB4cHhuVXF1SE5xc0l2QVZTZElsWm9SV0dDRFhWM1BESWdXanFIWlVYci1yTDVZZVFPRllnRzBZQW9vaTU4REZwdnNBLW1Wd2dDaWRrZnpseHp6eV9FZ2NmV0NCQzhBWlVmc053OEs1SEo0a0RmSC1uNDVneGt0ZDRXaGZ6a3Y2LXZodlRKem9qdnpMSmFLaUhqX1VCMG53SEd1Q3FYS3l0?oc=5\" target=\"_blank\">SOGREA 投标人研讨会标志着塞拉利昂离网可再生能源的新时代</a>&nbsp; &nbsp;<font color=\"#6f6f6f\">人人享有可持续能源|为所有人</font>",
-          "bullets": [],
-          "source": "Google News · 非洲清洁能源",
-          "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdWl3YzhzeU1VcUE5dExqdTB4cHhuVXF1SE5xc0l2QVZTZElsWm9SV0dDRFhWM1BESWdXanFIWlVYci1yTDVZZVFPRllnRzBZQW9vaTU4REZwdnNBLW1Wd2dDaWRrZnpseHp6eV9FZ2NmV0NCQzhBWlVmc053OEs1SEo0a0RmSC1uNDVneGt0ZDRXaGZ6a3Y2LXZodlRKem9qdnpMSmFLaUhqX1VCMG53SEd1Q3FYS3l0?oc=5",
-          "date": "Wed, 10 Ju",
           "sub_category": "policy"
         },
         {
@@ -80,6 +50,16 @@
           "source_url": "https://newsroom.gogla.org/tags/investment/",
           "date": "2026-06-15",
           "sub_category": "investment"
+        },
+        {
+          "tag": "Google News · 离网太阳能",
+          "title": "能源转型中没有成为欧洲头条新闻的部分发生在 Kiambu 县，该县的太阳能发电成本为 1,300 美元",
+          "summary": "能源转型中没有成为欧洲头条新闻的部分发生在 Kiambu 县，该县造价 1,300 美元的太阳能谷物磨坊可在 6 到 12 个月内收回成本 Silicon Canals",
+          "bullets": [],
+          "source": "Google News · 非洲离网太阳能",
+          "source_url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOaWVUTGd2NVlWUmYtUGYyTUVGX1RBcHVoZ2lVcDBVRFVKRXcwbjYzbm5kMENRRE8yaU0yXzVoZEMtaGluM3dRbUtLWC1BMHFZOGRXSVFDd05kbUFmVzlUdUZDdUxfblNJREtEc251U0VWMUlzTS1Fd1BmdVlKODhPaTZFUDZyY1hQYWp0LWlwbkdXck1BUFJqN2RIT3l1QzQ1M29aWXB1RVBrSkxpeW0xX1BPNnRTYWFmTV9NXzE5NThmdWoyMW01aC1NNDVtY0JHSmtUMVR0VU11a21RQWk0ZEpmVEFmZEQxNWV6X2I4Y3JWbnc0WG9WT2NRTFl6MGRzckF3QWtZaEZRY2FMMUxUZTZHZ1dMQktRbTV4eTF6M0FLSHp6U2JOVXRyeGU?oc=5",
+          "date": "Fri, 19 Ju",
+          "sub_category": "investment"
         }
       ]
     },
@@ -94,6 +74,24 @@
           "source": "Techpoint Africa",
           "source_url": "https://techpoint.africa/insight/cbn-data-localisation-push-raises-concerns/",
           "date": ""
+        },
+        {
+          "tag": "Google News · 太阳能投资",
+          "title": "按量付费太阳能行业的发展不应让非洲最弱势群体落后 - Nature",
+          "summary": "即用即付太阳能行业的发展不应让非洲最脆弱的群体落后于《自然》",
+          "bullets": [],
+          "source": "Google News · 非洲太阳能投资",
+          "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JZEdzQUFCN0pIczFHTHlmRWtleWN4WXlTQXJLa0dsdXV3aDgyNS1yS05fTmVYWm5ac3N4aFRaa3ZxNjZqbjBZUlQyTDA0Q3VsVHJ1VF9vTkloUzZIVmx3?oc=5",
+          "date": "Sat, 09 Ma"
+        },
+        {
+          "tag": "Google News · 清洁能源",
+          "title": "SOGREA 投标人研讨会标志着塞拉利昂离网可再生能源新时代的到来 - 人人享有可持续能源 | S",
+          "summary": "SOGREA 投标人研讨会标志着塞拉利昂离网可再生能源新时代的到来 | 人人享有可持续能源 |为所有人",
+          "bullets": [],
+          "source": "Google News · 非洲清洁能源",
+          "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdWl3YzhzeU1VcUE5dExqdTB4cHhuVXF1SE5xc0l2QVZTZElsWm9SV0dDRFhWM1BESWdXanFIWlVYci1yTDVZZVFPRllnRzBZQW9vaTU4REZwdnNBLW1Wd2dDaWRrZnpseHp6eV9FZ2NmV0NCQzhBWlVmc053OEs1SEo0a0RmSC1uNDVneGt0ZDRXaGZ6a3Y2LXZodlRKem9qdnpMSmFLaUhqX1VCMG53SEd1Q3FYS3l0?oc=5",
+          "date": "Wed, 10 Ju"
         }
       ]
     },
