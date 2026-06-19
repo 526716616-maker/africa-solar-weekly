@@ -157,11 +157,14 @@ def deep_read(title, source_url, source_name, retries=1):
     solar_keywords = ["solar", "energy", "power", "electrification", "off.grid",
                       "mini.grid", "renewable", "electricity", "grid", "africa",
                       "sun", "pv", "photovoltaic", "battery", "storage",
-                      "climate", "emission", "carbon", "clean energy", "green"]
+                      "climate", "emission", "carbon", "clean energy", "green",
+                      "rural", "offgrid", "paygo", "pay-as-you-go", "kwh",
+                      "kilowatt", "megawatt", "gigawatt", "generator", "diesel",
+                      "subsidy", "tariff", "utility", "distribution", "household"]
     text_lower = content.lower()
     kw_count = sum(1 for kw in solar_keywords if kw in text_lower)
     density = kw_count / max(len(text_lower.split()), 1)
-    if density < 0.03:
+    if density < 0.015:  # 从3%降至1.5%，因为网页含大量导航/页脚文字稀释
         print(f'  [warn] 关键词密度 {density:.1%} 过低，跳过精读', file=sys.stderr)
         return None
 
