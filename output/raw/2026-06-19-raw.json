@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-19T20:37:25.049663+08:00",
+  "crawled_at": "2026-06-19T20:50:26.807346+08:00",
   "week": "2026-W25",
   "sources": [
     {
@@ -44,15 +44,7 @@
     {
       "key": "pv-magazine",
       "name": "PV Magazine",
-      "articles": [
-        {
-          "title": "Developing El Niño set to reshape global solar resource",
-          "url": "https://www.pv-magazine.com/2026/06/19/developing-el-nino-set-to-reshape-global-solar-resource/",
-          "date": "2026-06-19",
-          "summary": "<p>A developing El Niño is expected to strengthen through 2026 and reshape solar resource globally, according to analysis using the <a href=\"https://solcast.com/?utm_source=pvmag&amp;utm_medium=Content&amp;utm_campaign=ghimap\">Solcast API</a>. Analysis of past strong El Niño events from July to September shows clear regional differences in irradiance, with higher than normal solar resource in most of India, and parts of Australia, equatorial Africa and Central America, and reductions across southern South America and East Asia. These historical patterns are broadly consistent with the regional direction of current seasonal forecasts, indicating likely trends for solar performance in the coming months as the current event develops.</p>\n\n\n\n<p>Sea surface temperatures and atmospheric conditio",
-          "source_name": "PV Magazine"
-        }
-      ]
+      "articles": []
     },
     {
       "key": "afsia",
@@ -244,7 +236,7 @@
     "gogla": 1,
     "techpoint": 1,
     "engie": 1,
-    "pv-magazine": 1,
+    "pv-magazine": 0,
     "afsia": 0,
     "lighting-global": 1,
     "sunking": 0,
@@ -266,6 +258,6 @@
     "google-solar-policy": 1,
     "google-clean-energy": 1,
     "the-africa-report": 1,
-    "total": 14
+    "total": 13
   }
 }
