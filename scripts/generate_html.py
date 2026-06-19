@@ -374,6 +374,10 @@ def generate_html(data: dict) -> str:
             tag = item.get("tag", "")
             title = item.get("title", "")
             summary = item.get("summary", "")
+            # 描述与标题重复则隐藏
+            item_title = item.get("title", "")
+            if summary and item_title and (summary == item_title or summary[:30] == item_title[:30]):
+                summary = ""
             bullets = item.get("bullets", [])
             source = item.get("source", "")
             source_url = item.get("source_url", "")
@@ -396,6 +400,9 @@ def generate_html(data: dict) -> str:
             tag_html = f'<span class="tag">{tag}</span>' if tag else ""
             date_html = f'<span class="card-date">{item_date}</span>' if item_date else '<span class="card-date" style="color:#aaa">日期未知</span>'
 
+            # 准备摘要HTML（空则不渲染）
+            summary_html = f'<div class="summary">{summary}</div>' if summary else ''
+            
             sections_html += f"""\
 <div class="news-card">
   <div class="card-top">
@@ -403,7 +410,7 @@ def generate_html(data: dict) -> str:
     {date_html}
   </div>
   <h3>{title}</h3>
-  <div class="summary">{summary}</div>
+  {summary_html}
   {bullets_html}
   {source_line}
 </div>
@@ -413,6 +420,9 @@ def generate_html(data: dict) -> str:
         for company in sec.get("companies", []):
             name = company.get("name", "")
             desc = company.get("description") or ""
+            # 描述与标题重复则隐藏
+            if desc and (desc == name or desc[:30] == name[:30]):
+                desc = ""
             tag = company.get("tag", "企业动态")
             source = company.get("source", "")
             source_url = company.get("source_url", "")
@@ -424,6 +434,8 @@ def generate_html(data: dict) -> str:
             elif source:
                 source_line = f'<div class="source">来源：{source}</div>'
 
+            desc_html = f'<div class="summary">{desc}</div>' if desc else ''
+            
             sections_html += f"""\
 <div class="company-card">
   <div class="card-top">
@@ -431,7 +443,7 @@ def generate_html(data: dict) -> str:
     {date_html}
   </div>
   <h3>{name}</h3>
-  <div class="summary">{desc}</div>
+  {desc_html}
   {source_line}
 </div>
 """

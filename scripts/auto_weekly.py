@@ -357,7 +357,8 @@ source_count = {}
 for src in raw["sources"]:
     for a in src["articles"]:
         title = a["title"]
-        summary = a.get("summary", "")[:600] if a.get("summary") else ""
+        raw_summary = a.get("summary", "") or ""
+        summary = clean_summary(raw_summary)  # 清洗HTML/Google News链接
         url = a.get("url", "")
         date = a.get("date", "")
 
