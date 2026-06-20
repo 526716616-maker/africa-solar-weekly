@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-20T08:07:42.167165+08:00",
+  "crawled_at": "2026-06-20T09:29:48.366206+08:00",
   "week": "2026-W25",
   "sources": [
     {
@@ -113,15 +113,7 @@
     {
       "key": "bboxx",
       "name": "BBOXX",
-      "articles": [
-        {
-          "title": "Bboxx appoints new Nigeria Managing Director to Build Momentum in Key Market",
-          "url": "https://www.bboxx.com/local-news/bboxx-appoints-new-nigeria-managing-director-to-build-momentum-in-key-market/",
-          "date": "2026-02-02",
-          "summary": "<p><strong>Lagos, 2 February 2026</strong> — Bboxx has appointed Ene Adesanya to the role of Managing Director for Bboxx Energy Access Nigeria (Bboxx Nigeria), as part of its ongoing focus on growing and strengthening its key markets.</p>\n\n\n\n<p>In her new role, Ene will lead Bboxx Nigeria’s participation in the Distributed Access through Renewable Energy Scale-up (DARES) fund, with a focus on extending Bboxx’s impact to more than 100,000 households in 2026 through a diversified product offering spanning solar energy access, solar-powered irrigation solutions for agribusinesses, and smartphone financing.</p>\n\n\n\n<p><strong>Anthony Osijo, Group CEO, Abci-Nexus, said:</strong></p>\n\n\n\n<p>“I am delighted to welcome Ene into the role of Managing Director for Bboxx Nigeria. This transition highlig",
-          "source_name": "BBOXX"
-        }
-      ]
+      "articles": []
     },
     {
       "key": "techcabal-energy",
@@ -180,7 +172,7 @@
     "bgfa": 1,
     "energynews-africa": 0,
     "africa-newsroom": 0,
-    "bboxx": 1,
+    "bboxx": 0,
     "techcabal-energy": 1,
     "renewable-energy-world": 0,
     "solar-industry-mag": 0,
@@ -188,6 +180,6 @@
     "how-we-made-it": 0,
     "allafrica-energy": 0,
     "esi-africa": 0,
-    "total": 8
+    "total": 7
   }
 }
