@@ -4,12 +4,12 @@
   "issue": 4,
   "highlights": [
     {
-      "num": "$210",
-      "label": "FF 电网太阳能"
+      "num": "2",
+      "label": "本期行业动态"
     },
     {
-      "num": "30%",
-      "label": "FF 电网太阳能"
+      "num": "2",
+      "label": "本期企业动态"
     }
   ],
   "sections": [
@@ -19,7 +19,7 @@
         {
           "tag": "GOGLA · 行业报告",
           "title": "离网太阳能投资标志着行业成熟、资本集中",
-          "summary": "<p class=\"mb\">---</p>\n<p class=\"mb\">地点：全球。 GOGLA 2025年报告指出离网太阳能投资增长，但资金集中度上升。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>2025年投资达3.0亿美元</li>\n<li>2024年投资下降30%</li>\n<li>$210亿融资缺口未填补</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>结构化金融推动投资</li>\n<li>本地货币融资占比提升</li>\n<li>混合融资解决资金缺口</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>加速能源普及覆盖</li>\n<li>提升企业融资能力</li>\n<li>推动可持续发展</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">离网太阳能市场正从初创阶段向成熟阶段过渡。</p>",
+          "summary": "<p class=\"mb\">---</p>\n<p class=\"mb\">地点：全球。 GOGLA 2025年报告指出离网太阳能投资增长，但资金集中度上升。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>全球投资达3亿美元</li>\n<li>资金分配不均加剧</li>\n<li>新兴企业融资困难</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>结构化金融推动增长</li>\n<li>本地货币融资占比提升</li>\n<li>混合融资弥补210亿缺口</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>加速能源普及覆盖</li>\n<li>推动可持续发展</li>\n<li>提升企业融资能力</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">离网太阳能市场正从初创阶段向成熟阶段过渡。</p>",
           "bullets": [],
           "source": "GOGLA Newsroom",
           "source_url": "https://newsroom.gogla.org/tags/investment/",
