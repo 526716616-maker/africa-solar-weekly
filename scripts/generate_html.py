@@ -484,7 +484,7 @@ def generate_html(data: dict) -> str:
   {sections_html}
 
   <div class="footer">
-    Africa Solar News · {date_info} · 每日更新
+    Africa Solar News · {date_info} · 每周更新
   </div>
 
 </div>
@@ -538,7 +538,7 @@ def generate_archive_html(issues: list) -> str:
   </ul>
 
   <div class="footer">
-    共 {len(issues)} 期 · 每日更新
+    共 {len(issues)} 期 · 每周更新
   </div>
 
 </div>
