@@ -244,22 +244,40 @@ print(f"[INFO] 读取: {raw_files[0]}")
 with open(raw_path, "r", encoding="utf-8") as f:
     raw = json.load(f)
 
-# ── 自动计算期号（基于已有 weekly JSON 中的最大期号） ──
+# ── 自动计算期号（基于不同日期计数，不是文件数或max issue） ──
 raw_dir_abs = os.path.abspath(raw_dir)
-max_issue = 0
+now = datetime.now(CST)
+
+# 收集所有已有周刊的日期（去重）
+seen_dates = set()
 for f in os.listdir(raw_dir_abs):
     if f.endswith("-weekly.json") and not f.startswith("latest"):
         try:
             with open(os.path.join(raw_dir_abs, f), "r", encoding="utf-8") as fp:
                 d = json.load(fp)
-            iss = d.get("issue", 0)
-            if iss > max_issue:
-                max_issue = iss
+            dt = d.get("date", "")[:10]  # YYYY-MM-DD
+            if dt:
+                seen_dates.add(dt)
         except Exception:
             pass
-issue_num = max_issue + 1
 
-now = datetime.now(CST)
+today = now.strftime("%Y-%m-%d")
+# 如果今天已有周刊，复用期号；否则用唯一日期数+1
+if today in seen_dates:
+    seen_dates.discard(today)  # 不算今天
+    # 尝试读取已有期号
+    existing = [f for f in os.listdir(raw_dir_abs) if f.startswith(today) and f.endswith("-weekly.json")]
+    if existing:
+        try:
+            with open(os.path.join(raw_dir_abs, existing[0]), "r", encoding="utf-8") as fp:
+                d = json.load(fp)
+            issue_num = d.get("issue", len(seen_dates) + 1)
+        except:
+            issue_num = len(seen_dates) + 1
+    else:
+        issue_num = len(seen_dates) + 1
+else:
+    issue_num = len(seen_dates) + 1
 
 # ── 清洗工具 ──
 def clean_summary(text: str, max_len: int = 600) -> str:
