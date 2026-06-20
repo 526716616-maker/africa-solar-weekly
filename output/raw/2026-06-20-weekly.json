@@ -1,0 +1,67 @@
+{
+  "week": "2026-W25",
+  "date": "2026-06-20",
+  "issue": 5,
+  "highlights": [
+    {
+      "num": "$210",
+      "label": "FF 电网太阳能"
+    },
+    {
+      "num": "30%",
+      "label": "FF 电网太阳能"
+    }
+  ],
+  "sections": [
+    {
+      "title": "二、投资数据",
+      "items": [
+        {
+          "tag": "GOGLA · 行业报告",
+          "title": "离网太阳能投资标志着行业成熟、资本集中",
+          "summary": "<p class=\"mb\">---</p>\n<p class=\"mb\">地点：全球。 GOGLA 2025年报告指出离网太阳能投资增长，但资金集中度上升。</p>\n<p class=\"mb\"><strong>该地区长期面临：</strong></p>\n<ul class=\"bullets\">\n<li>2025年投资达3.0亿美元</li>\n<li>2024年投资下降30%</li>\n<li>$210亿融资缺口未填补</li>\n</ul>\n<p class=\"mb\"><strong>解决方案：</strong></p>\n<ul class=\"bullets\">\n<li>结构化金融推动投资</li>\n<li>本地货币融资占比提升</li>\n<li>混合融资解决资金缺口</li>\n</ul>\n<p class=\"mb\"><strong>项目价值：</strong></p>\n<ul class=\"bullets\">\n<li>加速能源普及覆盖</li>\n<li>提升企业融资能力</li>\n<li>推动可持续发展</li>\n</ul>\n<p class=\"mb\">【趋势】</p>\n<p class=\"mb\">离网太阳能市场正从初创阶段向成熟阶段过渡。</p>\n<p class=\"mb\">---</p>",
+          "bullets": [],
+          "source": "GOGLA Newsroom",
+          "source_url": "https://newsroom.gogla.org/tags/investment/",
+          "date": "2026-06-15",
+          "sub_category": "investment"
+        }
+      ]
+    },
+    {
+      "title": "三、行业动态",
+      "items": [
+        {
+          "tag": "Techpoint · 非洲科技",
+          "title": "CBN 数据本地化推动引起了尼日利亚金融科技高管的担忧",
+          "summary": "独家的",
+          "bullets": [],
+          "source": "Techpoint Africa",
+          "source_url": "https://techpoint.africa/insight/cbn-data-localisation-push-raises-concerns/",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "title": "四、重点企业动态",
+      "companies": [
+        {
+          "tag": "企业动态 · Ignite Power",
+          "name": "福布斯：初创公司如何为非洲带来负担得起的清洁能源",
+          "description": "福布斯：初创公司如何为非洲带来负担得起的清洁能源",
+          "source": "ENGIE / IgniteAccess",
+          "source_url": "https://igniteaccess.com/how-startups-are-bringing-affordable-clean-energy-to-africa/",
+          "date": ""
+        },
+        {
+          "tag": "企业动态 · M-KOPA",
+          "name": "M-KOPA 加纳影响报告显示智能手机正在释放健康保险和经济机会",
+          "description": "M-KOPA 加纳影响报告显示，智能手机正在为日常收入者带来健康保险和经济机会",
+          "source": "M-KOPA",
+          "source_url": "https://www.m-kopa.com/newsroom/m-kopa-ghana-impact-report-reveals-smartphones-are-unlocking-health-insurance-and-economic-opportunity-for-every-day-earners",
+          "date": ""
+        }
+      ]
+    }
+  ]
+}
