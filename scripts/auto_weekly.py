@@ -48,86 +48,109 @@ def translate_text(text: str, retries: int = 3) -> str:
 QWEN_KEY = os.environ.get('QWEN_API_KEY', '') or 'sk-f0d5f80034794f048e82c936ec3556f0'
 QWEN_API = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions'
 
-DEEP_PROMPT = """你是非洲离网太阳能分析师。请用中文撰写一篇精读简报，严格使用以下格式，每组之间用一个空行分隔：
+# ── 按内容类型的AI精读模板 ──
 
-第一段：地点，核心事件概述。注明来源和项目名称。
+PROMPT_INVESTMENT = """你是非洲离网太阳能投资分析师。根据文章正文，生成一段中文投资分析摘要。
+格式：标题+结构化要点。
 
-📍 背景：
-- 背景1（事实陈述或面临的问题，含具体数据）
-- 背景2
-- 背景3
+📍 投资亮点：
+- （投资规模、参与方、地区）
+- （融资方式、债务/股权/补贴）
+- （资金缺口或增长趋势）
 
-📌 方案：
-- 举措1（含具体数据）
-- 举措2（含具体数据）
-- 举措3（含具体数据）
+📊 数据：
+- （关键数字：金额、MW、户数）
+- （增长率或对比）
 
-💡 价值：
-- 价值1
-- 价值2
-- 价值3
+🔮 展望：一句话趋势。
 
-📈 趋势：一句话总结趋势。
+要求：基于原文，不编造。总字数250-400字。"""
+
+PROMPT_POLICY = """你是非洲能源政策分析师。根据文章正文，生成一段中文政策分析摘要。
+
+📜 政策要点：
+- （政策名称、发布机构、覆盖范围）
+- （目标数字：如48%可再生能源）
+- （时间节点）
+
+⚖️ 影响分析：
+- （对行业/企业的直接影响）
+- （实施挑战或风险）
+
+🔭 前景：一句话总结。
+
+要求：基于原文，不编造。总字数200-350字。"""
+
+PROMPT_INDUSTRY = """你是非洲离网太阳能行业分析师。根据文章正文，生成一段中文行业快讯。
+格式：结构化简报。
+
+🌍 行业事件：
+- （事件描述、地点、参与方）
+- （技术、模式或趋势亮点）
+
+📈 数据洞察：
+- （关键数字）
+- （市场或技术数据）
+
+要求：简洁、基于原文。总字数200-300字。"""
+
+PROMPT_COMPANY = """你是非洲清洁能源企业动态编辑。根据文章正文，用中文概括企业动态关键信息。
+
+🏢 企业名称与事件：
+一句话概述（公司+项目+规模）。
+
+📋 关键细节：
+- （具体项目、地点、规模）
+- （融资、合作、技术指标）
+- （影响或意义）
+
+要求：基于原文，提取具体数字。总字数100-200字。"""
+
+PROMPT_FALLBACK = """你是非洲离网太阳能分析师。根据以下内容，用中文生成一段150-250字的精简短讯。
 
 要求：
-- 使用 - 符号开头列表项，每组之间空行分隔
-- 每个列表项不超过25字
-- 提取具体数字（MW、金额、户数、百分比等）
-- 总字数300-500字
+- 提取关键数据和事实
+- 不要编造数据
+- 使用 - 开头列表（2-4条）"""
 
-参考示例（同一天的多篇文章可能共用相同背景）：
 
-示例1 - 行业报告类：
----
-地点：南非开普敦。GOGLA 2025年离网太阳能投资报告显示全球投资达3亿美元。
-📍 背景：
-- 离网太阳能需求激增
-- 资金分配不均加剧
-- 新兴企业融资困难
-📌 方案：
-- 投资额达3.0亿美元
-- 混合融资弥补210亿缺口
-- 本地货币证券化创新
-💡 价值：
-- 加速能源普及覆盖
-- 推动可持续发展
-- 提升企业融资能力
-📈 趋势：离网太阳能市场正从初创阶段向成熟阶段过渡。
+def classify_article_type(title, summary, source_key):
+    """根据标题+摘要+来源快速粗分类文章类型"""
+    text = (title + " " + summary).lower()
+    # 政策类信号
+    if any(kw in text for kw in [
+        "policy", "regulation", "regulatory", "target", "ndc", "cop",
+        "paris agreement", "ecowas", "african union", "mandate", "decree",
+        "law", "bill", "act", "framework", "standard", "code",
+        "mission 300", "power africa", "sdg", "commitment", "initiative",
+        "net billing", "tariff", "subsidy", "世界银行", "world bank",
+    ]):
+        return "policy"
+    # 投资/融资信号
+    if any(kw in text for kw in [
+        "investment", "funding", "million", "billion", "grant", "loan",
+        "financing", "capital", "fund", "equity", "debt", "bond",
+        "securitization", "valuation", "series", "acquisition", "acquire",
+        "raise", "investor", "portfolio", "return",
+    ]):
+        return "investment"
+    # 企业源直接归企业
+    if source_key in ("engie", "sunking", "bboxx", "m-kopa"):
+        return "company"
+    # 默认行业
+    return "industry"
 
-示例2 - 企业动态类：
----
-地点：赞比亚。Ignite Power启动离网太阳能推广计划。
-📍 背景：
-- 80%人口无电力供应
-- 农村电力覆盖率极低
-- 柴油发电成本高昂
-📌 方案：
-- 安装1.2MW太阳能系统
-- 服务500户家庭
-- 建立社区充电网络
-💡 价值：
-- 提升生活质量和教育
-- 创造本地就业
-- 降低碳排放
-📈 趋势：离网太阳能正成为非洲电气化的关键路径。
 
-示例3 - 政策分析类：
----
-地点：西非。ECOWAS宣布2030年可再生能源目标48%。
-📍 背景：
-- 1.9亿人无电力供应
-- 农村通电率仅12%
-- 电力损失率高达35%
-📌 方案：
-- 可再生能源占比48%
-- 电力损失降至35%以下
-- 区域电网互联互通
-💡 价值：
-- 推动清洁能源转型
-- 提升农村经济发展
-- 促进区域能源整合
-📈 趋势：西非正通过政策与合作加速能源变革。
----"""
+def get_deep_prompt(article_type, title, source_name, content):
+    """根据文章类型返回合适的prompt + 正文"""
+    prompt_map = {
+        "investment": PROMPT_INVESTMENT,
+        "policy": PROMPT_POLICY,
+        "industry": PROMPT_INDUSTRY,
+        "company": PROMPT_COMPANY,
+    }
+    prompt = prompt_map.get(article_type, PROMPT_FALLBACK)
+    return prompt, f"标题：{title}\n来源：{source_name}\n\n正文：\n{content}"
 
 def deep_read_light(title, summary_text, source_name):
     """用RSS摘要（无正文）直接调Qwen做轻量结构化改写"""
@@ -158,8 +181,8 @@ def deep_read_light(title, summary_text, source_name):
     return None
 
 
-def deep_read(title, source_url, source_name, retries=1):
-    """获取文章全文并调用Qwen精读改写"""
+def deep_read(title, source_url, source_name, summary_hint="", source_key="", retries=1):
+    """获取文章全文并调用Qwen精读改写（按类型用不同模板）"""
     content = ''
     # Google News 链接是重定向页，没有正文内容，直接跳过
     if 'news.google.com' in source_url:
@@ -186,7 +209,7 @@ def deep_read(title, source_url, source_name, retries=1):
     if not content or len(content) < 300:
         return None
 
-    # 关键词密度检测：内容太泛（广告/导航文字）则跳过精读
+    # 关键词密度检测
     solar_keywords = ["solar", "energy", "power", "electrification", "off.grid",
                       "mini.grid", "renewable", "electricity", "grid", "africa",
                       "sun", "pv", "photovoltaic", "battery", "storage",
@@ -197,9 +220,14 @@ def deep_read(title, source_url, source_name, retries=1):
     text_lower = content.lower()
     kw_count = sum(1 for kw in solar_keywords if kw in text_lower)
     density = kw_count / max(len(text_lower.split()), 1)
-    if density < 0.01:  # 1%阈值（网页含大量导航/页脚稀释）
+    if density < 0.01:
         print(f'  [warn] 关键词密度 {density:.1%} 过低，跳过精读', file=sys.stderr)
         return None
+
+    # 确定文章类型，选择对应模板
+    atype = classify_article_type(title, summary_hint, source_key)
+    system_prompt, user_content = get_deep_prompt(atype, title, source_name, content)
+    max_tok = 1200 if atype in ("investment",) else 800 if atype == "policy" else 600
 
     for attempt in range(retries + 1):
         try:
@@ -209,11 +237,11 @@ def deep_read(title, source_url, source_name, retries=1):
             }, json={
                 'model': 'qwen-turbo',
                 'messages': [
-                    {'role': 'system', 'content': DEEP_PROMPT},
-                    {'role': 'user', 'content': f"标题：{title}\n来源：{source_name}\n\n正文：\n{content}"}
+                    {'role': 'system', 'content': system_prompt},
+                    {'role': 'user', 'content': user_content}
                 ],
-                'temperature': 0.7,
-                'max_tokens': 1200,
+                'temperature': 0.6,
+                'max_tokens': max_tok,
             }, timeout=60)
             result = resp.json()
             if 'choices' not in result:
@@ -472,7 +500,7 @@ for src in raw["sources"]:
         deep_text = ""
         if url:
             print(f"  [deep] 精读: {title[:60]}...")
-            deep = deep_read(title, url, src["name"])
+            deep = deep_read(title, url, src["name"], summary, src["key"])
             if deep:
                 deep_text = translate_text(deep[:1000])
                 deep_succeeded = True
