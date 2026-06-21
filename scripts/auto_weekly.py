@@ -383,6 +383,30 @@ def smart_label(num_str, article_title, source_name):
 # ── 智能亮点提取（从已分类的文章中提取具体数字）──
 # 注意：此段必须在文章处理之后才能拿到 AI 精读后的 summary
 
+# ── 防重：读取已有周刊文章标题，跳过已出现的 ──
+seen_titles = set()
+for fname in os.listdir(raw_dir_abs):
+    if fname.endswith("-weekly.json") and not fname.startswith("latest"):
+        # 跳过今天自己的文件（允许本期覆盖）
+        if fname.startswith(now.strftime("%Y-%m-%d")):
+            continue
+        try:
+            with open(os.path.join(raw_dir_abs, fname), "r", encoding="utf-8") as fp:
+                old = json.load(fp)
+            for sec in old.get("sections", []):
+                for item in sec.get("items", []):
+                    t = item.get("title", "")
+                    if t:
+                        # 取前 60 字做模糊匹配（翻译后可能略有差异）
+                        seen_titles.add(t[:60].lower().strip())
+                for comp in sec.get("companies", []):
+                    n = comp.get("name", "")
+                    if n:
+                        seen_titles.add(n[:60].lower().strip())
+        except Exception:
+            pass
+dedup_skipped = 0
+
 # ── 分配文章到板块 ──
 policy_items = []      # 一、政策规划
 investment_items = []  # 二、投资数据
@@ -416,6 +440,12 @@ source_count = {}
 for src in raw["sources"]:
     for a in src["articles"]:
         title = a["title"]
+
+        # 防重：已在往期出现过的文章跳过
+        if title[:60].lower().strip() in seen_titles:
+            dedup_skipped += 1
+            continue
+
         raw_summary = a.get("summary", "") or ""
         summary = clean_summary(raw_summary)  # 清洗HTML/Google News链接
         url = a.get("url", "")
@@ -680,6 +710,8 @@ print(f"  政策规划: {len(policy_items)} 条")
 print(f"  投资数据: {len(investment_items)} 条")
 print(f"  行业动态: {len(industry_items)} 条")
 print(f"  企业动态: {len(company_items)} 条")
+if dedup_skipped:
+    print(f"  防重跳过: {dedup_skipped} 篇")
 
 # ── 生成 HTML ──
 sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
