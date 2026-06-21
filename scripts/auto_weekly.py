@@ -491,10 +491,10 @@ for src in raw["sources"]:
                 print(f"  [deep] 回退原摘要")
 
         # 根据来源分类
-        company_sources = {"engie", "sunking", "bboxx", "m-kopa", "dlight"}
+        company_sources = {"engie", "sunking", "bboxx", "m-kopa"}
         company_keywords = [
             "ignite power", "ignite energy", "sun king", "sunking",
-            "bboxx", "d.light", "dlight", "m-kopa", "mkopa",
+            "bboxx", "m-kopa", "mkopa",
             "zola electric", "husk power", "nuru energy",
             "easy solar", "greenlight planet", "azuri tech",
             "solarnow", "one power", "mobisol", "fenix intl",
@@ -516,9 +516,6 @@ for src in raw["sources"]:
                 tag_prefix = "企业动态 · BBOXX"
             elif src["key"] == "m-kopa":
                 tag_prefix = "企业动态 · M-KOPA"
-            elif src["key"] == "dlight":
-                tag_prefix = "企业动态 · d.light"
-            else:
                 tag_prefix = "企业动态"
             # 精简描述（最多200字纯文本，不用AI精读格式）
             company_desc = ""
@@ -552,20 +549,12 @@ for src in raw["sources"]:
             # 行业动态 → 细分到政策/投资/行业
             tag_map = {
                 "gogla": "GOGLA · 行业报告",
-                "techpoint": "Techpoint · 非洲科技",
                 "pv-magazine": "PV Magazine · 太阳能",
                 "afsia": "AFSIA · 非洲太阳能",
                 "lighting-global": "Lighting Global · 离网照明",
                 "bgfa": "BGFA · 离网基金",
-                "energynews-africa": "Energy News · 非洲能源",
-                "africa-newsroom": "Africa Newsroom · 能源新闻",
                 "techcabal-energy": "TechCabal · 能源科技",
-                "renewable-energy-world": "REW · 全球太阳能",
-                "solar-industry-mag": "Solar Industry · 行业杂志",
-                "freeing-energy": "Freeing Energy · 离网能源",
                 "how-we-made-it": "How We Made It · 非洲商业",
-                "allafrica-energy": "AllAfrica · 非洲能源",
-                "esi-africa": "ESI Africa · 非洲电力",
                 "solarafrica": "SolarAfrica · 太阳能洞察",
                 "amda": "AMDA · 迷你电网",
             }
