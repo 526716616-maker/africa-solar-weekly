@@ -153,11 +153,27 @@ SOURCES = {
                      "photovoltaic", "solar home", "power generation"],
     },
     # ──────────────────────────────────────────────────────────────
-    # 新增数据源（2026-06-19 扩展）
+    # 新增数据源（2026-06-21 替换泛非洲媒体为对口能源源）
     # ──────────────────────────────────────────────────────────────
-    "how-we-made-it": {
-        "name": "How We Made It In Africa",
-        "url": "https://www.howwemadeitinafrica.com/feed/",
+    "energy-news-network": {
+        "name": "Energy News Network",
+        "url": "https://energy-news-network.com/feed/",
+        "type": "rss",
+        "item_sel": "item",
+        "title_sel": "title",
+        "link_sel": "link",
+        "date_sel": "pubDate",
+        "summary_sel": "description",
+        "keywords": ["africa", "solar", "off-grid", "offgrid", "mini-grid", "minigrid",
+                     "renewable", "electrification", "energy access", "clean energy",
+                     "power", "grid", "battery", "storage", "wind",
+                     "energy transition", "climate", "green", "pv",
+                     "microgrid", "paygo", "pay-as-you-go", "kwh",
+                     "megawatt", "gigawatt", "utility", "distribution"],
+    },
+    "sun-connect": {
+        "name": "Sun Connect News",
+        "url": "https://sun-connect.org/feed/",
         "type": "rss",
         "item_sel": "item",
         "title_sel": "title",
@@ -165,15 +181,28 @@ SOURCES = {
         "date_sel": "pubDate",
         "summary_sel": "description",
         "keywords": ["solar", "off-grid", "offgrid", "mini-grid", "minigrid",
-                     "electrification", "clean energy", "energy access",
-                     "photovoltaic", "pv panel", "solar home", "paygo",
-                     "battery storage", "microgrid", "renewable energy"],
+                     "renewable", "electrification", "energy access", "africa",
+                     "clean energy", "pv", "battery", "storage", "paygo",
+                     "microgrid", "solar home", "energy transition"],
+    },
+    "pv-tech": {
+        "name": "PV Tech",
+        "url": "https://www.pv-tech.org/feed/",
+        "type": "rss",
+        "item_sel": "item",
+        "title_sel": "title",
+        "link_sel": "link",
+        "date_sel": "pubDate",
+        "summary_sel": "description",
+        "keywords": ["africa", "south africa", "nigeria", "kenya", "ghana",
+                     "ethiopia", "tanzania", "uganda", "rwanda", "senegal",
+                     "morocco", "egypt", "middle east",
+                     "solar", "pv", "photovoltaic", "off-grid", "offgrid",
+                     "mini-grid", "minigrid", "battery", "storage",
+                     "module", "cell", "perovskite", "tandem"],
     },
     # ──────────────────────────────────────────────────────────────
-    # 第3批：各国+非洲综合媒体
-    # Google News ×4 已移除 → 全是重定向页无正文；The Africa Report 已移除 → GitHub Actions 网络不通
-    # ──────────────────────────────────────────────────────────────
-    # 新增：有完整正文的非洲太阳能源（2026-06-21）
+    # 保留：非洲太阳能源专项源
     # ──────────────────────────────────────────────────────────────
     "solarafrica": {
         "name": "SolarAfrica Insights",
@@ -185,7 +214,7 @@ SOURCES = {
         "date_sel": "pubDate",
         "summary_sel": "description",
         "keywords": ["solar", "energy", "renewable", "clean energy", "project",
-                     "acquisition", "acquis", "power purchase", "ppa", "mw", "gw",
+                     "acquisition", "power purchase", "ppa", "mw", "gw",
                      "africa", "south africa", "off-grid", "storage", "battery"],
     },
     "amda": {
@@ -197,39 +226,6 @@ SOURCES = {
         "link_sel": "link",
         "date_sel": "pubDate",
         "summary_sel": "description",
-    },
-    # ──────────────────────────────────────────────────────────────
-    # 非洲综合新闻源（太阳能关键词过滤，2026-06-21）
-    # ──────────────────────────────────────────────────────────────
-    "africa-climate-reports": {
-        "name": "Africa Climate Reports",
-        "url": "https://africaclimatereports.org/feed/",
-        "type": "rss",
-        "item_sel": "item",
-        "title_sel": "title",
-        "link_sel": "link",
-        "date_sel": "pubDate",
-        "summary_sel": "description",
-        "keywords": ["solar", "off-grid", "offgrid", "mini-grid", "minigrid",
-                     "renewable energy", "electrification", "energy access",
-                     "photovoltaic", "clean energy", "power",
-                     "solaire", "energie", "electrification", "photovoltaique"],
-    },
-    "the-conversation-africa": {
-        "name": "The Conversation Africa",
-        "url": "https://theconversation.com/africa/articles.atom",
-        "type": "rss",
-        "item_sel": "entry",
-        "title_sel": "title",
-        "link_sel": "link",
-        "date_sel": "published, updated",
-        "summary_sel": "summary, content",
-        "keywords": ["solar", "off-grid", "offgrid", "mini-grid", "minigrid",
-                     "renewable energy", "electrification", "energy access",
-                     "photovoltaic", "paygo", "solar home", "electricity",
-                     "power africa", "mission 300", "microgrid", "sdg7",
-                     "energy poverty", "rural electrification", "energy transition",
-                     "climate finance", "green energy", "clean cooking"],
     },
     # ── SOURCES 结束 ──
 }
