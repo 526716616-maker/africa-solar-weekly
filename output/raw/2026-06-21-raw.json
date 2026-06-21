@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-06-21T13:15:23.130156+08:00",
+  "crawled_at": "2026-06-21T13:26:19.169204+08:00",
   "week": "2026-W25",
   "sources": [
     {
@@ -154,6 +154,16 @@
           "source_name": "AMDA Minigrids"
         }
       ]
+    },
+    {
+      "key": "africa-climate-reports",
+      "name": "Africa Climate Reports",
+      "articles": []
+    },
+    {
+      "key": "the-conversation-africa",
+      "name": "The Conversation Africa",
+      "articles": []
     }
   ],
   "summary": {
@@ -170,6 +180,8 @@
     "how-we-made-it": 0,
     "solarafrica": 1,
     "amda": 1,
+    "africa-climate-reports": 0,
+    "the-conversation-africa": 0,
     "total": 11
   }
 }

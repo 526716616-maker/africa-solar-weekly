@@ -187,6 +187,36 @@ SOURCES = {
         "date_sel": "pubDate",
         "summary_sel": "description",
     },
+    # ──────────────────────────────────────────────────────────────
+    # 非洲综合新闻源（太阳能关键词过滤，2026-06-21）
+    # ──────────────────────────────────────────────────────────────
+    "africa-climate-reports": {
+        "name": "Africa Climate Reports",
+        "url": "https://africaclimatereports.org/feed/",
+        "type": "rss",
+        "item_sel": "item",
+        "title_sel": "title",
+        "link_sel": "link",
+        "date_sel": "pubDate",
+        "summary_sel": "description",
+        "keywords": ["solar", "off-grid", "offgrid", "mini-grid", "minigrid",
+                     "renewable energy", "electrification", "energy access",
+                     "photovoltaic", "clean energy", "power generation"],
+    },
+    "the-conversation-africa": {
+        "name": "The Conversation Africa",
+        "url": "https://theconversation.com/africa/articles.atom",
+        "type": "rss",
+        "item_sel": "entry",
+        "title_sel": "title",
+        "link_sel": "link",
+        "date_sel": "published, updated",
+        "summary_sel": "summary, content",
+        "keywords": ["solar", "off-grid", "offgrid", "mini-grid", "minigrid",
+                     "renewable energy", "electrification", "energy access",
+                     "photovoltaic", "paygo", "solar home",
+                     "power africa", "mission 300", "microgrid"],
+    },
     # ── SOURCES 结束 ──
 }
 

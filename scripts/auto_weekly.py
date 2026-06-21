@@ -479,8 +479,8 @@ for src in raw["sources"]:
         date = a.get("date", "")
 
         # 只保留最近7天的资讯（无日期的保留，有日期但超7天则过滤）
-        cutoff_7d = (datetime.now(CST) - __import__('datetime').timedelta(days=7)).strftime("%Y-%m-%d")
-        if date and date < cutoff_7d:
+        cutoff_14d = (datetime.now(CST) - __import__('datetime').timedelta(days=14)).strftime("%Y-%m-%d")
+        if date and date < cutoff_14d:
             continue
         # 无日期的源每源最多3篇
         src_key = src["key"]
@@ -584,6 +584,8 @@ for src in raw["sources"]:
                 "how-we-made-it": "How We Made It · 非洲商业",
                 "solarafrica": "SolarAfrica · 太阳能洞察",
                 "amda": "AMDA · 迷你电网",
+                "africa-climate-reports": "Climate Reports · 非洲",
+                "the-conversation-africa": "The Conversation · 非洲",
             }
             tag = tag_map.get(src["key"], src["name"])
 
