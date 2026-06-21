@@ -94,11 +94,11 @@ SOURCES = {
         "name": "Sun King",
         "url": "https://sunking.com/news-and-blog/",
         "type": "html",
-        "selector": "article, .post, .blog-entry, div[class*=post]",
-        "title_sel": "h2, h3",
-        "link_sel": "a",
-        "date_sel": "time, .date",
-        "summary_sel": "p, .excerpt",
+        "selector": ".card.card--blank",
+        "title_sel": "h3.card-title, h2",
+        "link_sel": "a[href*='/news-blog/']",
+        "date_sel": ".card-date, time, .date",
+        "summary_sel": "p, .card-text",
     },
     "m-kopa": {
         "name": "M-KOPA",
@@ -225,6 +225,7 @@ def parse_date(text: str) -> Optional[str]:
         "%d %b %Y",
         "%m/%d/%Y",
         "%d/%m/%Y",
+        "%d.%m.%Y",   # Sun King: 12.06.2026
         # RSS pubDate 格式: "Wed, 17 Jun 2026 12:33:44 +000"
         "%a, %d %b %Y %H:%M:%S %z",
         "%a, %d %b %Y %H:%M:%S",
