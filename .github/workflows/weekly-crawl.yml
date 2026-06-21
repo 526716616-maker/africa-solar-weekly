@@ -10,8 +10,6 @@ name: Weekly Africa Solar Report
 on:
   schedule:
     - cron: "0 23 * * 0"
-  push:
-    branches: ["master"]
   workflow_dispatch:
 
 permissions:
