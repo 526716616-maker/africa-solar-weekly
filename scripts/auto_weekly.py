@@ -410,20 +410,47 @@ def num_value(s):
         val *= 100  # 人口类数字加权
     return val
 
-def smart_label(num_str, article_title, source_name):
-    """为数字生成简短标签"""
-    # 尝试从标题中提取关键词组
-    title_clean = re.sub(r'[\\U0001F600-\\U0001FFFF]', '', article_title)
-    title_clean = re.sub(r'[-–—|·•]', ' ', title_clean)
-    words = [w.strip() for w in re.split(r'[:\s,，、]+', title_clean) if len(w.strip()) >= 2]
-    # 过滤掉数字开头的词、纯数字
-    words = [w for w in words if not re.match(r'^[\d\$]', w) and len(w) >= 2]
-    # 取前3个有意义的词
-    if words:
-        label = ' '.join(words[:3])
-        if len(label) > 20:
-            label = label[:20]
-        return label
+def smart_label(num_str, chinese_text, source_name):
+    """从中文正文中提取数字所在句子的短语作为标签（≤20字）"""
+    import re as _re
+    # 先清理 AI 标记
+    clean_text = _re.sub(r'【[^】]*】', '', chinese_text)
+
+    num_clean = _re.sub(r'[\s,]', '', num_str).replace('%', '％')
+    idx = clean_text.find(num_clean)
+    if idx < 0:
+        idx = clean_text.find(num_str)
+    if idx < 0:
+        m = _re.search(_re.escape(num_str.rstrip('%')), clean_text)
+        if m:
+            idx = m.start()
+
+    if idx >= 0:
+        # 优先取数字后面的描述
+        after = clean_text[idx + len(num_str):]
+        after = _re.sub(r'^\s*[，,。.；;！!】\n]+', '', after)  # 跳过开头的标点
+        m = _re.match(r'([^，,。.；;！!\n】]+)', after)
+        if m and len(m.group(1).strip()) >= 2:
+            suffix = m.group(1).strip()
+            suffix = _re.sub(r'^\d{2,4}年?\s*', '', suffix)
+            suffix = suffix[:12]
+            if suffix:
+                label = num_str + suffix
+                if 4 <= len(label) <= 20:
+                    return label
+        # 后缀不够好 → 取数字前面的短语
+        prefix = clean_text[max(0, idx-12):idx].strip()
+        prefix = _re.sub(r'^\s*[，,。.；;！!】\n]+', '', prefix)
+        prefix = _re.sub(r'\d{2,4}年\s*$', '', prefix)
+        # 从后往前取到上一个标点
+        m2 = _re.search(r'([^，,。.；;！!\n】]+)$', prefix)
+        if m2 and len(m2.group(1).strip()) >= 1:
+            label = m2.group(1).strip()[-10:] + num_str
+            if 4 <= len(label) <= 20:
+                return label
+        # 都不行 → 数字 + 来源缩写
+        label = num_str + source_name[:6]
+
     return source_name[:20]
 
 # ── 智能亮点提取（从已分类的文章中提取具体数字）──
@@ -644,41 +671,6 @@ for src in raw["sources"]:
 # 如果企业动态不够，从 ENGIE 文章中也加到行业动态
 # 不重复添加
 
-# ── 智能亮点：从已分类文章中提取具体数字 ──
-context_pairs = []
-seen = set()
-
-# 收集所有已分类文章的文字
-def collect_highlight_texts():
-    texts = []
-    for item in policy_items + investment_items + industry_items:
-        texts.append((item.get("title", ""), item.get("summary", ""), item.get("source", "")))
-    for c in company_items:
-        texts.append((c.get("name", ""), c.get("description", ""), c.get("source", "")))
-    return texts
-
-for title, summary, source in collect_highlight_texts():
-    full_text = (title or "") + " " + (summary or "")
-    nums = extract_numbers(full_text)
-    for n in nums:
-        n_key = re.sub(r'[\s,\.\$\%]', '', n).lower()
-        if n_key not in seen and len(n_key) >= 2:
-            seen.add(n_key)
-            label = smart_label(n, title or source, source or "")
-            context_pairs.append((n, label))
-
-context_pairs.sort(key=lambda x: num_value(x[0]), reverse=True)
-highlights = []
-for n, label in context_pairs[:4]:
-    highlights.append({"num": n, "label": label})
-
-# 兜底：如果提取不到数字，用分类统计
-if len(highlights) < 2:
-    highlights = [
-        {"num": str(len(industry_items) + len(policy_items) + len(investment_items)), "label": "本期行业动态"},
-        {"num": str(len(company_items)), "label": "本期企业动态"},
-    ][:4]
-
 # ── 翻译为中文 ──
 all_industry_items = policy_items + investment_items + industry_items
 total_to_translate = len(all_industry_items) + len(company_items)
@@ -708,9 +700,51 @@ for item in company_items:
     item["name"] = translate_text(item["name"])
     item["description"] = translate_summary_html(item.get("description") or "") or item["name"]
 
-# 翻译亮点标签
-for h in highlights:
-    h["label"] = translate_text(h["label"])
+# ── 智能亮点：从中文译文中提取数字 + 上下文标签 ──
+def collect_translated_texts():
+    """收集所有已翻译的中文内容"""
+    texts = []
+    for item in policy_items + investment_items + industry_items:
+        # 提取纯文本（去掉 format_rich 的 HTML 标签）
+        plain = re.sub(r'<[^>]+>', ' ', item.get("summary", "")).strip()
+        texts.append((item.get("title", ""), plain, item.get("source", "")))
+    for c in company_items:
+        texts.append((c.get("name", ""), c.get("description", ""), c.get("source", "")))
+    return texts
+
+context_pairs = []
+seen = set()
+
+# 每篇文章最多 1 个亮点，确保来源多样性
+article_hl_count = {}  # {source_key: count}
+
+for title, summary, source in collect_translated_texts():
+    full_text = (title or "") + " " + (summary or "")
+    nums = extract_numbers(full_text)
+    src_key = (source or "")[:40]
+    for n in nums:
+        n_key = re.sub(r'[\s,\.\$\%]', '', n).lower()
+        if n_key not in seen and len(n_key) >= 2:
+            if article_hl_count.get(src_key, 0) >= 1:
+                continue  # 每源最多1个，保证多样性
+            seen.add(n_key)
+            article_hl_count[src_key] = article_hl_count.get(src_key, 0) + 1
+            label = smart_label(n, full_text, source or "")
+            context_pairs.append((n, label))
+
+context_pairs.sort(key=lambda x: num_value(x[0]), reverse=True)
+highlights = []
+for n, label in context_pairs[:4]:
+    highlights.append({"num": n, "label": label})
+
+# 兜底：如果提取不到数字，用分类统计
+if len(highlights) < 2:
+    highlights = [
+        {"num": str(len(industry_items) + len(policy_items) + len(investment_items)), "label": "本期行业动态"},
+        {"num": str(len(company_items)), "label": "本期企业动态"},
+    ][:4]
+
+print("[INFO] 智能亮点生成完成")
 print("[INFO] 翻译完成")
 
 # ── 组装 curated JSON ──
