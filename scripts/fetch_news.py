@@ -155,9 +155,10 @@ SOURCES = {
         "link_sel": "link",
         "date_sel": "pubDate",
         "summary_sel": "description",
-        "keywords": ["solar", "off-grid", "mini-grid", "renewable", "clean energy",
-                     "energy access", "electrification", "power", "electricity",
-                     "climate", "green energy"],
+        "keywords": ["solar", "off-grid", "offgrid", "mini-grid", "minigrid",
+                     "electrification", "clean energy", "energy access",
+                     "photovoltaic", "pv panel", "solar home", "paygo",
+                     "battery storage", "microgrid", "renewable energy"],
     },
     # ──────────────────────────────────────────────────────────────
     # 第3批：各国+非洲综合媒体
