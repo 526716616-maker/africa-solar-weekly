@@ -502,7 +502,7 @@ for src in raw["sources"]:
             print(f"  [deep] 精读: {title[:60]}...")
             deep = deep_read(title, url, src["name"], summary, src["key"])
             if deep:
-                deep_text = translate_text(deep[:1000])
+                deep_text = translate_text(deep[:1000]) or ""
                 deep_succeeded = True
                 print(f"  [deep] OK ({len(deep_text)}字)")
             elif summary and len(summary) >= 30:

@@ -1,0 +1,86 @@
+{
+  "week": "2026-W25",
+  "date": "2026-06-21",
+  "issue": 4,
+  "highlights": [
+    {
+      "num": "48%",
+      "label": "并宣布战略"
+    },
+    {
+      "num": "30%",
+      "label": "FF 电网太阳能"
+    },
+    {
+      "num": "324kW",
+      "label": "奥利斯到豪卡斯"
+    },
+    {
+      "num": "261kW",
+      "label": "奥利斯到豪卡斯"
+    }
+  ],
+  "sections": [
+    {
+      "title": "一、政策规划",
+      "items": [
+        {
+          "tag": "AMDA · 迷你电网",
+          "title": "AMDA 和 GOGLA 宣布战略合作，加速能源获取",
+          "summary": "<p class=\"mb\">**政策分析摘要：**</p>\n<p class=\"mb\">2026年6月18日，非洲微型电网开发商协会（AMDA）与全球离网太阳能协会（GOGLA）在非洲能源论坛上签署战略合作协议，旨在加速非洲电力普及。该合作覆盖非洲30个国家，目标是到2030年通过离网太阳能和分布式可再生能源连接3亿人，其中48%的电力需求可通过此类解决方案满足。双方将联合推动政策倡导、市场情报共享及行业协调，以提升国家能源公约的可投资性。</p>\n<p class=\"mb\">此合作对能源企业具有直接推动作用，有助于降低监管不确定性并促进私人资本流入。但实施中可能面临政策协调不力、资金结构不足等挑战。前景方面，该合作有望显着提升非洲能源接入效率，助力实现可持续发展目标。</p>",
+          "bullets": [],
+          "source": "AMDA Minigrids",
+          "source_url": "https://www.africamda.org/amda-and-gogla-announce-strategic-collaboration-to-accelerate-energy-access/",
+          "date": "2026-06-18",
+          "sub_category": "policy"
+        }
+      ]
+    },
+    {
+      "title": "二、投资数据",
+      "items": [
+        {
+          "tag": "GOGLA · 行业报告",
+          "title": "离网太阳能投资标志着行业成熟、资本集中",
+          "summary": "<p class=\"mb\">**标题：离网太阳能投资反映行业成熟与资本集中**</p>\n<p class=\"mb\"><strong>投资亮点：</strong></p>\n<ul class=\"bullets\">\n<li>2024年离网太阳能投资总额为3亿美元，较2023年下降30%，但2025年数据显示投资有所回升。</li>\n<li>主要参与方包括GOGLA、国际金融机构及本地企业，重点覆盖非洲地区。</li>\n<li>融资方式以混合金融为主，结合公共、私人和慈善资本，同时股权基金和补贴成为推动因素。</li>\n<li>资金缺口依然显着，实现2030年能源普及目标仍需7倍投资。</li>\n</ul>\n<p class=\"mb\"><strong>关键数据：</strong></p>\n<ul class=\"bullets\">\n<li>2023年全球离网太阳能投资达4.25亿美元，2024年降至3亿美元。</li>\n<li>2025年部分市场显示增长迹象，但整体仍面临资金分配不均问题。</li>\n<li>2024年投资中，用于可再生能源生产性用途的资金增长2.5倍。</li>\n</ul>\n<p class=\"mb\">【行业展望】</p>\n<p class=\"mb\">随着结构性融资和本地货币支持的增加，离网太阳能投资正逐步走向成熟，但资金集中与区域差异仍是主要挑战。</p>",
+          "bullets": [],
+          "source": "GOGLA Newsroom",
+          "source_url": "https://newsroom.gogla.org/tags/investment/",
+          "date": "2026-06-15",
+          "sub_category": "investment"
+        },
+        {
+          "tag": "AFSIA · 非洲太阳能",
+          "title": "Solis将在Intersolar Europe 2026展示全场景储能解决方案",
+          "summary": "<p class=\"mb\">【行业事件】</p>\n<p class=\"mb\">Solis 将于2026年6月23日至25日在德国慕尼黑举行的Intersolar Europe展会上，展示其全场景能源存储解决方案，包括FlexAIO、EverCore等产品。公司正从逆变器制造商转型为完整的能源解决方案提供商。</p>\n<p class=\"mb\">技术亮点：FlexAIO 是一款集成逆变器、电池和智能控制的高电压储能系统，支持单相和三相应用，容量可扩展至324kWh，具备AI智能能量管理功能。 EverCore 为商业与工业用户提供一体化储能方案，容量达261kWh，提升能源管理效率。</p>\n<p class=\"mb\">【数据洞察】</p>\n<p class=\"mb\">Solis 展示的储能系统覆盖住宅、商业及工业应用，容量范围从6–54kWh扩展至324kWh，体现其灵活部署能力。公司通过本地团队提供定制化技术支持，强化市场渗透。</p>",
+          "bullets": [],
+          "source": "AFSIA Solar Africa",
+          "source_url": "https://www.afsiasolar.com/solis-to-showcase-full-scenario-energy-storage-solutions-at-intersolar-europe-2026/?utm_source=rss&utm_medium=rss&utm_campaign=solis-to-showcase-full-scenario-energy-storage-solutions-at-intersolar-europe-2026",
+          "date": "2026-06-18",
+          "sub_category": "investment"
+        }
+      ]
+    },
+    {
+      "title": "四、重点企业动态",
+      "companies": [
+        {
+          "tag": "企业动态 · Ignite Power",
+          "name": "福布斯：初创公司如何为非洲带来负担得起的清洁能源",
+          "description": "向撒哈拉以南非洲一些能源最匮乏的地区提供电力，更不用说来自可再生能源的电力，是一个令人烦恼和令人畏惧的问题",
+          "source": "ENGIE / IgniteAccess",
+          "source_url": "https://igniteaccess.com/how-startups-are-bringing-affordable-clean-energy-to-africa/",
+          "date": ""
+        },
+        {
+          "tag": "企业动态",
+          "name": "M-KOPA 加纳影响报告显示智能手机正在释放健康保险和经济机会",
+          "description": "M-KOPA 加纳影响报告显示，智能手机正在为日常收入者带来健康保险和经济机会",
+          "source": "M-KOPA",
+          "source_url": "https://www.m-kopa.com/newsroom/m-kopa-ghana-impact-report-reveals-smartphones-are-unlocking-health-insurance-and-economic-opportunity-for-every-day-earners",
+          "date": ""
+        }
+      ]
+    }
+  ]
+}
