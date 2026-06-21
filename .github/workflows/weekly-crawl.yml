@@ -9,8 +9,10 @@ name: Weekly Africa Solar Report
 
 on:
   schedule:
-    - cron: "0 23 * * 0"    # 每周日 UTC 23:00 = 北京时间周一 07:00
-  workflow_dispatch:         # 支持手动触发
+    - cron: "0 23 * * 0"
+  push:
+    branches: ["master"]      # 临时：手动测试
+  workflow_dispatch:
 
 permissions:
   contents: write
