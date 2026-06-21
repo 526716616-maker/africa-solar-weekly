@@ -4,6 +4,10 @@ import os
 import sys
 import re
 import time
+
+# 确保脚本所在目录在 sys.path 中
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 import requests
 from datetime import datetime, timezone
 from deep_translator import GoogleTranslator
@@ -35,6 +39,9 @@ def translate_text(text: str, retries: int = 3) -> str:
             if result and result != text:
                 _cache[text] = result
                 return result
+            # 翻译结果与原文相同（已是目标语言或太短），返回原文
+            if attempt == retries:
+                return text
         except Exception as e:
             if attempt < retries:
                 print(f"  [retry] 翻译重试 {attempt+1}/{retries}: {e}", file=sys.stderr)
@@ -42,6 +49,7 @@ def translate_text(text: str, retries: int = 3) -> str:
             else:
                 print(f"  [warn] 翻译失败 ({type(e).__name__}): {str(e)[:80]}", file=sys.stderr)
                 return text
+    return text
 
 
 # ── AI 精读 ──
@@ -152,26 +160,33 @@ def get_deep_prompt(article_type, title, source_name, content):
     prompt = prompt_map.get(article_type, PROMPT_FALLBACK)
     return prompt, f"标题：{title}\n来源：{source_name}\n\n正文：\n{content}"
 
-def deep_read_light(title, summary_text, source_name):
-    """用RSS摘要（无正文）直接调Qwen做轻量结构化改写"""
-    if not summary_text or len(summary_text) < 30:
+def deep_read_light(title, summary_text, source_name, source_key=""):
+    """用RSS摘要（无正文）调Qwen做精读——使用与 deep_read 相同的类型模板"""
+    if not summary_text or len(summary_text) < 10:
         return None
-    prompt = f"""你是非洲离网太阳能快讯编辑。根据以下标题和摘要，用中文生成一段150-200字的精简短讯，提取关键数据和事实。
-格式：地点/来源 + 核心事实 + 1-2个关键数字（如有）。不要编造数据，只基于给定内容。
+
+    atype = classify_article_type(title, summary_text, source_key)
+    system_prompt, _ = get_deep_prompt(atype, title, source_name, "")
+    max_tok = 1200 if atype in ("investment",) else 800 if atype == "policy" else 600
+
+    user_content = f"""以下是文章标题和摘要，请根据你的分析模板生成中文精读，只基于给定内容提取关键信息，不编造数据。
 
 标题：{title}
 来源：{source_name}
-摘要：{summary_text[:800]}"""
-    
+摘要：{summary_text[:1200]}"""
+
     try:
         resp = requests.post(QWEN_API, headers={
             'Authorization': f'Bearer {QWEN_KEY}',
             'Content-Type': 'application/json'
         }, json={
             'model': 'qwen-turbo',
-            'messages': [{'role': 'user', 'content': prompt}],
+            'messages': [
+                {'role': 'system', 'content': system_prompt},
+                {'role': 'user', 'content': user_content}
+            ],
             'temperature': 0.5,
-            'max_tokens': 400,
+            'max_tokens': max_tok,
         }, timeout=30)
         result = resp.json()
         if 'choices' in result:
@@ -197,7 +212,9 @@ def deep_read(title, source_url, source_name, summary_hint="", source_key="", re
             soup = BeautifulSoup(resp.text, 'html.parser')
             for tag in soup(['script', 'style', 'nav', 'footer', 'header', 'aside']):
                 tag.decompose()
-            for sel in ['article', 'main', '.post-content', '.entry-content', '.content', 'body']:
+            for sel in ['article', 'main', '.post-content', '.entry-content', '.content',
+                          '.article-body', '.blog-post', '.single-post', '.wp-block-post-content',
+                          '.post-body', '.entry', '#content', 'body']:
                 el = soup.select_one(sel)
                 if el:
                     content = el.get_text(separator="\n", strip=True)
@@ -206,23 +223,26 @@ def deep_read(title, source_url, source_name, summary_hint="", source_key="", re
     except Exception as e:
         print(f'  [warn] 抓取原文失败 {source_url}: {e}', file=sys.stderr)
 
-    if not content or len(content) < 300:
+    if not content or len(content) < 100:
         return None
 
-    # 关键词密度检测
-    solar_keywords = ["solar", "energy", "power", "electrification", "off.grid",
-                      "mini.grid", "renewable", "electricity", "grid", "africa",
-                      "sun", "pv", "photovoltaic", "battery", "storage",
-                      "climate", "emission", "carbon", "clean energy", "green",
-                      "rural", "offgrid", "paygo", "pay-as-you-go", "kwh",
-                      "kilowatt", "megawatt", "gigawatt", "generator", "diesel",
-                      "subsidy", "tariff", "utility", "distribution", "household"]
-    text_lower = content.lower()
-    kw_count = sum(1 for kw in solar_keywords if kw in text_lower)
-    density = kw_count / max(len(text_lower.split()), 1)
-    if density < 0.01:
-        print(f'  [warn] 关键词密度 {density:.1%} 过低，跳过精读', file=sys.stderr)
-        return None
+    # 关键词密度检测（已知太阳能信源跳过）
+    _solar_sources = {"afsia", "gogla", "pv-magazine", "solarafrica", "amda",
+                      "lighting-global", "bgfa", "engie", "sunking", "bboxx", "m-kopa"}
+    if source_key not in _solar_sources:
+        solar_keywords = ["solar", "energy", "power", "electrification", "off.grid",
+                          "mini.grid", "renewable", "electricity", "grid", "africa",
+                          "sun", "pv", "photovoltaic", "battery", "storage",
+                          "climate", "emission", "carbon", "clean energy", "green",
+                          "rural", "offgrid", "paygo", "pay-as-you-go", "kwh",
+                          "kilowatt", "megawatt", "gigawatt", "generator", "diesel",
+                          "subsidy", "tariff", "utility", "distribution", "household"]
+        text_lower = content.lower()
+        kw_count = sum(1 for kw in solar_keywords if kw in text_lower)
+        density = kw_count / max(len(text_lower.split()), 1)
+        if density < 0.01:
+            print(f'  [warn] 关键词密度 {density:.1%} 过低，跳过精读', file=sys.stderr)
+            return None
 
     # 确定文章类型，选择对应模板
     atype = classify_article_type(title, summary_hint, source_key)
@@ -312,11 +332,9 @@ def clean_summary(text: str, max_len: int = 600) -> str:
     """清洗 RSS/HTML 摘要：去标签、去垃圾文字、截断"""
     if not text:
         return ""
-    # Google News RSS: 摘要被 <a href="..."> 包裹，提取 a 标签内文本
-    a_match = re.search(r'<a\s[^>]*href="[^"]*"[^>]*>(.*?)</a>', text, re.DOTALL)
-    if a_match and len(a_match.group(1).strip()) > 10:
-        text = a_match.group(1).strip()
-    # 去掉 HTML 标签
+    # 去掉 HTML 标签（先单独处理 img 防止含复杂属性的情况，再处理截断的 img）
+    text = re.sub(r'<img\s[^>]*?>', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'<img\s.*$', '', text, flags=re.IGNORECASE | re.DOTALL)
     text = re.sub(r'<[^>]+>', ' ', text)
     # 解码 HTML 实体
     text = text.replace('&#038;', '&').replace('&#38;', '&')
@@ -501,21 +519,23 @@ for src in raw["sources"]:
             print(f"  [deep] 精读: {title[:60]}...")
             deep = deep_read(title, url, src["name"], summary, src["key"])
             if deep:
-                deep_text = translate_text(deep[:1000]) or ""
+                deep_text = translate_text(deep[:1200]) or ""
                 deep_succeeded = True
                 print(f"  [deep] OK ({len(deep_text)}字)")
-            elif summary and len(summary) >= 30:
-                # 正文抓取失败 → 用RSS摘要做轻量精读
-                print(f"  [light] 轻量精读...")
-                light = deep_read_light(title, summary, src["name"])
-                if light:
-                    deep_text = translate_text(light[:600]) or ""
-                    deep_succeeded = True
-                    print(f"  [light] OK ({len(deep_text)}字)")
-                else:
-                    print(f"  [deep] 回退原摘要")
             else:
-                print(f"  [deep] 回退原摘要")
+                # 正文抓取失败 → 用摘要做轻量精读。cleaned太短则回溯原始摘要
+                light_input = summary if summary and len(summary) >= 10 else clean_summary(raw_summary, max_len=1200) if raw_summary else summary
+                if light_input and len(light_input.strip()) >= 10:
+                    print(f"  [light] 轻量精读...")
+                    light = deep_read_light(title, light_input, src["name"], src["key"])
+                    if light:
+                        deep_text = translate_text(light[:1200]) or ""
+                        deep_succeeded = True
+                        print(f"  [light] OK ({len(deep_text)}字)")
+                    else:
+                        print(f"  [light] 回退原摘要")
+                else:
+                    print(f"  [deep] 摘要太短，回退原摘要")
 
         # 根据来源分类
         company_sources = {"engie", "sunking", "bboxx", "m-kopa"}
@@ -547,17 +567,23 @@ for src in raw["sources"]:
             # 精简描述（最多200字纯文本，不用AI精读格式）
             company_desc = ""
             if deep_succeeded and deep_text:
-                # 摘取AI精读第一段（地点+概述），去掉后续分段和分隔符
                 cleaned = (deep_text or "").strip()
-                # 去掉开头的 --- 分隔线
                 if cleaned.startswith('---'):
                     cleaned = cleaned[3:].strip()
-                # 取第一段（双换行分隔）或第一行
-                first_para = cleaned.split('\n\n')[0] if '\n\n' in cleaned else cleaned.split('\n')[0]
-                # 去掉emoji标记
-                for emoji in ['\U0001F4CD', '\U0001F4CC', '\U0001F4A1', '\U0001F4C8']:
-                    first_para = first_para.replace(emoji, '')
-                company_desc = first_para.strip()[:200]
+                # 去掉 emoji 标记和 Markdown bold 标题行
+                for emoji in ['\U0001F4CD', '\U0001F4CC', '\U0001F4A1', '\U0001F4C8',
+                               '\U0001F30D', '\U0001F4CA', '\U0001F52E',
+                               '\U0001F4DC', '\u2696\uFE0F', '\U0001F52D',
+                               '\U0001F3E2', '\U0001F4CB']:
+                    cleaned = cleaned.replace(emoji, '')
+                # 去掉 **粗体标题** 开头的行，取后面的实质内容
+                lines = cleaned.split('\n')
+                meaningful = [l for l in lines if l.strip() and not l.strip().startswith('**')]
+                if meaningful:
+                    company_desc = ' '.join(meaningful).strip()
+                else:
+                    company_desc = cleaned.strip()
+                company_desc = company_desc[:200]
             elif summary:
                 company_desc = summary[:200]
             else:

@@ -350,6 +350,16 @@ body {
 """
 
 
+def strip_html(text: str) -> str:
+    """去除 <img> 标签及截断的 img（安全兜底），保留其他 HTML 标记"""
+    if not text or '<img' not in text.lower():
+        return text
+    import re
+    text = re.sub(r'<img\s[^>]*?>', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'<img\s.*$', '', text, flags=re.IGNORECASE | re.DOTALL)
+    return text.strip()
+
+
 def generate_html(data: dict) -> str:
     """根据数据字典生成完整 HTML"""
 
@@ -373,7 +383,7 @@ def generate_html(data: dict) -> str:
         for item in sec.get("items", []):
             tag = item.get("tag", "")
             title = item.get("title", "")
-            summary = item.get("summary", "")
+            summary = strip_html(item.get("summary", ""))
             # 描述与标题重复则隐藏
             item_title = item.get("title", "")
             if summary and item_title and (summary == item_title or summary[:30] == item_title[:30]):
@@ -418,8 +428,8 @@ def generate_html(data: dict) -> str:
 
         # 企业卡片
         for company in sec.get("companies", []):
-            name = company.get("name", "")
-            desc = company.get("description") or ""
+            name = strip_html(company.get("name", ""))
+            desc = strip_html(company.get("description") or "")
             # 描述与标题重复则隐藏
             if desc and (desc == name or desc[:30] == name[:30]):
                 desc = ""

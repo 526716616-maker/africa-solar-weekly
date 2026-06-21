@@ -4,6 +4,10 @@
   "issue": 3,
   "highlights": [
     {
+      "num": "48%",
+      "label": "并宣布战略"
+    },
+    {
       "num": "43%",
       "label": "FF 电网太阳能"
     },
@@ -14,10 +18,6 @@
     {
       "num": "30%",
       "label": "FF 电网太阳能"
-    },
-    {
-      "num": "324kW",
-      "label": "奥利斯到豪卡斯"
     }
   ],
   "sections": [
@@ -25,9 +25,29 @@
       "title": "一、政策规划",
       "items": [
         {
+          "tag": "PV Magazine · 太阳能",
+          "title": "能源转型需要新的领导力剧本",
+          "summary": "<p class=\"mb\">【行业事件】</p>\n<p class=\"mb\">Women in Solar+ Europe（WiSEu）在Intersolar Europe期间举办“重塑领导力：用AI时代的新策略引领未来”研讨会，探讨能源转型中领导力的变革需求。传统领导模式难以应对技术快速迭代、人工智能普及及系统复杂性的挑战。</p>\n<p class=\"mb\">技术、模式或趋势亮点：</p>\n<p class=\"mb\">领导力正从“技术专家”向“集体智慧的推动者”转变，强调跨学科协作、开放沟通与多元视角，以提升决策质量与创新能力。</p>\n<p class=\"mb\">【数据洞察】</p>\n<p class=\"mb\">研究显示，拥有多样化团队和领导结构的组织，在创新和决策上表现更优。领导者需创造包容环境，激发人才潜力，成为组织竞争力的核心。</p>\n<p class=\"mb\">（字数：250）</p>",
+          "bullets": [],
+          "source": "PV Magazine",
+          "source_url": "https://www.pv-magazine.com/2026/06/19/the-energy-transition-needs-a-new-leadership-playbook/",
+          "date": "2026-06-19",
+          "sub_category": "policy"
+        },
+        {
+          "tag": "AFSIA · 非洲太阳能",
+          "title": "Solis将在Intersolar Europe 2026展示全场景储能解决方案",
+          "summary": "<p class=\"mb\">**政策分析摘要：**</p>\n<p class=\"mb\">Solis将在2026年Intersolar Europe展会上展示其全场景能源存储解决方案，包括FlexAIO、EverCore等产品，旨在推动从逆变器制造商向完整能源解决方案提供商的转型。该展示覆盖住宅及工商业应用，强调智能控制与本地化支持。尽管文中未明确提及具体政策名称、目标数字或时间节点，但可推测其与欧洲可再生能源推广及能源转型战略相关。对行业而言，Solis的全链条解决方案将提升能源管理效率，促进储能技术普及。然而，系统集成度高可能带来技术复杂性和初期投资成本上升等挑战。未来，随着智能能源管理系统的发展，Solis的综合方案有望成为推动能源结构优化的重要力量。</p>",
+          "bullets": [],
+          "source": "AFSIA Solar Africa",
+          "source_url": "https://www.afsiasolar.com/solis-to-showcase-full-scenario-energy-storage-solutions-at-intersolar-europe-2026/?utm_source=rss&utm_medium=rss&utm_campaign=solis-to-showcase-full-scenario-energy-storage-solutions-at-intersolar-europe-2026",
+          "date": "2026-06-18",
+          "sub_category": "policy"
+        },
+        {
           "tag": "AMDA · 迷你电网",
           "title": "AMDA 和 GOGLA 宣布战略合作，加速能源获取",
-          "summary": "全球离网太阳能协会和非洲领先的微电网行业机构合作伙伴加强集体影响力，呼吁各国政府使国家能源契约可投资 <img fetchpriority=\"high\" Decoding=\"async\" width=\"1024\" height=\"1024\" src=\"https://www.africamda.org/wp-content/uploads/2026/06/682476-3G4A0353-2-eb4c62-original-1781703105-1024x1024.jpeg\" alt=\"\" class=\"wp-image-11181\" srcset =“https://www.africamda.org/wp-content/uploads/2026/06/682476-3G4A0353-2-eb4c62-original-1781703105-980x980.jpeg 980w， https://www.africamda.org/wp-content/uploads/2026/06/682476-3G4A035",
+          "summary": "<p class=\"mb\">**政策分析摘要：**</p>\n<p class=\"mb\">2026年6月18日，非洲微电网开发商协会（AMDA）与全球离网太阳能协会（GOGLA）在非洲能源论坛上签署战略合作协议，旨在加强行业影响力，推动各国将国家能源公约转化为可投资的项目。该合作覆盖非洲地区，目标是到2030年通过离网太阳能和分布式可再生能源解决方案连接3亿人，其中约48%的电力需求可通过此类技术满足。双方计划通​​​​过联合政策倡导、市场情报共享及技术协作，提升行业声音。</p>\n<p class=\"mb\">此合作对行业企业具有直接推动作用，有助于降低重复工作、提高政策影响力。但实施中可能面临监管不确定性、优惠资本结构缺失等挑战。前景上看，该合作有望加速非洲能源转型进程。</p>",
           "bullets": [],
           "source": "AMDA Minigrids",
           "source_url": "https://www.africamda.org/amda-and-gogla-announce-strategic-collaboration-to-accelerate-energy-access/",
@@ -42,21 +62,11 @@
         {
           "tag": "GOGLA · 行业报告",
           "title": "离网太阳能投资标志着行业成熟、资本集中",
-          "summary": "<p class=\"mb\">**标题：离网太阳能投资反映行业成熟度与资本集中趋势**</p>\n<p class=\"mb\"><strong>投资亮点：</strong></p>\n<ul class=\"bullets\">\n<li>2024年全球离网太阳能投资达3亿美元，较2023年下降30%，但2025年有所回升。主要投资方包括国际金融机构、本地企业及政府支持机构，重点区域为非洲。</li>\n<li>融资方式以混合融资为主，结合债务、股权及补贴，推动私人资本进入市场。</li>\n<li>资金缺口依然显着，2023年需7倍投资才能实现2030年能源普及目标，但2025年结构性融资和本地货币融资有所改善。</li>\n</ul>\n<p class=\"mb\"><strong>关键数据：</strong></p>\n<ul class=\"bullets\">\n<li>2023年离网太阳能投资达4.25亿美元，同比下降43%；2024年降至3亿美元。</li>\n<li>非洲是主要投资区域，多个初创企业通过ELEVATE计划提升融资能力，增强与国际资本的对接。</li>\n</ul>\n<p class=\"mb\">【行业展望】</p>\n<p class=\"mb\">随着结构性融资和本地化策略推进，离网太阳能投资正逐步向成熟市场集中，但资金缺口仍需长期解决。</p>",
+          "summary": "<p class=\"mb\">**标题：离网太阳能投资反映行业成熟与资本集中**</p>\n<p class=\"mb\"><strong>投资亮点：</strong></p>\n<ul class=\"bullets\">\n<li>2024年全球离网太阳能投资总额为3亿美元，较2022年下降43%，但2025年数据显示投资有所回升。</li>\n<li>投资方包括国际金融机构、本地企业及私募股权基金，部分项目采用混合融资模式，结合公共、私人和慈善资本。</li>\n<li>资金缺口依然显着，实现2030年能源普及目标需7倍于当前投资规模。</li>\n</ul>\n<p class=\"mb\"><strong>关键数据：</strong></p>\n<ul class=\"bullets\">\n<li>2023年全球离网太阳能投资达4.25亿美元，2024年降至3亿美元，降幅达30%。</li>\n<li>2025年数据显示，结构性融资和本地货币支持推动投资增长，但资金分配不均问题加剧。</li>\n</ul>\n<p class=\"mb\">【行业展望】</p>\n<p class=\"mb\">随着行业逐渐成熟，资本集中趋势明显，未来投资将更依赖结构化融资和本地化策略。</p>",
           "bullets": [],
           "source": "GOGLA Newsroom",
           "source_url": "https://newsroom.gogla.org/tags/investment/",
           "date": "2026-06-15",
-          "sub_category": "investment"
-        },
-        {
-          "tag": "AFSIA · 非洲太阳能",
-          "title": "Solis将在Intersolar Europe 2026展示全场景储能解决方案",
-          "summary": "<p class=\"mb\">【行业事件】</p>\n<p class=\"mb\">Solis 将于2026年6月23日至25日在德国慕尼黑举行的Intersolar Europe展会上，展示其全场景能源存储解决方案，包括FlexAIO、EverCore等产品。公司正从逆变器制造商转型为完整的能源解决方案提供商。</p>\n<p class=\"mb\">技术亮点：FlexAIO 是一款集成逆变器、电池和智能控制的高电压储能系统，支持单相和三相应用，容量可扩展至324kWh，具备AI智能能量管理功能。 EverCore 为商业与工业用户提供一体化储能方案，容量达261kWh，提升能源管理效率。</p>\n<p class=\"mb\">【数据洞察】</p>\n<p class=\"mb\">Solis 展示的储能系统覆盖住宅、商业及工业应用，容量范围从6–54kWh扩展至324kWh，体现其灵活部署能力。公司通过本地团队提供定制化技术支持，强化市场渗透。</p>",
-          "bullets": [],
-          "source": "AFSIA Solar Africa",
-          "source_url": "https://www.afsiasolar.com/solis-to-showcase-full-scenario-energy-storage-solutions-at-intersolar-europe-2026/?utm_source=rss&utm_medium=rss&utm_campaign=solis-to-showcase-full-scenario-energy-storage-solutions-at-intersolar-europe-2026",
-          "date": "2026-06-18",
           "sub_category": "investment"
         }
       ]
@@ -65,18 +75,9 @@
       "title": "三、行业动态",
       "items": [
         {
-          "tag": "PV Magazine · 太阳能",
-          "title": "能源转型需要新的领导力剧本",
-          "summary": "能源转型需要新的领导力剧本",
-          "bullets": [],
-          "source": "PV Magazine",
-          "source_url": "https://www.pv-magazine.com/2026/06/19/the-energy-transition-needs-a-new-leadership-playbook/",
-          "date": "2026-06-19"
-        },
-        {
           "tag": "AFSIA · 非洲太阳能",
           "title": "第33项世界纪录！晶科能源为钙钛矿/TOPCon串联电池设定新的效率基准：34.82%",
-          "summary": "晶科能源",
+          "summary": "<p class=\"mb\">【行业事件】</p>\n<p class=\"mb\">JinkoSolar 在中国上海微系统与信息技术研究所认证下，成功将 N 型 TOPCon 钙钛矿叠层电池效率提升至 34.82%，创世界新纪录。这是该公司第 33 次打破光伏电池效率世界纪录，标志着其在下一代钙钛矿叠层技术工业化方面取得关键进展。</p>\n<p class=\"mb\">【数据洞察】</p>\n<p class=\"mb\">此次效率突破基于多项核心技术创新，包括双层复合钝化接触结构、多维界面钝化技术及梯度结晶动力学控制策略等。 JinkoSolar 作为全球首家实现 N 型 TOPCon 技术量产的企业，持续推动该技术迭代与钙钛矿叠层技术发展，进一步验证了其商业化前景。</p>",
           "bullets": [],
           "source": "AFSIA Solar Africa",
           "source_url": "https://www.afsiasolar.com/33rd-world-record-jinkosolar-sets-new-efficiency-benchmark-for-perovskite-topcon-tandem-cells-at-34-82/?utm_source=rss&utm_medium=rss&utm_campaign=33rd-world-record-jinkosolar-sets-new-efficiency-benchmark-for-perovskite-topcon-tandem-cells-at-34-82",
@@ -90,7 +91,7 @@
         {
           "tag": "企业动态",
           "name": "M-KOPA 加纳影响报告显示智能手机正在释放健康保险和经济机会",
-          "description": "M-KOPA 加纳影响报告显示，智能手机正在为日常收入者带来健康保险和经济机会",
+          "description": "M-KOPA 加纳影响报告显示，其智能手机分期付款方案正在为低收入日薪劳动者解锁健康保险与经济机会。报告核心发现：通过 M-KOPA 的 Pay-As-You-Go 模式，加纳日常收入者首次获得智能手机+健康保险组合服务，显著提升了金融普惠与医疗保障覆盖面。",
           "source": "M-KOPA",
           "source_url": "https://www.m-kopa.com/newsroom/m-kopa-ghana-impact-report-reveals-smartphones-are-unlocking-health-insurance-and-economic-opportunity-for-every-day-earners",
           "date": ""
