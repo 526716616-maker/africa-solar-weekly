@@ -610,7 +610,18 @@ for src in raw["sources"]:
                     company_desc = ' '.join(meaningful).strip()
                 else:
                     company_desc = cleaned.strip()
-                company_desc = company_desc[:200]
+                # 智能截断：最后一个完整句号处切断，避免半截话
+                if len(company_desc) > 180:
+                    cut = max(company_desc.rfind('。', 0, 200),
+                              company_desc.rfind('. ', 0, 200),
+                              company_desc.rfind('！', 0, 200),
+                              company_desc.rfind('? ', 0, 200))
+                    if cut > 100:
+                        company_desc = company_desc[:cut+1]
+                    else:
+                        company_desc = company_desc[:200]
+                else:
+                    company_desc = company_desc[:200]
             elif summary:
                 company_desc = summary[:200]
             else:
