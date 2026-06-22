@@ -468,12 +468,11 @@ for fname in os.listdir(raw_dir_abs):
             for sec in old.get("sections", []):
                 for item in sec.get("items", []):
                     u = item.get("source_url", "")
-                    # GOGLA 新闻稿不去重，每期都保留
-                    if u and 'gogla.org' not in u.lower() and 'newsroom.gogla' not in u.lower():
+                    if u:
                         seen_urls.add(u.strip().rstrip('/').lower())
                 for comp in sec.get("companies", []):
                     u = comp.get("source_url", "")
-                    if u and 'gogla.org' not in u.lower() and 'newsroom.gogla' not in u.lower():
+                    if u:
                         seen_urls.add(u.strip().rstrip('/').lower())
         except Exception:
             pass
