@@ -44,16 +44,22 @@ SOURCES = {
                      "renewable", "clean energy", "paygo", "mini.grid",
                      "microgrid", "lighting", "storage", "battery"],
     },
-    # ── 企业动态 ──
-    "engie": {
-        "name": "ENGIE / IgniteAccess",
-        "url": "https://igniteaccess.com/category/in-the-news/",
-        "type": "html",
-        "selector": "article, .post, .news-item",
-        "title_sel": "h2, h3, .news-title, .entry-title",
-        "link_sel": "a",
-        "date_sel": "time, .date, .entry-date",
-        "summary_sel": "p, .excerpt, .entry-summary",
+    # ── 国际基金会/开发机构（从 GOGLA Top Stories 发现）──
+    "rockefeller": {
+        "name": "Rockefeller Foundation",
+        "url": "https://www.rockefellerfoundation.org/feed/",
+        "type": "rss",
+        "item_sel": "item",
+        "title_sel": "title",
+        "link_sel": "link",
+        "date_sel": "pubDate",
+        "summary_sel": "description",
+        "keywords": ["africa", "african", "solar", "energy", "power",
+                     "electrification", "renewable", "climate", "off-grid",
+                     "offgrid", "mini-grid", "minigrid", "microgrid",
+                     "energy access", "clean energy", "green",
+                     "kenya", "nigeria", "ethiopia", "ghana", "tanzania",
+                     "mission 300", "electricity", "battery", "storage"],
     },
     # ── RSS 来源 ──
     "pv-magazine": {
