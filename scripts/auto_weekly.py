@@ -53,7 +53,7 @@ def translate_text(text: str, retries: int = 3) -> str:
 
 
 # ── AI 精读 ──
-QWEN_KEY = 'sk-DlJFF226cnK9WstHFYcrvLDYxevCwJUJrosj7fISIhyjsEcz'
+AGNES_API_KEY = os.environ.get('AGNES_API_KEY', 'sk-DlJFF226cnK9WstHFYcrvLDYxevCwJUJrosj7fISIhyjsEcz')
 QWEN_API = 'https://apihub.agnes-ai.com/v1/chat/completions'
 
 # ── 按内容类型的AI精读模板 ──
@@ -177,7 +177,7 @@ def deep_read_light(title, summary_text, source_name, source_key=""):
 
     try:
         resp = requests.post(QWEN_API, headers={
-            'Authorization': f'Bearer {QWEN_KEY}',
+            'Authorization': f'Bearer {AGNES_API_KEY}',
             'Content-Type': 'application/json'
         }, json={
             'model': 'agnes-2.0-flash',
@@ -252,7 +252,7 @@ def deep_read(title, source_url, source_name, summary_hint="", source_key="", re
     for attempt in range(retries + 1):
         try:
             resp = requests.post(QWEN_API, headers={
-                'Authorization': f'Bearer {QWEN_KEY}',
+                'Authorization': f'Bearer {AGNES_API_KEY}',
                 'Content-Type': 'application/json'
             }, json={
                 'model': 'agnes-2.0-flash',
