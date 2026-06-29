@@ -1,0 +1,65 @@
+{
+  "week": "2026-W27",
+  "date": "2026-06-29",
+  "issue": 4,
+  "highlights": [
+    {
+      "num": "3",
+      "label": "篇行业深度分析"
+    },
+    {
+      "num": "3",
+      "label": "家重点企业跟踪"
+    },
+    {
+      "num": "3",
+      "label": "大政策动向"
+    },
+    {
+      "num": "3",
+      "label": "项投资数据"
+    }
+  ],
+  "sections": [
+    {
+      "title": "一、政策规划",
+      "items": [
+        {
+          "tag": "FSD Africa",
+          "title": "FSD Africa 将为第十一届我们的海洋会议上宣布的 3 亿美元肯尼亚蓝绿债券计划提供咨询",
+          "summary": "<p class=\"mb\">**政策要点**：</p>\n<p class=\"mb\">肯尼亚“蓝色-绿色债券”计划（Kenya Go Blue-Green Bond Programme），由沿海地区经济联盟（JKP）、内罗毕证券交易所（NSE）、FSD Africa等机构联合发起，覆盖肯尼亚六大沿海县。该计划旨在动员长期资本，支持蓝色经济与气候韧性优先事项。</p>\n<p class=\"mb\">**影响分析**：</p>\n<p class=\"mb\">此举标志着可持续金融领域的重大突破，直接为肯尼亚沿海地区的海洋资源开发与气候适应项目提供资金渠道，有助于提升区域基础设施水平并吸引国际投资。然而，作为2026年6月宣布的新兴倡议，其具体实施细节、监管框架及资金落地效率尚待观察，可能面临项目筛选标准统一性及跨国资本流动管理的挑战。</p>\n<p class=\"mb\">**前景**：</p>\n<p class=\"mb\">该3亿美元债券计划是肯尼亚利用创新金融工具推动蓝色经济增长与气候行动的关键里程碑，有望成为非洲可持续融资的示范案例。</p>",
+          "bullets": [],
+          "source": "FSD Africa",
+          "source_url": "https://fsdafrica.org/fsd-africa-to-advise-on-the-us300-million-kenya-blue-green-bond-programme-announced-at-the-11th-our-ocean-conference/",
+          "date": "2026-06-24",
+          "sub_category": "policy"
+        },
+        {
+          "tag": "Energy News Network",
+          "title": "沙漠技术加强非洲伙伴关系并探索有前途的投资机会以支持其前身",
+          "summary": "<p class=\"mb\">**</p>\n<p class=\"mb\">【政策要点】</p>\n<p class=\"mb\"><strong>**</strong></p>\n<ul class=\"bullets\">\n<li>**政策/事件背景**：沙特Desert Technologies出席2026年非洲能源论坛（AEF），响应“建设非洲工业未来”主题。</li>\n<li>**核心举措**：推广集成太阳能与储能解决方案，包括SAHARA太阳能集装箱、即插即用太阳能套件及智能太阳能水泵逆变器。</li>\n<li>**技术赋能**：引入AI驱动的智能能源管理，涵盖发电预测、实时性能分析及预防性维护，旨在提升项目经济价值与运营效率。</li>\n</ul>\n<p class=\"mb\">**</p>\n<p class=\"mb\">【影响分析】</p>\n<p class=\"mb\"><strong>**</strong></p>\n<ul class=\"bullets\">\n<li>**对行业/企业的影响**：为非洲偏远地区及混合电网提供高效离网/并网能源方案，直接助力当地工业化进程与可持续发展目标（SDGs）。同时，作为沙特非石油出口战略的一部分，强化了其在非洲能源市场的战略伙伴关系。</li>\n<li>**实施挑战或风险**：虽然文章未明确提及具体政策障碍，但强调AI解决方案需应对复杂的现场环境以确保持续可靠性；此外，大规模扩张依赖于与当地政府和投资者的深度协调，存在地缘政治与市场准入的潜在复杂性。</li>\n</ul>\n<p class=\"mb\">**</p>\n<p class=\"mb\">【前景】</p>\n<p class=\"mb\">**</p>\n<p class=\"mb\">Desert Technologies通过技术与资本的双重输出，正成为推动非洲能源转型及沙特经济多元化的关键战略伙伴。</p>",
+          "bullets": [],
+          "source": "Energy News Network",
+          "source_url": "https://energy-news-network.com/industry-news/desert-technologies-strengthens-african-partnerships-and-explores-promising-investment-opportunities-that-support-its-expansion-in-the-continent-at-africa-energy-forum-2026/",
+          "date": "2026-06-25",
+          "sub_category": "policy"
+        }
+      ]
+    },
+    {
+      "title": "二、投资数据",
+      "items": [
+        {
+          "tag": "PV Tech",
+          "title": "Intersolar 2026：欧洲太阳能行业一周的主要收获",
+          "summary": "<p class=\"mb\"><strong>行业事件：</strong></p>\n<ul class=\"bullets\">\n<li>2026年慕尼黑Intersolar展会期间，欧洲光伏行业情绪低迷，面临激励政策消退、电网约束加剧及制造商持续亏损等多重挑战，与2024年行业高光时刻形成鲜明对比。</li>\n<li>储能技术成为展会绝对焦点，所有主要中国光伏制造商（如天合光能、晶澳科技）均展出储能解决方案及“光储一体化”产品，显示出从单纯组件制造向综合能源服务转型的趋势。</li>\n</ul>\n<p class=\"mb\"><strong>数据洞察：</strong></p>\n<ul class=\"bullets\">\n<li>纯光伏项目在多地因电网限制变得不可行，迫使开发商、EPC和独立电力生产商（IPP）加速拥抱储能以维持项目 viability。</li>\n<li>尽管上游制造端利润承压，但储能领域资金流入显着，成为行业新的增长引擎和技术迭代核心驱动力。</li>\n</ul>",
+          "bullets": [],
+          "source": "PV Tech",
+          "source_url": "https://www.pv-tech.org/intersolar-2026-key-takeaways-from-a-week-with-europes-solar-industry/",
+          "date": "2026-06-26",
+          "sub_category": "investment"
+        }
+      ]
+    }
+  ]
+}
